@@ -49,7 +49,7 @@ NOTE:
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(-37.8172098,144.9537367),
+        position: new google.maps.LatLng(28.6216797,77.0337363)),
         map: map,
     icon: 'images/icons/map-marker.png',
     });
