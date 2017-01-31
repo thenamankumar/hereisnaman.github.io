@@ -1,14 +1,3 @@
-/*
-
-Template: Sam Martin - Personal Vcard Resume HTML Template
-Author: potenzaglobalsolutions.com
-Version: 1.0
-Design and Developed by: potenzaglobalsolutions.com
-
-NOTE:
-
-*/
-
 (function($){
   "use strict";
 
@@ -47,6 +36,12 @@ NOTE:
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
+    // Let's also add a marker while we're at it
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(-37.8172098,144.9537367),
+        map: map,
+    icon: 'images/icons/map-marker.png',
+    });
     }
 
     google.maps.event.addDomListener(window, 'load', initialize_map);
