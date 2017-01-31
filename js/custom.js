@@ -90,8 +90,8 @@ $('#menu-icon').on( "click", function(e) {
         NiceScroll
 *************************/
   $("html").niceScroll({
-    scrollspeed: 150,
-    mousescrollstep: 38,
+    scrollspeed: 100,
+    mousescrollstep: 20,
     cursorwidth: 7,
     cursorborder: 0,
     cursorcolor: '#2f3742',
