@@ -47,12 +47,6 @@ NOTE:
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Let's also add a marker while we're at it
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(28.6216797,77.0337363)),
-        map: map,
-    icon: 'images/icons/map-marker.png',
-    });
     }
 
     google.maps.event.addDomListener(window, 'load', initialize_map);
