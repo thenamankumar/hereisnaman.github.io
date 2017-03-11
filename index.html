@@ -1,869 +1,1570 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Naman Kumar, hereisnaman, web developer, programmer" />
-    <meta name="description" content="Naman Kumar is a B.Tech Student, Web Developer, Graphic Designer and Programmer from New Delhi, India. Know more about him." />
-    <meta name="author" content="Naman Kumar" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Naman Kumar - Web Developer and Programmer </title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
-
-    <!-- bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- google font -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic' rel='stylesheet' type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic' rel='stylesheet' type="text/css" />
-
-    <!-- themify icon -->
-    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" />
-
-    <!-- font awesome  -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- magnific popup -->
-    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
-
-    <!-- jquery ui -->
-    <link rel='stylesheet' href='css/jquery-ui.css'>
-
-    <!-- main style -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Naman Kumar - Mobile and Web Developer</title>
+    <!--Bootstrape Files-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--Bootstrape Files End-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-    <!-- responsive -->
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="css/animations.css" rel="stylesheet" type="text/css" />
+    <!--Font Files-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'
+        type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet'
+        type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600italic,700,600,300,200'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700italic,900italic,900,700'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--Font Files End-->
+    <!--Slider Files-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!--Slider Files End-->
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
 </head>
-
 <body>
-
-    <!--=================================
-  loading -->
-    <div id="loading">
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="object" id="object_one"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_three"></div>
-                <div class="object" id="object_four"></div>
-            </div>
-        </div>
-    </div>
-    <!--=================================
-  loading -->
-
-    <!--=================================
-  header -->
-    <div class="menu-responsive">
-        <a href="#"> <b>Naman Kumar</b></a> <a id="menu-icon" class="but" href="#"><span class="ti-menu"></span> </a></div>
-    <header id="left-header" class="header">
-        <nav id="menu" class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="http://namankumar.me"> <img id="logo_img" src="images/logo.png" alt="naman-kumar-hereisnaman"> </a>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul id="navbar" class="nav navbar-nav">
-                    <li class="active"><a href="#home" class="page-scroll">Home</a></li>
-                    <li><a href="#about" class="page-scroll">About</a></li>
-                    <li><a href="#services" class="page-scroll">Services</a></li>
-                    <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-                    <li><a href="#skill" class="page-scroll">Skill</a></li>
-                    <li><a href="#resume" class="page-scroll">Resume</a></li>
-                    <li><a href="#contact" class="page-scroll">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="menu-footer">
-            <div class="social">
+    <!--Preloader area starts -->
+    <div class="loader" id="loader">
+        &nbsp;</div>
+    <!--Preloader area ends -->
+    <div id="wraper">
+        <a href="#" class="smallimg" id="smallimg">Back</a>
+        <!--Top Headerbar area starts -->
+        <div id="top-bar">
+            <h1 class="logo">
+                <a href="index.html">Naman Kumar</a></h1>
+            <div class="socialmedia">
                 <ul>
-                    <li><a href="mailto:naman@outlook.in" target="_blank"><i class="fa fa-envelope-o "></i></a></li>
-                    <li><a href="https://www.facebook.com/hereisnaman" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/hereisnaman" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/hereisnaman/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/hereisnaman/" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="#" class="linkedin">Linkedin</a></li>
+                    <li><a href="#" class="twitter">Twitter</a></li>
+                    <li><a href="#" class="facebook">Facebook</a></li>
                 </ul>
             </div>
-            <div class="copyright">
-                <p>© Naman Kumar <br/> all rights reserved</p>
-            </div>
+            <a class="mobilemenu">View Menu</a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#" onclick="landingpagecube();">HOME</a></li>
+                    <li><a href="#" onclick="aboutcube();">ABOUT</a></li>
+                    <li><a href="#" onclick="teamcube();">RESUME</a></li>
+                    <li><a href="#" onclick="thumbnailscube();">PORTFOLIO</a></li>
+                    <li><a href="#" onclick="blogcube()">NEWS</a></li>
+                    <li><a href="#" onclick="contactcube();">CONTACT</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
-    <!--=================================
-  header -->
+        <nav id="menumobile">
+            <ul>
+                <li><a href="#" onclick="landingpagecube();">HOME</a></li>
+                <li><a href="#" onclick="aboutcube();">ABOUT</a></li>
+                <li><a href="#" onclick="teamcube();">RESUME</a></li>
+                <li><a href="#" onclick="thumbnailscube();">PORTFOLIO</a></li>
+                <li><a href="#" onclick="blogcube()">NEWS</a></li>
+                <li><a href="#" onclick="contactcube();">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!--Top Headerbar area ends -->
+        <!--Landing Page Us page area ends -->
+        <div id="landingpage" class="pt-page pt-page-current">
+            <section>
+      <div class="contentRight landingpage">
+        <div class="postcontentarea">
+          <div class="post parent">
+            <div class="content-r-inner child">
 
-    <!--=================================
-  intro -->
-    <section class="content-scroller">
-        <div id="home" class="intro-bg gradient-01" style="background: url('images/bg.jpg');">
-            <div id="scroll-down" class="intro">
-                <div class="intro-content">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12 text-left content-left">
-                                <h1> <span> Hello i’m </span> Naman Kumar </h1>
-                                <div id="typer">
-                                </div>
-                                <div class="button-large">
-                                    <a href="https://github.com/hereisnaman" target="_blank">View Me On GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="scroll-down page-scroll" title="Scroll Down" href="#about"><i></i></a>
+					<div class="col-md-12 col-xs-12 col-lg-12 no-pad-home">
+					<div class="subtitle">MOBILE AND WEB DEVELOPER</div>
+					<h2>Naman Kumar</h2>
+					<div class="author-title">
+					<div class="sad">Is a Tech Enthusiastic, B.tech Computer Science & Engineering student at Northern India Engineering College, New Delhi. A Freelance Web Developer, SEO Expert and a growing mobile developer and competitive programmer.</div>
+					</div>
+					</div>
+
+
+				<div class="divider30">&nbsp;</div>
+				<div class="footer-box">
+
+					<div class="col-xs-12 col-sm-6">
+					<div>
+						<div class="touch"><a class="link" href="#"><i class="fa fa-envelope"></i> GET IN TOUCH</a></div>
+					</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+					<div>
+						<ul class="socialpost">
+							<li class="nomargin-right"><a href="#" class=""><i class="fa fa-google"></i></a></li>
+							<li><a href="#" class=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class=""><i class="fa fa-behance"></i></a></li>
+						</ul>
+					</div>
+					</div>
+					<div class="divider30">&nbsp;</div>
+				</div>
             </div>
+          </div>
         </div>
-        <!--=================================
-  intro -->
+      </div>
+    </section>
+        </div>
+        <!--Landing page area ends -->
+        <!--Main Home page area starts -->
+        <div id="thumbnails" class="pt-page">
+            <div id="scalediv">
+                <div class="hiddenscroll" id="hiddenscroll">
+                    <div class="row" data-id="one">
+                        <div class="innerrow">
+                            <figure class="big makebig ColumnLOne">
 
-        <!--=================================
-  about -->
-        <section id="about" class="about white-bg page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <div class="about-image">
-                            <img class="img-responsive" src="images/me.jpg" alt="naman-kumar-hereisnaman">
-                        </div>
-                        <div class="about-social">
-                            <ul>
-                                <li><a href="mailto:naman@outlook.in" target="_blank"><i class="fa fa-envelope-o "></i></a></li>
-                                <li><a href="https://www.facebook.com/hereisnaman" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/hereisnaman" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/hereisnaman/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="https://github.com/hereisnaman/" target="_blank"><i class="fa fa-github"></i></a></li>
-                            </ul>
+              <div class="explr"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&txt=1400%C3%97788&w=1400&h=788" alt="">
+                <div class="content">
+                  <h2>Morbi Dapibus Eros A Sol<br/>
+                    Icitudin Facilisis<br/>
+                    <span>Video, Standard</span></h2>
+                  <p class="comnt">16</p>
+                </div>
+
+              </div>
+              <div class="contentRight"> <a class="close" href="javascript:void(0)">Close</a>
+                <div class="postcontentarea">
+                  <div class="post">
+                    <div class="content-r-inner">
+
+					<div class="blogheadergride">
+					<h2 class="blogtitle">Integer ut iaculis felis  <br/>Curabitur eget molestie mi</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </figure>
+                            <figure class="ColumnRTwo callpost" data-num="1"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=B3B3B3&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
+                            <figure class="ColumnROne callpost" data-num="2"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=BABABA&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <div class="section-title">
-                            <div class="section-title-name">
-                                <span>Know about me</span>
-                                <h2>About Me</h2>
-                            </div>
-                            <div class="title-name-gray">
-                                <strong>About Me</strong>
-                            </div>
+                    <div class="row" data-id="two">
+                        <div class="innerrow">
+                            <figure class="ColumnLOne callpost" data-num="3"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=B3B3B3&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
+                            <figure class="ColumnLTwo callpost" data-num="4"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=BABABA&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
+                            <figure class="ColumnROne big makebig">
+              <div class="explr"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&txt=1400%C3%97788&w=1400&h=788" alt="">
+                <div class="content">
+                  <h2>Morbi Dapibus Eros A Sol<br/>
+                    Icitudin Facilisis<br/>
+                    <span>Video, Standard</span></h2>
+                  <p class="comnt">16</p>
+                </div>
+
+              </div>
+              <div class="contentRight"> <a class="close" href="javascript:void(0)">Close</a>
+                <div class="postcontentarea">
+                  <div class="post">
+                    <div class="content-r-inner">
+
+					<div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </figure>
                         </div>
-                        <div class="contact-block">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="my-contact clearfix">
-                                        <div class="contact-icon">
-                                            <span class="ti-user"></span>
-                                        </div>
-                                        <div class="contact-info">
-                                            <h4>Name:</h4>
-                                            <p>Naman Kumar</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="my-contact clearfix">
-                                        <div class="contact-icon">
-                                            <span class="ti-email"></span>
-                                        </div>
-                                        <div class="contact-info">
-                                            <h4>Email:</h4>
-                                            <p>naman@outlook.in</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="my-contact clearfix">
-                                        <div class="contact-icon">
-                                            <span class="ti-mobile"></span>
-                                        </div>
-                                        <div class="contact-info">
-                                            <h4>Phone:</h4>
-                                            <p>+91-8527705775</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="my-contact clearfix">
-                                        <div class="contact-icon">
-                                            <span class="ti-calendar"></span>
-                                        </div>
-                                        <div class="contact-info">
-                                            <h4>Date of birth: </h4>
-                                            <p>17 September 1998</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="my-contact clearfix">
-                                        <div class="contact-icon">
-                                            <span class="ti-direction-alt"></span>
-                                        </div>
-                                        <div class="contact-info">
-                                            <h4>Address: </h4>
-                                            <p>B102A, FF, Rama Park, New Delhi. India</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4">
-                                    <div class="my-contact clearfix">
-                                        <div class="contact-icon">
-                                            <span class="ti-flag-alt-2"></span>
-                                        </div>
-                                        <div class="contact-info">
-                                            <h4>Nationality: </h4>
-                                            <p>India</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="about-block clearfix">
-                                        <p>I have more than <b>4 year of experience</b> in the field of website development, SEO and programming. Specialized in Wordpress designing & development and also in graphic design and Android development. Professional
-                                            in <b>Search Engine Optimisation</b> both on-page and off-page.</p>
-                                        <p>Creative Solution Provider as a <b>Freelance Graphic Artist and SEO expert</b>, Team worker to Induce the Creative Juice among the colleagues with a View to deliver the Best and New in the business.</p>
-                                        <!--<img class="pull-right" src="images/signature.png" alt="">-->
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row" data-id="three">
+                        <div class="innerrow">
+                            <figure class="big makebig ColumnLOne">
+              <div class="explr"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&txt=1400%C3%97788&w=1400&h=788" alt="">
+                <div class="content">
+                  <h2>Morbi Dapibus Eros A Sol<br/>
+                    Icitudin Facilisis<br/>
+                    <span>Video, Standard</span></h2>
+                  <p class="comnt">16</p>
+                </div>
+
+              </div>
+              <div class="contentRight"> <a class="close" href="javascript:void(0)">Close</a>
+                <div class="postcontentarea">
+                  <div class="post">
+                    <div class="content-r-inner">
+                   	<div class="blogheadergride">
+					<h2 class="blogtitle">Integer ut iaculis felis  <br/>Curabitur eget molestie mi</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </figure>
+                            <figure class="ColumnRTwo callpost" data-num="5"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=B3B3B3&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
+                            <figure class="ColumnROne callpost" data-num="6"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=BABABA&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
+                        </div>
+                    </div>
+                    <div class="row" data-id="four">
+                        <div class="innerrow">
+                            <figure class="ColumnLOne callpost" data-num="7"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=B3B3B3&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
+                            <figure class="ColumnLTwo callpost" data-num="8"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&bg=BABABA&txt=583%C3%97600&w=583&h=600" alt="">
+              <div class="content">
+                <h2>Mauris augue ante dictum <br/>
+                  <span>Video, Standard</span></h2>
+                <p class="comnt">16</p>
+              </div>
+            </figure>
+                            <figure class="ColumnROne big makebig ">
+              <div class="explr"> <img src="https://placeholdit.imgix.net/~text?txtsize=40&txt=1400%C3%97788&w=1400&h=788" alt="">
+                <div class="content">
+                  <h2>MORBI DAPIBUS EROS A SOL<br/>
+                    ICITUDIN FACILISIS<br/>
+                    <span>Video, Standard</span></h2>
+                  <p class="comnt">16</p>
+                </div>
+
+              </div>
+              <div class="contentRight"> <a class="close" href="javascript:void(0)">Close</a>
+                <div class="postcontentarea">
+                  <div class="post">
+                    <div class="content-r-inner">
+                    	<div class="blogheadergride">
+					<h2 class="blogtitle">MORBI DAPIBUS EROS A SOL  <br/>ICITUDIN FACILISIS</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </figure>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--=================================
-  about -->
+            <!-- Posts page area starts -->
+            <div id="posts">
+                <a class="back" id="back">Back</a>
+                <aside> <a class="previous">Previous</a>
+        <div class="postimagearea">
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+          <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        </div>
+      </aside>
+                <section>
+      <a class="next">Next</a>
+        <div class="contentRight">
+          <div class="postcontentarea">
+            <div class="post">
+              <div class="content-r-inner">
+					<div class="blogheadergride">
+					<h2 class="blogtitle">Icitudin Facilisis <br/>Morbi Dapibus Eros A Sol</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
 
-        <!--=================================
-work -->
-        <section id="services" class="services white-bg page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="section-title">
-                            <div class="section-title-name">
-                                <span>Services</span>
-                                <h2>What I Can Do</h2>
-                            </div>
-                            <div class="title-name-gray">
-                                <strong>What I Can Do</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="service-block">
-                            <span class="ti-desktop"></span>
-                            <h2>Website Design</h2>
-                            <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. I can do website design & development, branding & digital marketing.</p>
-                            <!--<div class="contact-button">
-    <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-  </div>-->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="service-block">
-                            <span class="ti-slice"></span>
-                            <h2>programming</h2>
-                            <p>I can build Android, IOS and command line applications. I also have a keen interest in alorithms & real life problem solving via programming and I am active on online coding platforms like Code Chef.</p>
-                            <!--<div class="contact-button">
-    <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-  </div>-->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="service-block">
-                            <span class="ti-brush-alt"></span>
-                            <h2>Graphic Design</h2>
-                            <p>Not a photosop pro yet but still have a good hand on graphic design. I have a good sense of graphics and can design beautiful graphics starting from logos & media graphics to ebook covers & mockups.</p>
-                            <!--	<div class="contact-button">
-    <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-  </div>-->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="service-block">
-                            <span class="ti-layout-media-center"></span>
-                            <h2>SEO</h2>
-                            <p>I am an seo expert, with experience of 4 years in the field. I can rank any website and make them get a lot of organic traffic and earning. I have worked on many websites and ranked them #1</p>
-                            <!--<div class="contact-button">
-    <a class="clearfix" href="#"> <span class="pull-left">Read More...</span> <span class="ti-arrow-circle-right pull-right"></span></a>
-  </div>-->
-                        </div>
-                    </div>
-                </div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
             </div>
-        </section>
-        <!--=================================
-work -->
+            <div class="post">
+              <div class="content-r-inner">
+					<div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
 
-        <!--=================================
-portfolio -->
-        <section id="portfolio" class="portfolio white-bg page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="section-title">
-                            <div class="section-title-name">
-                                <span>My Featured Work</span>
-                                <h2>My Projects</h2>
-                            </div>
-                            <div class="title-name-gray">
-                                <strong>My Projects</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="isotope-filters text-left">
-                            <button data-filter="" class="active"> View All <span>/</span></button>
-                            <button data-filter=".web-design"> Web Design <span>/</span></button>
-                            <button data-filter=".graphic-design">Graphic Design <span>/</span></button>
-                            <button data-filter=".adroid">Android Apps <span>/</span></button>
-                            <button data-filter=".cprogram">C++ Programs </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="isotope popup-portfolio full-screen">
-                    <div class="grid-item cprogram">
-                        <div class="portfolio-item">
-                            <div class="item">
-                                <div class="item-hover">
-                                    <div class="item-inner">
-                                        <img class="img-responsive" src="images/projects/tictactoeai.jpg" alt="naman-kumar-hereisnaman-tic-tac-toe-ai"></div>
-                                    <div class="item-info">
-                                        <a href="https://github.com/hereisnaman/Tic-Tac-Toe-AI" target="_blank">Tic Tac Toe Ai</a>
-                                        <span>C/C++</span>
-                                        <div class="item-link">
-                                            <a class="portfolio-img" href="images/projects/tictactoeai.jpg"><span class="ti-plus"></span></a>
-                                            <a href="https://github.com/hereisnaman/Tic-Tac-Toe-AI" target="_blank"><span class="ti-link"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item web-design">
-                        <div class="portfolio-item">
-                            <div class="item">
-                                <div class="item-hover">
-                                    <div class="item-inner">
-                                        <img class="img-responsive" src="images/projects/namankumarwebsite.jpg" alt="naman-kumar-hereisnaman-website"></div>
-                                    <div class="item-info">
-                                        <a href="https://github.com/hereisnaman/Personal-Resume-Website" target="_blank">Personal Website</a>
-                                        <span>HTML CSS JS</span>
-                                        <div class="item-link">
-                                            <a class="portfolio-img" href="images/projects/namankumarwebsite.jpg"><span class="ti-plus"></span></a>
-                                            <a href="https://github.com/hereisnaman/Personal-Resume-Website" target="_blank"><span class="ti-link"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item web-design">
-                        <div class="portfolio-item">
-                            <div class="item">
-                                <div class="item-hover">
-                                    <div class="item-inner">
-                                        <img class="img-responsive" src="images/projects/mirobaswebsite.jpg" alt="naman-kumar-hereisnaman-mirobas-website"></div>
-                                    <div class="item-info">
-                                        <a href="https://github.com/hereisnaman/mirobas-website" target="_blank">Mirobas Technology Website</a>
-                                        <span>HTML CSS JS</span>
-                                        <div class="item-link">
-                                            <a class="portfolio-img" href="images/projects/mirobaswebsite.jpg"><span class="ti-plus"></span></a>
-                                            <a href="https://github.com/hereisnaman/mirobas-website" target="_blank"><span class="ti-link"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item web-design">
-                        <div class="portfolio-item">
-                            <div class="item">
-                                <div class="item-hover">
-                                    <div class="item-inner">
-                                        <img class="img-responsive" src="images/projects/inderjeetjanagalwebsite.jpg" alt="naman-kumar-hereisnaman-website"></div>
-                                    <div class="item-info">
-                                        <a href="https://github.com/hereisnaman/inderjeetjanagal" target="_blank">Inderjeet Janagal Website</a>
-                                        <span>HTML CSS JS</span>
-                                        <div class="item-link">
-                                            <a class="portfolio-img" href="images/projects/inderjeetjanagalwebsite.jpg"><span class="ti-plus"></span></a>
-                                            <a href="https://github.com/hereisnaman/inderjeetjanagal" target="_blank"><span class="ti-link"></span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
             </div>
-        </section>
-        <!--=================================
-portfolio -->
+            <div class="post">
+              <div class="content-r-inner">
+					<div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
 
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
 
-        <!--=================================
-  My Skill -->
-        <section id="skill" class="my-skill white-bg page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="section-title">
-                            <div class="section-title-name">
-                                <span>I am good at</span>
-                                <h2>My Skill</h2>
-                            </div>
-                            <div class="title-name-gray">
-                                <strong>My Skill</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="skill-content">
-                            <h2>My Professional Strengths</h2>
-                            <span>“The strength of a man's virtue should not be measured by his special exertions, but by his habitual acts”</span>
-                            <p>I am an SEO expert, also good at web design & development. I build websites both from scratch and on different website building platforms like Blogger and Wordpress. I am experienced in search engine optimisation and have ranked
-                                many websites #1.<br /><br /> I am a growing Android developer and also work on command line interface and build pragrams using C/C++.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="skill">
-                            <ul>
-                                <li>Web & Graphic Design
-                                    <div class="bar_container">
-                                        <span class="bar" data-bar='{ "color": "#07cb79" }'>
-                    <span class="pct">90%</span>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>C/C++ & Java Projects
-                                    <div class="bar_container">
-                                        <span class="bar" data-bar='{ "color": "#07cb79", "delay": "600" }'>
-                   <span class="pct">75%</span>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>Android Development
-                                    <div class="bar_container">
-                                        <span class="bar" data-bar='{ "color": "#07cb79", "delay": "1200" }'>
-                  <span class="pct">60%</span>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>IOS Development
-                                    <div class="bar_container">
-                                        <span class="bar" data-bar='{ "color": "#07cb79", "delay": "1800" }'>
-                 <span class="pct">45%</span>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li>Search Engine Optimisation
-                                    <div class="bar_container">
-                                        <span class="bar" data-bar='{ "color": "#07cb79", "delay": "2400" }'>
-                 <span class="pct">95%</span>
-                                        </span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="skill-chart">
-                                <div class="skill-chart-expand clearfix">
-                                    <div class="expand expand-left">
-                                        <p>Newbie</p>
-                                    </div>
-                                    <div class="expand expand-left">
-                                        <p>Decent</p>
-                                    </div>
-                                    <div class="expand expand-right">
-                                        <p>Pretty Good</p>
-                                    </div>
-                                    <div class="expand expand-right">
-                                        <p>Master</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="language-skills">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <h2>Programming Language Skills</h2>
-                            <p>I have learned many programming language which helps me build different kinds of projects starting from web designing to Android apps and interactive command line programs. I also work in open source community to learn new
-                                things and contribute.</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="chart-bar">
-                                <div class="chart" id="chart1" data-percent="85">
-                                    <span class="percent"></span>
-                                </div>
-                                <h3>C/C++<br/>Experienced</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="chart-bar">
-                                <div class="chart" data-percent="80">
-                                    <span class="percent"></span>
-                                </div>
-                                <h3>Java<br/>Experienced</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="chart-bar">
-                                <div class="chart" data-percent="50">
-                                    <span class="percent"></span>
-                                </div>
-                                <h3>Swift<br/>Basic</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <div class="chart-bar">
-                                <div class="chart" data-percent="70">
-                                    <span class="percent"></span>
-                                </div>
-                                <h3>HTML & CSS<br/>Advanced</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="knowledge">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                                <h2>Knowledge</h2>
-                                <p>Programming & Web Development is my passion. I keep on learning new things to keep my self updates and improve my skill level. Till now I have learned quite a few things of wide digital application.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <ul>
-                                    <li><span class="ti-hand-point-right"></span> Web design and development</li>
-                                    <li><span class="ti-hand-point-right"></span> Multimedia design</li>
-                                    <li><span class="ti-hand-point-right"></span> Search Engine Optimisation</li>
-                                    <li><span class="ti-hand-point-right"></span> Social Media Optimisation</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <ul>
-                                    <li><span class="ti-hand-point-right"></span> C/C++ Version 14</li>
-                                    <li><span class="ti-hand-point-right"></span> Java Core and Advanced</li>
-                                    <li><span class="ti-hand-point-right"></span> HTML,CSS,JS</li>
-                                    <li><span class="ti-hand-point-right"></span> MySQL, PHPMyAdmin</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                <ul>
-                                    <li><span class="ti-hand-point-right"></span> Computer Architechture</li>
-                                    <li><span class="ti-hand-point-right"></span> Object Oriented programming</li>
-                                    <li><span class="ti-hand-point-right"></span> Data Structures</li>
-                                    <li><span class="ti-hand-point-right"></span> Algorithm Analysis & Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
             </div>
-        </section>
-        <!--=================================
-  My Skill -->
+            <div class="post">
+              <div class="content-r-inner">
+					<div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
 
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
 
-        <!--=================================
-  Resume -->
-        <section id="resume" class="resume white-bg page-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="section-title">
-                            <div class="section-title-name">
-                                <span>My Work Experience</span>
-                                <h2>Resume</h2>
-                            </div>
-                            <div class="title-name-gray">
-                                <strong>Resume</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <h2>Experience : </h2>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-calendar"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>90 Clouds Pvt Ltd</h3>
-                                <span>2016 to present</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>Sales & Marketing Head</h3>
-                                <p>I work at 90Clouds as Sales and Marketing head and manage sales, branding and promotional activities.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-calendar"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>Unzip Life</h3>
-                                <span>2015 to 2016</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>Editor</h3>
-                                <p>I worked at Unzip Life as an Editor and administrator. Unzip Life is a self-improvement and motivation website.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-calendar"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>Freelancing</h3>
-                                <span>2014 to present</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>Graphic & Website Designer & SEO Expert</h3>
-                                <p>I work as a freelancer at various websites like Freelancer, Fiverr and Truelancer. I provide graphic and website desiging and SEO services.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <h2>Education : </h2>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-ruler-pencil"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>Northern India Engineering College</h3>
-                                <span>2016 to 2020</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>B.Tech Computer Science & Engineering</h3>
-                                <p>I am doing B.Tech Computer Science & Engineering from Northern India Engineering College under Indraprastha University, New Delhi.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-ruler-pencil"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>Veda Vyasa DAV Public School</h3>
-                                <span>2016</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>Higher Secondary</h3>
-                                <p>I completed my Higher Secondary from Veda Vyasa DAV Public School, New Delhi, under CBSE board, with Science (non-med) as my stream and scored 83.6%.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-ruler-pencil"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>Veda Vyasa DAV Public School</h3>
-                                <span>2014</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>Metric</h3>
-                                <p>I completed my Metric from Veda Vyasa DAV Public School, New Delhi, under CBSE board. I got 8.8 CGPA.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <h2>Achievements : </h2>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-crown"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>Byte Your Clip</h3>
-                                <span>2016</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>First Prize</h3>
-                                <p>DAV Public School, Ashok Vihar, Delhi, hosted a technical fest Kriti, in which I participated in the video making competition "Byte Your Clip" and grabbed first prize. The topic of the video was "Swachh Bharat".</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-crown"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>School Enterprise Challenge</h3>
-                                <span>2015</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>People's Award</h3>
-                                <p>A UK based organisation "Teach Men to Fish" hosted an international competition for setting up a school based enterprise. I built an ecommerce webstore for the enterprise and worked for branding and promotion.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-crown"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>Chinh India Film Festival</h3>
-                                <span>2014</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>Selected as International Jury</h3>
-                                <p>I was selected as an International Jury in Chinh Media Camp to judge childern films in 'Animation' & 'Kids for Kids' category during 8th International Chinh India Kids Film Festival 2014, held in New Delhi.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume-block">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="resume-icon">
-                                <span class="ti-crown"></span>
-                            </div>
-                            <div class="resume-name">
-                                <h3>GVC Web Design Contest</h3>
-                                <span>2014</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <div class="resume-info">
-                                <h3>Third Prize</h3>
-                                <p>Give Something Back International Foundation hosted a Global Virtual Classroom Web Design international competition. I designed a website on the topis cyber crime, titled "Think Before You Click" based on Google Sites Platform.
-                                    I grabbed third prize.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
             </div>
-        </section>
-        <!--=================================
-  Resume -->
+            <div class="post">
+              <div class="content-r-inner">
+					<div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
 
-        <!--=================================
-    contact -->
-        <section id="contact" class="google-map white-bg page-section-pt">
-            <div class="container-fluid">
-                <div id="google-map">
-                    <div id="map-canvas"></div>
-                </div>
-                <div class="contact">
-                    <h2>Say Hi It’s Free! </h2>
-                    <div class="address">
-                        <ul>
-                            <li><span class="ti-location-pin"></span>
-                                <p>B102A, FF, Rama Park, New Delhi. India</p>
-                            </li>
-                            <li><span class="ti-marker-alt"></span>
-                                <p>naman@outlook.in </p>
-                            </li>
-                            <li><span class="ti-mobile"></span>
-                                <p>+91-8527705775 </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="social">
-                        <h4>I'm also on Social Networks</h4>
-                        <p>Follow me on social networks to get the latest news, blog, updates and much more.</p>
-                        <ul>
-                            <li><a href="https://www.facebook.com/hereisnaman" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/hereisnaman" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/hereisnaman/" target="_blank"><i class="fa fa-linkedin"></i> </a></li>
-                        </ul>
-                    </div>
-                    <div class="button-large"><a href="https://github.com/hereisnaman/" target="_blank">View my repo</a></div>
-                </div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
             </div>
-        </section>
-        <!--=================================
-    contact -->
+            <div class="post">
+              <div class="content-r-inner">
+					<div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
 
-        <!--=================================
- javascript -->
-        <!-- jquery -->
-        <script type="text/javascript" src="js/jquery.min.js"></script>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
 
-        <!-- modernizr -->
-        <script type="text/javascript" src="js/modernizr.min.js"></script>
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
 
-        <!-- Plugins -->
-        <script type="text/javascript" src='js/plugins.js'></script>
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
 
-        <!-- map script -->
-        <script src="http://maps.google.com/maps/api/js?key=AIzaSyDVREpgQrM5R_9dea5Mwfqq6rXfjo2J89Y"></script>
-        <script type="text/javascript" src="js/map-scripts.js"></script>
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
 
-        <!-- custom -->
-        <script type="text/javascript" src="js/custom.js"></script>
-        <!--=================================
- javascript -->
+					<div class="clear"></div>
 
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
+            </div>
+            <div class="post">
+              <div class="content-r-inner">
+					<div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
+            </div>
+            <div class="post">
+              <div class="content-r-inner">
+             <div class="blogheadergride">
+					<h2 class="blogtitle">ICITUDIN FACILISIS <br/>MORBI DAPIBUS EROS A SOL</h2>
+					</div>
+					<br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            </div>
+            <!-- Posts page area ends -->
+        </div>
+        <!--Main Home page area ends -->
+        <!--About Us page area ends -->
+        <div id="aboutus" class="pt-page">
+            <section>
+      <div class="contentRight aboutpage">
+        <div class="postcontentarea">
+          <div class="post">
+            <div class="content-r-inner">
+
+
+
+					<div class="col-md-6 col-xs-12 col-lg-7">
+					<div class="subtitle">ABOUT ME</div>
+					<h2>Hi, I'm John Doe a <br/> Award winning <br/> graphics Artist</h2>
+					</div>
+
+
+
+
+					<div class="col-md-6 col-xs-12 col-lg-5 right-content-box" >
+
+
+					<div class="col-xs-12 col-sm-5 right-content-inner">
+						<div class="right-content-table">
+							<div class="right-content-table-cell">
+								<div class="cent">MY LOGO DESIGNS</div>
+								<div class="sad">We believe that interfaces should be simple and easy enough to use and navigate for the least tech oriented people</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-sm-offset-5  col-xs-12 col-sm-7">
+					<br/><br/>
+					<img class="cource-image" alt="Mak Boox" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=639%C3%97854&w=639&h=854">
+
+					</div>
+
+
+
+
+
+					</div>
+					<div class="divider30">&nbsp;</div>
+
+					<div class="skill-scroll">
+    <div id="skills-slider" class="col-md-12">
+
+      <div class="item">
+	  <div class="sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">BRANDING</div>
+							<div class="sad">We believe that interfaces should be simple and easy enough to use and navigate for the least tech oriented people</div>
+						</div>
+
+		</div>
+	  </div>
+	  <div class="item">
+	  <div class="sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">SKETCHING</div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+
+		</div>
+	  </div>
+
+      <div class="item">
+	  <div class="sa5a">
+	  	<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">LOGO DESIGN</div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+	  </div>
+	  </div>
+
+	  <div class="item">
+	  <div class="sa5a">
+	  	<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">TYPOGRAPHY</div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+	  </div>
+	  </div>
+       <div class="item">
+	  <div class="sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">ART DIRECTION </div>
+							<div class="sad">We believe that interfaces should be simple and easy enough to use and navigate for the least tech oriented people</div>
+						</div>
+
+		</div>
+	  </div>
+	  <div class="item">
+	  <div class="sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">PHOTO ADVERTISING</div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+
+		</div>
+	  </div>
+
+      <div class="item">
+	  <div class="sa5a">
+	  	<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">PHOTO EDITING</div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+	  </div>
+	  </div>
+
+	  <div class="item">
+	  <div class="sa5a">
+	  	<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">PHOTO ADVERTISING</div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+	  </div>
+	  </div>
+
+    </div>
+	</div>
+
+	<div class="skill-fix">
+
+		<div class="col-md-12">
+
+
+
+						<div class="team-skills">
+
+
+						<div class="col-lg-3 col-sm-12 col-md-6 sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">PHOTO EDITING</div>
+							<div class="sad">We believe that interfaces should be simple and easy enough to use and navigate for the least tech oriented people</div>
+						</div>
+
+						</div>
+
+						<div class="col-lg-3 col-sm-12 col-md-6 sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12  col-lg-7">
+							<div class="cent">PATTERN DESIGN </div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+
+
+						</div>
+
+						<div class="col-lg-3 col-sm-12 col-md-6 sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="book" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">ART DIRECTION </div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+
+
+						</div>
+
+							<div class="col-lg-3 col-sm-12 col-md-6 sa5a">
+
+						<div class="col-md-12 col-xs-12 col-lg-5 boximage">
+							<img class="about-images" alt="bear" src="https://placeholdit.imgix.net/~text?txtsize=25&txt=172%C3%97167&w=172&h=164">
+						</div>
+
+						<div class="col-md-12 col-xs-12 col-lg-7">
+							<div class="cent">PHOTO ADVERTISING</div>
+							<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+						</div>
+
+
+						</div>
+
+
+
+
+						</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+				<div class="divider30">&nbsp;</div>
+					<div class="col-xs-12 col-sm-6">
+					<div>
+						<div class="touch"><a class="link" href="#"><i class="fa fa-envelope"></i> GET IN TOUCH</a></div>
+					</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+					<div>
+						<ul class="socialpost">
+							<li class="nomargin-right"><a href="#" class=""><i class="fa fa-google"></i></a></li>
+							<li><a href="#" class=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class=""><i class="fa fa-behance"></i></a></li>
+						</ul>
+					</div>
+					</div>
+					<div class="clear"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        </div>
+        <!--About Us page area ends -->
+        <!--Contact Us page area ends -->
+        <div id="contactus" class="pt-page">
+            <section>
+      <div class="contentRight contactpage">
+        <div class="postcontentarea">
+          <div class="post">
+            <div class="content-r-inner">
+
+
+
+					<div class="col-md-6 col-xs-12 col-lg-7">
+					<div class="subtitle">Contact US</div>
+					<h2>Give me a shout out<br/>& I will make you<br/>a believer.</h2>
+					</div>
+					<div class="col-md-6 col-xs-12 col-lg-5 right-content-box" >
+
+
+					</div>
+
+					</div>
+					<div class="divider30">&nbsp;</div>
+					<div class="col-md-9 col-centered">
+
+						<div class="col-xs-12 col-md-6 col-sm-6 col-lg-3">
+						<div class="contact-info">
+							<div class="contact-cap">A</div>
+							<div class="contact-main">
+							1270 Tiegen Dr,<br/>
+							San Francisco<br/>
+							Calif. 94541
+							</div>
+							<div class="contact-sub">
+							LOCATE ON MAP
+							</div>
+						</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6 col-sm-6 col-lg-3">
+						<div class="contact-info">
+							<div class="contact-cap">P</div>
+							<div class="contact-main">
+							+1 234 5678 901<br/>
+							+1 234 5678 920<br/>
+							F: +1 245 789865
+							</div>
+							<div class="contact-sub">
+							MORE NUMBERS
+							</div>
+						</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6 col-sm-6 col-lg-3">
+						<div class="contact-info">
+						<div class="contact-cap">E</div>
+							<div class="contact-main">
+							hello@themeify.com<br/>
+							sales@themeify.com<br/>
+							careers@themeify.com
+							</div>
+							<div class="contact-sub">
+							OR USE OUR FORM BELOW
+							</div>
+						</div>
+						</div>
+
+						<div class="col-xs-12 col-md-6 col-sm-6 col-lg-3">
+						<div class="contact-info">
+						<div class="contact-cap">S</div>
+						<div class="contact-main">
+							<ul class="socialpost">
+								<li><a href="#" class=""><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#" class=""><i class="fa fa-google"></i></a></li>
+								<li><a href="#" class=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" class=""><i class="fa fa-behance"></i></a></li>
+							</ul>
+							<ul class="socialpost">
+								<li><a href="#" class=""><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#" class=""><i class="fa fa-facebook-f"></i></a></li>
+								<li><a href="#" class=""><i class="fa fa-pinterest"></i></a></li>
+
+							</ul>
+						</div>
+						</div>
+						</div>
+					</div>
+
+			  <div class="divider30">&nbsp;</div>
+			  <div class="col-md-9 col-centered">
+			  <div class="reply-sec">
+                <div class="contactform">
+                  <div class="lft">
+                    <div>
+                      <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div>
+                      <input type="text" placeholder="Subject (Optional)">
+                    </div>
+                  </div>
+                  <div class="rgt">
+                    <textarea rows="4" cols="8" name="comments" placeholder="Here goes your message..."></textarea>
+                  </div>
+                  <div class="submit">
+                    <input type="submit" value="SEND MESSAGE">
+                  </div>
+                </div>
+              </div>
+			  </div>
+
+
+					<div class="divider30">&nbsp;</div>
+					<div class="col-xs-12 col-sm-6">
+					<div>
+						<div class="touch"><a class="link" href="#"><i class="fa fa-envelope"></i> GET IN TOUCH</a></div>
+					</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+					<div>
+						<ul class="socialpost">
+							<li class="nomargin-right"><a href="#" class=""><i class="fa fa-google"></i></a></li>
+							<li><a href="#" class=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class=""><i class="fa fa-behance"></i></a></li>
+						</ul>
+					</div>
+					</div>
+					<div class="divider30">&nbsp;</div>
+					<div class="clear"></div>
+
+            </div>
+          </div>
+        </div>
+
+    </section>
+        </div>
+        <!--Contact Us page area ends -->
+        <!--Team page area starts -->
+        <div id="team" class="pt-page">
+            <section>
+				<div class="contentRight team">
+					<div class="postcontentarea">
+						<div class="post">
+							<div class="content-r-inner">
+
+
+
+								<div class="col-xs-12 col-md-8 col-lg-6">
+									<div class="subtitle">RESUME</div>
+									<h2>Designing high quality UI/UX experiences </h2>
+
+								<div class="col-md-12 col-lg-9 no-pad-home">
+									<div class="resume-taglin">
+									"Through brand strategy and design, we craft experiences that help brands stand out as well as stand for something"
+									</div>
+								</div>
+
+								</div>
+
+								<div class="col-xs-12 col-md-12 col-lg-6">
+
+									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+											<div class="subtitle codeskillicon navy-blue"><img alt="green icon" src="images/red-icon.png">   Animation skills</div>
+
+											<div class="circle-responsive color-DB872D">
+												<div class="circle-content">
+													<i>Photoshop</i><br/><b>100%</b>
+												</div>
+											</div>
+
+
+											<div class="circle-responsive color-DE6F7F">
+												<div class="circle-content" class="circlepad">
+													<i>VStudio</i><br/><b>85%</b>
+												</div>
+											</div>
+											<div class="circle-responsive color-65AC50">
+												<div class="circle-content" class="circlepad">
+													<i>illustrator</i><br/><b>90%</b>
+												</div>
+											</div>
+											<div class="circle-responsive color-DD56F1">
+												<div class="circle-content" class="circlepad">
+													<i>Sketching</i><br/><b>95%</b>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+											<div class="subtitle codeskillicon navy-blue"><img alt="green icon" src="images/red-icon.png">   Character Design skills</div>
+
+											<div class="circle-responsive color-DB872D">
+												<div class="circle-content">
+													<b>FIREWORKS</b>
+												</div>
+											</div>
+
+
+											<div class="circle-responsive color-DE6F7F">
+												<div class="circle-content" class="circlepad">
+													<b>PHOTOSHOP</b>
+												</div>
+											</div>
+											<div class="circle-responsive color-65AC50">
+												<div class="circle-content" class="circlepad">
+													<b>ILLUSTATOR</b>
+												</div>
+											</div>
+
+										</div>
+
+
+
+								</div>
+
+
+								<div class="divider30">&nbsp;</div>
+
+								<div class="col-sm-12">
+
+
+									<div class="edu-info">
+
+									<div class="subtitle navy-blue">EDUCATION</div>
+
+										<div class="col-sm-6 col-md-3 nopadding-left">
+										<div class="subtitle dateformate">2002</div>
+										<img alt="green icon" src="images/green-icon.png">
+										<div class="education-line"></div>
+										<div class="subtitle">ATOM SCIENCE</div>
+										<div class="resume-title resume-meta">STANFORD UNIVERSITY</div>
+										<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+										</div>
+
+										<div class="col-sm-6 col-md-3 no-pad-xs">
+										<div class="subtitle dateformate">2006</div>
+										<img alt="green icon" src="images/green-icon.png">
+										<div class="education-line"></div>
+										<div class="subtitle">SOFTWARE ENGINEER</div>
+										<div class="resume-title resume-meta">USC</div>
+										<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+										</div>
+
+										<div class="col-sm-6 col-md-3 no-pad no-pad-xs">
+										<div class="subtitle dateformate">2010</div>
+										<img alt="green icon" src="images/green-icon.png">
+										<div class="education-line"></div>
+										<div class="subtitle">COMPUTER SCIENCE</div>
+										<div class="resume-title resume-meta">BERKELY</div>
+										<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+										</div>
+
+										<div class="col-sm-6 col-md-3 no-pad-xs yearstyle">
+										<div class="subtitle dateformate">2012</div>
+										<div class="border-right">
+											<img alt="green icon" src="images/green-icon.png">
+											<div class="education-line"></div>
+										</div>
+										<div class="subtitle">MASTERS</div>
+										<div class="resume-title resume-meta">CAL POLY</div>
+										<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+										</div>
+									</div>
+								</div>
+								<div class="divider30">&nbsp;</div>
+								<div class="col-sm-12">
+
+										<div class="edu-info col-md-12 col-lg-9 nopadding-left">
+
+											<div class="subtitle navy-blue">WORK HISTROY</div>
+
+											<div class="col-sm-4 no-pad-xs nopadding-left">
+											<div class="subtitle dateformate">2006</div>
+											<img alt="green icon" src="images/blue-icon.png">
+											<div class="education-line"></div>
+											<div class="subtitle">EXCLUSIVE  AUTHOR</div>
+											<div class="resume-title resume-meta">ENVATO  INC.</div>
+											<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+											</div>
+
+											<div class="col-sm-4 no-pad-xs">
+											<div class="subtitle dateformate">2008 - 2010</div>
+											<img alt="green icon" src="images/blue-icon.png">
+											<div class="education-line"></div>
+											<div class="subtitle">WEB DEVELOPER</div>
+											<div class="resume-title resume-meta">GOOGLE, INC.</div>
+											<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+											</div>
+
+											<div class="col-sm-4 no-pad-xs yearstyle">
+											<div class="subtitle dateformate">2010 - 2015</div>
+											<div class="border-right">
+												<img alt="green icon" src="images/blue-icon.png">
+												<div class="education-line"></div>
+											</div>
+											<div class="subtitle">FRONT END WEB DEVELOPER</div>
+											<div class="resume-title resume-meta">THEMEIFY</div>
+											<div class="sad">The results are beautiful when we do not rush through details and you understand that coolness is not an overnight thing</div>
+											</div>
+										</div>
+
+
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 boximage">
+											<br/><br/><br/>
+											<i class="fa fa-file-word-o file-icon"></i>
+
+											<div class="resume-download-button">
+
+												<div class="resume-title"><a href="#">DOWNLOAD RESUME</a></div>
+												<div class="resume-title resume-meta">CSV FILE</div>
+											</div>
+										</div>
+
+
+
+
+								</div>
+
+								<div class="divider30">&nbsp;</div>
+								<div class="col-xs-12 col-sm-6">
+								<div class="touch"><a class="link" href="#"><i class="fa fa-envelope"></i> GET IN TOUCH</a></div>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+								<div>
+								<ul class="socialpost">
+								<li class="nomargin-right"><a href="#" class=""><i class="fa fa-google"></i></a></li>
+								<li><a href="#" class=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" class=""><i class="fa fa-behance"></i></a></li>
+								</ul>
+								</div>
+								</div>
+
+								<div class="clear"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+        </div>
+        <!--Team page area ends -->
+        <!--Blog page area starts -->
+        <div id="blog" class="pt-page">
+            <aside> <a class="previous">previous</a>
+      <div class="postimagearea">
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+        <div class="postimage" style="background-image: URL(https://placeholdit.imgix.net/~text?txtsize=40&txt=616%C3%971021&w=616&h=1021);"></div>
+      </div>
+    </aside>
+            <section>
+    <a class="next">Next</a>
+      <div class="contentRight">
+        <div class="postcontentarea">
+			<div class="post">
+				<div class="content-r-inner">
+
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Pellentesque a iaculis Research  <br/>Curabitur eget molestie in Other Countries</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung?</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata">And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have.</div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung? </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+				</div>
+			</div>
+
+          <div class="post">
+            <div class="content-r-inner">
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Commodo dui maximus quis <br/>in Other Countries</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+            </div>
+          </div>
+          <div class="post">
+		  <div class="content-r-inner">
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Integer User Research  <br/>Aliquam Other Countries</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have.</div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung? </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="content-r-inner">
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Phasellus dictum odio dolor  <br/>Commodo dui maximus quis Other Countries</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung?</div>
+
+					<div class="blogdata">And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have.</div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung? </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="content-r-inner">
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Phasellus faucibus facilisis <br/>Aliquam massa nunc</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung?</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata">And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have.</div>
+
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="content-r-inner">
+
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Pellentesque a iaculis est <br/>Curabitur eget molestie Countries</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung?</div>
+
+					<div class="blogdata">And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have.</div>
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung? </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="content-r-inner">
+
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Quisque aliquet massa <br/>Nulla quis vulputate ipsum</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung?</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="content-r-inner">
+					<div class="blogheader">
+					<div class="blogsub">Home  __  Blog  __  Conducting User..</div>
+					<h2 class="blogtitle">Integer ut iaculis felis  <br/>Curabitur eget molestie mi</h2>
+					<div class="blogmetainfo"><b>Melissa Walker</b> <span class="infodivider">/</span> April 30, 2014 <span class="infodivider">/</span> UI, UX, Graphics</div>
+					</div>
+					<br><br>
+					<div class="blogdata">I ought to just try that with my boss; I'd get kicked out maybe that would be the best thing for me. If I didn't I'd have given in my notice a long time ago, I'd have he just what I think, tell him everything I would. </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung?</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata">And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have.</div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung? </div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="content-image"><img alt="blog" src="https://placeholdit.imgix.net/~text?txtsize=40&txt=770%C3%97443&w=770&h=443" class="space10ud content-image-width"></div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? True, he had not slept peacefully, but probably all the more deeply because of that. What should he do now? The next train went at seven; if he were to catch that he would have to rush.</div>
+
+					<div class="blogdata leftbord">“And he did not at all feel particularly fresh and lively. And even if he did catch the train he would not avoid his boss's anger as the office assistant would have but instead the lorem ipsum took over.”</div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="sa2"><div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes was it possible to quietly sleep through that  furniture-rattling noise? True, he had not peacefully, but probably all the more deeply because of that. What should he do now?</div></div>
+
+					<div class="clear"></div>
+
+					<div class="blogquestion">ASKING CHINESE</div>
+					<div class="blogdata">He would have put in his report about Gregor's not being there a long time ago. The office assistant was the boss's man spineless, and with no understanding. What about if he reported sick? But that would be extremely strained.</div>
+
+					<div class="blogquestion">TELLING INDIANS</div>
+					<div class="blogdata">It had been set for four o'clock as it should have been; it certainly must have rung. Yes, but was it possible to quietly sleep through that furniture-rattling noise? </div>
+
+					<div class="blogdata">And he looked over at the alarm clock, ticking on the chest of drawers. "God in Heaven!" he thought. It was half past six and the hands were quietly moving forwards, it was even later than half past, more like quarter to seven. Had the alarm clock not rung.</div>
+
+					<div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        </div>
+        <!--Blog page area ends -->
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script type='text/javascript' src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#skills-slider").owlCarousel({
+                autoPlay: 4000, //Set AutoPlay to 3 seconds
+                itemsDesktop: [1500, 3],
+                itemsDesktopSmall: [1300, 3]
+            });
+        });
+    </script>
 </body>
-
 </html>
