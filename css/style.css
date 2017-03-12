@@ -448,7 +448,7 @@ END HEADER
 #thumbnails {
     clear: both;
     top: 50px;
-    background: #000;
+    background: #E5E7E6 none repeat scroll 0 0;
 }
 
 #thumbnails * {
@@ -1082,6 +1082,7 @@ END PORTFOLIO
     font-weight: normal;
     letter-spacing: -4px;
     line-height: 115px;
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
 
 figure.big .contentRight .post {
@@ -1098,6 +1099,7 @@ figure.big .contentRight .post {
 
 #blog .contentRight h2 {
     margin-top: 40px;
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
 
 .contentRight p {
@@ -1657,6 +1659,7 @@ END ABOUT US
 
 #blog .contentRight h2, #posts .contentRight h2 {
     padding: 30px 0 0;
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
 
 #blog .contentRight .blog-cont, #posts .contentRight .blog-cont {
@@ -2117,6 +2120,7 @@ figure.clickImage .explrht {
         letter-spacing: 0;
         line-height: 65px;
         margin-bottom: 0;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
     .contentRight .contactform div div {
         margin-right: 5%;
@@ -2130,6 +2134,7 @@ figure.clickImage .explrht {
         letter-spacing: -1;
         line-height: 85px;
         margin-bottom: 0;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -2139,6 +2144,7 @@ figure.clickImage .explrht {
         letter-spacing: -1;
         line-height: 85px;
         margin-bottom: 0;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -2381,6 +2387,7 @@ figure.clickImage .explrht {
         font-size: 40px;
         line-height: 40px;
         padding: 25px 0 15px;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
     .contentRight p {
         font-size: 13px;
@@ -2633,6 +2640,7 @@ figure.clickImage .explrht {
         margin-bottom: 10px;
         padding: 25px 0 15px;
         text-align: left;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
     .sa3 {
         padding: 4%;
@@ -2724,6 +2732,7 @@ figure.clickImage .explrht {
         padding: 25px 0 15px;
         text-align: left;
         margin-bottom: 10px;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
     .cent {
         text-align: center;
@@ -3117,6 +3126,7 @@ figure.clickImage .explrht {
         padding: 25px 0 15px;
         text-align: left;
         margin-bottom: 0px;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
     #top-bar .socialmedia {
         display: none;
@@ -3522,6 +3532,7 @@ figure.clickImage .explrht {
         letter-spacing: -5px;
         line-height: 90px;
         padding: 20px 0;
+        text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -3787,6 +3798,7 @@ figure.clickImage .explrht {
 
 #team .contentRight h2 {
     max-width: 700px;
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
 
 .file-icon {
