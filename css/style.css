@@ -695,6 +695,17 @@ figure .content {
     bottom: 15%;
     left: 0;
     opacity: 1;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    display: table;
+    margin: auto;
+    opacity: 1;
+    right: 0;
+    text-align: center;
+    top: 0;
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform: scale(0);
 }
 
 figure .contentsqz {
@@ -726,6 +737,7 @@ figure .contentsqz {
     text-align: center;
     top: 0;
     width: 100%;
+    height: 100%;
     z-index: 10;
     transform: scale(0);
     -webkit-transform: scale(0);
@@ -772,7 +784,7 @@ figure .contentsqz {
     top: auto;
 }
 
-.big:hover .content, .callpost:hover .content {
+.big:hover .content, .callpost:hover .content, figure:hover .content {
     -ms-transform: scale(1);
     transform: scale(1);
     -webkit-transform: scale(1);
