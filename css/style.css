@@ -448,7 +448,7 @@ END HEADER
 #thumbnails {
     clear: both;
     top: 50px;
-    background: #E5E7E6 none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
 }
 
 #thumbnails * {
