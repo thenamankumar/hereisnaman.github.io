@@ -1915,6 +1915,17 @@ figure.clickImage .explrht {
     font-style: italic;
     max-width: 600px;
 }
+.sadquote {
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-style: italic;
+    max-width: 600px;
+    text-transform: uppercase;
+}
 
 .touch {
     font-family: montserratbold;
