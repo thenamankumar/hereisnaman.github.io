@@ -9,6 +9,28 @@
     <meta name="author" content="Naman Kumar" />
     <title>Naman Kumar Mobile and Web Developer</title>
     <link rel="shortcut icon" href="http://namankumar.me/images/favicon.ico" />
+    <!--Open Graphs-->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Naman Kumar - Web Developer | Java Programmer">
+    <meta property="og:url" content="http://namankumar.me">
+    <meta property="og:image" content="http://namankumar.me/images/homebg.jpg">
+    <meta property="profile:first_name" content="Naman">
+    <meta property="profile:last_name" content="Kumar">
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script type='text/javascript' src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#skills-slider").owlCarousel({
+                autoPlay: 4000, //Set AutoPlay to 3 seconds
+                itemsDesktop: [1500, 3],
+                itemsDesktopSmall: [1300, 3]
+            });
+        });
+    </script>
 
     <!--Bootstrape Files-->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -67,10 +89,10 @@
         <nav id="menumobile">
             <ul>
                 <<li><a href="#home" onclick="landingpagecube();">HOME</a></li>
-                <li><a href="#about" onclick="aboutcube();">ABOUT</a></li>
-                <li><a href="#resume" onclick="teamcube();">RESUME</a></li>
-                <li><a href="#portfolio" onclick="thumbnailscube();">PORTFOLIO</a></li>
-                <li><a href="#contact" onclick="contactcube();">CONTACT</a></li>
+                    <li><a href="#about" onclick="aboutcube();">ABOUT</a></li>
+                    <li><a href="#resume" onclick="teamcube();">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="thumbnailscube();">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="contactcube();">CONTACT</a></li>
             </ul>
         </nav>
         <!--Top Headerbar area ends -->
@@ -83,8 +105,10 @@
                             <div class="content-r-inner child">
 
                                 <div class="col-md-12 col-xs-12 col-lg-12 no-pad-home">
-                                    <div class="subtitle">MOBILE AND WEB DEVELOPER</div>
-                                    <h2>Naman Kumar</h2>
+                                  <div itemscope itemtype="http://schema.org/Person">
+                                    <div class="subtitle" itemprop="jobTitle">Java Programmer & Web Developer</div>
+                                    <h2 itemprop="name">Naman Kumar</h2>
+                                    </div>
                                     <div class="author-title">
                                         <div class="sad">Is a Tech Enthusiastic, B.tech Computer Science & Engineering student at Northern India Engineering College, New Delhi. A Freelance Web Developer, SEO Expert and a growing mobile developer and competitive programmer.</div>
                                     </div>
@@ -633,20 +657,6 @@
         <!--Blog page area ends -->
 
     </div>
-    <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script type='text/javascript' src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#skills-slider").owlCarousel({
-                autoPlay: 4000, //Set AutoPlay to 3 seconds
-                itemsDesktop: [1500, 3],
-                itemsDesktopSmall: [1300, 3]
-            });
-        });
-    </script>
 
 </body>
 
