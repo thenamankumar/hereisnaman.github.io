@@ -496,6 +496,9 @@ figure:hover {
 figure.mainImage:hover {
     box-shadow: none;
 }
+figure a{
+  color: #fff!important;
+}
 
 .hiddenscroll {
     overflow: auto!important;
@@ -811,7 +814,7 @@ figure .content h2, figure .contentsqz h2 {
     margin-top: 0%;
 }
 
-.bigerImage .content .comnt {
+.bigerImage .content .githubicon {
     width: auto;
 }
 
@@ -856,7 +859,7 @@ figure .content h2 span, figure .contentsqz h2 span {
     ;
 }
 
-.comnt {
+.githubicon {
     background: URL(../images/heart.png) no-repeat 0 0;
     padding-left: 35px;
     font-family: 'Inconsolata', sans-serif;
@@ -2263,7 +2266,7 @@ figure.clickImage .explrht {
         width: auto;
         z-index: 10;
     }
-    .comnt {
+    .githubicon {
         width: auto;
     }
     #top-bar div {
@@ -2332,7 +2335,7 @@ figure.clickImage .explrht {
         width: auto;
         z-index: 10;
     }
-    .comnt {
+    .githubicon {
         width: auto;
     }
     #top-bar .socialmedia {
@@ -2651,7 +2654,7 @@ figure.clickImage .explrht {
         width: auto;
         z-index: 10;
     }
-    .comnt {
+    .githubicon {
         width: auto;
     }
     #top-bar .socialmedia {
@@ -2994,7 +2997,7 @@ figure.clickImage .explrht {
         width: auto;
         z-index: 10;
     }
-    .comnt {
+    .githubicon {
         width: auto;
     }
     #top-bar .socialmedia {
@@ -3125,7 +3128,7 @@ figure.clickImage .explrht {
     .big .content h2 span, .bigerImage .content h2 span {
         font-size: 16px;
     }
-    .comnt {
+    .githubicon {
         background: url("../images/heart.png") no-repeat scroll 0 0 / auto 100% rgba(0, 0, 0, 0);
         font-size: 14px;
         height: 16px;
