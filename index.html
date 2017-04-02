@@ -67,7 +67,23 @@
     <!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
+  <script>
+      $(document).ready(function() {
+          //jquery
+          $(location).attr('href');
+          var loc = window.location;
+          if (loc == "http://namankumar.me/#about")
+              aboutcube();
+          else if (loc == "http://namankumar.me/#resume")
+              teamcube();
+          else if (loc == "http://namankumar.me/#portfolio")
+              thumbnailscube();
+          else if (loc == "http://namankumar.me/#contact")
+              contactcube();
+          else
+              landingpagecube();
+      });
+  </script>
 </head>
 
 <body>
