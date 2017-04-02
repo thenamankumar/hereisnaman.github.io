@@ -3154,7 +3154,7 @@ figure.clickImage .explrht {
         text-align: left!important;
         max-width: 50%!important;
     }
-    .github{
+    .github,.socialpost{
         display: none!important;
     }
     .contentRight h2 {
