@@ -860,7 +860,7 @@ figure .content h2 span, figure .contentsqz h2 span {
 }
 
 .githubicon {
-    background: URL(../images/heart.png) no-repeat 0 0;
+    background: URL(../images/githubicon.png) no-repeat 0 0;
     padding-left: 35px;
     font-family: 'Inconsolata', sans-serif;
     font-weight: 300;
@@ -3129,7 +3129,7 @@ figure.clickImage .explrht {
         font-size: 16px;
     }
     .githubicon {
-        background: url("../images/heart.png") no-repeat scroll 0 0 / auto 100% rgba(0, 0, 0, 0);
+        background: url("../images/githubicon.png") no-repeat scroll 0 0 / auto 100% rgba(0, 0, 0, 0);
         font-size: 14px;
         height: 16px;
         margin-top: 7px;
