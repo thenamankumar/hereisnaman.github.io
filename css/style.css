@@ -350,9 +350,10 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
 	4.3. SOCIAL MEDIA NAVIGATION
 */
 
-.socialicons{
-  float: right!important;
+.socialicons {
+    float: right!important;
 }
+
 .socialmedia {
     width: auto!important;
     float: right!important;
@@ -1110,6 +1111,7 @@ figure.big .contentRight .post {
 }
 
 #blog .contentRight h2 {
+    text-align: left!important;
     margin-top: 40px;
     text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
@@ -1670,6 +1672,7 @@ END ABOUT US
 }
 
 #blog .contentRight h2, #posts .contentRight h2 {
+    text-align: left!important;
     padding: 30px 0 0;
     text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
@@ -1915,6 +1918,7 @@ figure.clickImage .explrht {
     font-style: italic;
     max-width: 600px;
 }
+
 .sadquote {
     color: #000;
     font-family: "Source Sans Pro";
@@ -3142,9 +3146,18 @@ figure.clickImage .explrht {
     .postcontentarea {
         margin: 0 20px;
     }
+    .landingpage .subtitle {
+        text-align: left!important;
+        max-width: 50%!important;
+    }
+    #landingpage .sad{
+        text-align: left!important;
+        max-width: 50%!important;
+    }
     .contentRight h2 {
         font-size: 29px;
         letter-spacing: 0;
+        text-align: left!important;
         line-height: 35px;
         padding: 25px 0 15px;
         text-align: left;
@@ -3821,6 +3834,7 @@ figure.clickImage .explrht {
 
 #team .contentRight h2 {
     max-width: 700px;
+    text-align: left!important;
     text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
 
@@ -3895,6 +3909,8 @@ figure.clickImage .explrht {
 .circlepad {
     padding-top: 70px;
 }
+
+
 /*
 END WRAPER
 */
