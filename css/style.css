@@ -2086,9 +2086,9 @@ figure.clickImage .explrht {
 .subtitle {
     color: #fff;
     font-family: montserratbold;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 2px;
-    line-height: 22.85px;
+    line-height: 24.85px;
     text-transform: uppercase;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 }
@@ -3649,9 +3649,9 @@ figure.clickImage .explrht {
 .resume-title {
     color: #000;
     font-family: montserratbold;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 1px;
-    line-height: 22.85px;
+    line-height: 30.85px;
     text-transform: uppercase;
 }
 
@@ -3746,6 +3746,8 @@ figure.clickImage .explrht {
 
 .codeskillicon {
     padding: 30px 0;
+    font-size: 19px!important;
+    color: #337ab7!important;
 }
 
 @media (max-width: 1199px) {
@@ -3850,8 +3852,8 @@ figure.clickImage .explrht {
 }
 
 .navy-blue {
-    color: #337ab7;
-    font-size: 19px;
+    color: #000;
+    font-size: 28px;
 }
 
 .dateformate {
