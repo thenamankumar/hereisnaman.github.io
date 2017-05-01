@@ -4509,7 +4509,7 @@ div {
   border-right: 1px solid #070735;
 }
 .bl{
-  border-left: 1px solid #070735;
+  border-left: 1px solid #d3d3d3;
 }
 /*knowledge*/
 
@@ -4541,6 +4541,10 @@ div {
 
 .zones{
   max-width: 100%;
+}
+hr.style1{
+	border-top: 2px solid #drdrdr;
+  max-width: 85%;
 }
 /*
 END WRAPER
