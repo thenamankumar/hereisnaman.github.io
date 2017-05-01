@@ -496,8 +496,9 @@ figure:hover {
 figure.mainImage:hover {
     box-shadow: none;
 }
-figure a{
-  color: #fff!important;
+
+figure a {
+    color: #fff!important;
 }
 
 .hiddenscroll {
@@ -3153,11 +3154,11 @@ figure.clickImage .explrht {
         text-align: left!important;
         max-width: 50%!important;
     }
-    #landingpage .sad{
+    #landingpage .sad {
         text-align: left!important;
         max-width: 50%!important;
     }
-    .github,.socialpost,.essential{
+    .github, .socialpost, .essential {
         display: none!important;
     }
     .contentRight h2 {
@@ -3917,527 +3918,627 @@ figure.clickImage .explrht {
 .circlepad {
     padding-top: 70px;
 }
+
+
 /*code by Akash Bijwe*/
 
 .clearfi:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0 !important;
-  height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0 !important;
+    height: 0;
 }
-.container{
-  position: relative;
-  margin: 2% auto 0 auto;
-  width: 75%;
+
+.container {
+    position: relative;
+    margin: 2% auto 0 auto;
+    width: 75%;
 }
-.pr{
-  position: relative;
+
+.pr {
+    position: relative;
 }
-.pa{
-  position: absolute;
+
+.pa {
+    position: absolute;
 }
-.ftl{
-  float: left;
+
+.ftl {
+    float: left;
 }
-.pad-lr-10{
-  padding: 0 10px;
+
+.pad-lr-10 {
+    padding: 0 10px;
 }
-.mackbook{
-  left: 285px;
-  top: 75px;
+
+.mackbook {
+    left: 285px;
+    top: 75px;
 }
-.mackbook .screen{
-  height: 150px;
-  width: 250px;
-  background-color: #3C5996;
-  border: 10px solid #151822;
-  border-radius: 5px;
+
+.mackbook .screen {
+    height: 150px;
+    width: 250px;
+    background-color: #3C5996;
+    border: 10px solid #151822;
+    border-radius: 5px;
 }
-.mackbook .screen .user_pic{
-  margin: 5% auto 5% auto;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
-  background-color: #B1BDD5;
+
+.mackbook .screen .user_pic {
+    margin: 5% auto 5% auto;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #B1BDD5;
 }
-.mackbook .screen .password{
-  background-color: #fff;
-  height: 15px;
-  width: 100px;
-  border-radius: 20px;
-  margin: 0 auto;
+
+.mackbook .screen .password {
+    background-color: #fff;
+    height: 15px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 0 auto;
 }
-.mackbook .screen .icons{
-  margin: 10% auto 0px auto;
-  width: 75px;
+
+.mackbook .screen .icons {
+    margin: 10% auto 0px auto;
+    width: 75px;
 }
-.mackbook .screen .icons .icon{
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: #344C7F;
-  float: left;
-  margin: 0 5%;
+
+.mackbook .screen .icons .icon {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #344C7F;
+    float: left;
+    margin: 0 5%;
 }
-.mackbook .base{
-  height: 185px;
-  width: 250px;
-  background-color: #E8E8EB;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom: 8px solid #A6856E;
+
+.mackbook .base {
+    height: 185px;
+    width: 250px;
+    background-color: #E8E8EB;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom: 8px solid #A6856E;
 }
-.mackbook .base .connector{
-  background-color: #151822;
-  height: 8px;
-  width: 170px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  margin: 0 auto;
+
+.mackbook .base .connector {
+    background-color: #151822;
+    height: 8px;
+    width: 170px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 auto;
 }
-.mackbook .base .keypad{
- background-color: #C2CBDE;
-  height: 85px;
-  width: 250px;
-  margin: 10px auto;
-  border-radius: 5px;
-  padding: 3px;
+
+.mackbook .base .keypad {
+    background-color: #C2CBDE;
+    height: 85px;
+    width: 250px;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 3px;
 }
-.mackbook .base .keypad .key{
-  height: 17px;
-  border-radius: 4px;
-  background-color: #151822;
-  margin: 2px;
-  /*box-shadow: 0px 2px 1px #6F7584;*/
+
+.mackbook .base .keypad .key {
+    height: 17px;
+    border-radius: 4px;
+    background-color: #151822;
+    margin: 2px;
+    /*box-shadow: 0px 2px 1px #6F7584;*/
 }
-.mackbook .base .keypad .key1{
-  width: 16px;
+
+.mackbook .base .keypad .key1 {
+    width: 16px;
 }
-.mackbook .base .keypad .key2{
-  width: 32px;
+
+.mackbook .base .keypad .key2 {
+    width: 32px;
 }
-.mackbook .base .keypad .key3{
-  width: 90px;
+
+.mackbook .base .keypad .key3 {
+    width: 90px;
 }
-.mackbook .base .touchpad{
-  background-color: #C2CBDE;
-  height: 59px;
-  width: 100px;
-  border-radius: 5px;
-  margin: -5px auto 5px auto;
+
+.mackbook .base .touchpad {
+    background-color: #C2CBDE;
+    height: 59px;
+    width: 100px;
+    border-radius: 5px;
+    margin: -5px auto 5px auto;
 }
-.mackbook .base .shadow{
-  width: 100%;
-  height: 6px;
-  background-color: #C2CBDE;
-  bottom: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+
+.mackbook .base .shadow {
+    width: 100%;
+    height: 6px;
+    background-color: #C2CBDE;
+    bottom: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-div{
-  -webkit-transition: ease 0.2s;
+
+div {
+    -webkit-transition: ease 0.2s;
     -moz-transition: ease 0.2s;
     -ie-transition: ease 0.2s;
     -o-transition: ease 0.2s;
-      transition: ease 0.2s;
-}
-.hover:hover{
-  /*margin-top: -7px;*/
-  transform: scale(1.1, 1.1)
+    transition: ease 0.2s;
 }
 
-.mouse{
-  height: 96px;
-  width: 60px;
-  background-color: #E8E8EB;
-  left: 580px;
-  top: 375px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-bottom: 5px solid #A6856E;
-}
-.mouse .scroller{
-  background-color: #C2CBDE;
-  left: 28px;
-  width: 3px;
-  border-radius: 10px;
-  height: 15px;
-  top: 16px;
+.hover:hover {
+    /*margin-top: -7px;*/
+    transform: scale(1.1, 1.1)
 }
 
-.phone{
-  background-color: #20232C;
-  height: 180px;
-  width: 90px;
-  border-radius: 10px;
-  border-bottom: 5px solid #A6856E;
-  left: 680px;
-  top: 300px;
-}
-.phone .speaker{
-  background-color: #EDEDF0;
-  height: 3px;
-  width: 15px;
-  border-radius: 5px;
-  margin: 8px auto;
-}
-.phone .screen{
-  background-color: #262E41;
-  width: 80%;
-  margin: 0 auto;
-  height: 135px;
-}
-.phone .screen .screen_data{
-  background-color: #3C5997;
-  width: 100%;
-  height: 7px;
-}
-.phone .button{
-  height: 15px;
-  width: 15px;
-  background-color: #EDEDF0;
-  border-radius: 50%;
-  margin: 6px auto;
-}
-.phone .volume_rockers{
-  background-color: #20232C;
-  height: 24px;
-  width: 5px;
-  top: 25px;
-  left: -2px;
-  border-radius: 10px;
+.mouse {
+    height: 96px;
+    width: 60px;
+    background-color: #E8E8EB;
+    left: 580px;
+    top: 375px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom: 5px solid #A6856E;
 }
 
-.notes{
-  height: 130px;
-  width: 120px;
-  background-color: #EFD171;
-  border-bottom: 5px solid #A9876E;
-  left: 700px;
-  top: 110px;
-}
-.notes .note{
-  height: 95%;
-  width: 100%;
-  background-color: #FFE882;
-}
-.notes .note:after{
-  content: '';
-  border-left: 10px solid #FFF1B4;
-  border-top: 10px solid #FFF1B4;
-  border-right: 10px solid #EFD171;
-  border-bottom: 10px solid #EFD171;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+.mouse .scroller {
+    background-color: #C2CBDE;
+    left: 28px;
+    width: 3px;
+    border-radius: 10px;
+    height: 15px;
+    top: 16px;
 }
 
-.pen{
-  background-color: #c2cbde;
-  width: 15px;
-  height: 120px;
-  left: 600px;
-  top: 230px;
+.phone {
+    background-color: #20232C;
+    height: 180px;
+    width: 90px;
+    border-radius: 10px;
+    border-bottom: 5px solid #A6856E;
+    left: 680px;
+    top: 300px;
 }
-.pen .pen-nip{
-  border-bottom: 22px solid #c2cbde;
-  border-left: 8px solid transparent;
-  border-right: 7px solid transparent;
-  width: 0;
-  height: 0;
-  margin-top: -22px;
+
+.phone .speaker {
+    background-color: #EDEDF0;
+    height: 3px;
+    width: 15px;
+    border-radius: 5px;
+    margin: 8px auto;
 }
-.pen .pen-nip .pen-tip{
-  background-color: #E8E8EB;
-  height: 2px;
-  width: 32%;
-  top: -16px;
-  position: absolute;
-  left: 5.5px;
-  border-radius: 7px;
+
+.phone .screen {
+    background-color: #262E41;
+    width: 80%;
+    margin: 0 auto;
+    height: 135px;
 }
-.pen .pen-bottom{
-  bottom: 0px;
-  background-color: #3C5996;
-  width: 100%;
-  height: 4px;
-  border-bottom: 3px solid #A9876E;
+
+.phone .screen .screen_data {
+    background-color: #3C5997;
+    width: 100%;
+    height: 7px;
 }
-.handwatch{
-  left: 620px;
-  top: 0px;
-  height: 200px;
-  width: 150px;
+
+.phone .button {
+    height: 15px;
+    width: 15px;
+    background-color: #EDEDF0;
+    border-radius: 50%;
+    margin: 6px auto;
 }
-.handwatch .belt{
-  background-color: #151822;
-  height: 180px;
-  width: 50px;
-  border-radius: 10px;
-  border-bottom: 5px solid #A6856E;
+
+.phone .volume_rockers {
+    background-color: #20232C;
+    height: 24px;
+    width: 5px;
+    top: 25px;
+    left: -2px;
+    border-radius: 10px;
 }
-.handwatch .dial{
-  background-color: #fff;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  border: 5px solid #8F8A8F;
-  top: 52px;
-  left: -3%;
+
+.notes {
+    height: 130px;
+    width: 120px;
+    background-color: #EFD171;
+    border-bottom: 5px solid #A9876E;
+    left: 700px;
+    top: 110px;
 }
-.sun-hand{
-  height: 8px;
-  width: 8px;
-  background-color: #181B25;
-  border-radius: 50%;
-  top: 24px;
-  left: 26px;
-  z-index: 2;
+
+.notes .note {
+    height: 95%;
+    width: 100%;
+    background-color: #FFE882;
 }
-.handwatch .dial .hand1{
-  width: 2px;
-  height: 23px;
-  background-color: #A5A9B2;
-  left: 29px;
-  top: 5px;
+
+.notes .note:after {
+    content: '';
+    border-left: 10px solid #FFF1B4;
+    border-top: 10px solid #FFF1B4;
+    border-right: 10px solid #EFD171;
+    border-bottom: 10px solid #EFD171;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
-.handwatch .dial .hand2{
-  width: 2px;
-  height: 18px;
-  background-color: #A5A9B2;
-  left: 33px;
-  top: 13px;
-  transform: rotate(40deg);
+
+.pen {
+    background-color: #c2cbde;
+    width: 15px;
+    height: 120px;
+    left: 600px;
+    top: 230px;
 }
-.handwatch .dial .button1{
-  height: 4px;
-  width: 4px;
-  background-color: #63636C;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  right: -4px;
-  top: 10px;
-  transform: rotate(-34deg);
+
+.pen .pen-nip {
+    border-bottom: 22px solid #c2cbde;
+    border-left: 8px solid transparent;
+    border-right: 7px solid transparent;
+    width: 0;
+    height: 0;
+    margin-top: -22px;
 }
-.handwatch .dial .button2{
-  height: 4px;
-  width: 4px;
-  background-color: #63636C;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  right: -8px;
-  top: 20px;
-  transform: rotate(-7deg);
+
+.pen .pen-nip .pen-tip {
+    background-color: #E8E8EB;
+    height: 2px;
+    width: 32%;
+    top: -16px;
+    position: absolute;
+    left: 5.5px;
+    border-radius: 7px;
+}
+
+.pen .pen-bottom {
+    bottom: 0px;
+    background-color: #3C5996;
+    width: 100%;
+    height: 4px;
+    border-bottom: 3px solid #A9876E;
+}
+
+.handwatch {
+    left: 620px;
+    top: 0px;
+    height: 200px;
+    width: 150px;
+}
+
+.handwatch .belt {
+    background-color: #151822;
+    height: 180px;
+    width: 50px;
+    border-radius: 10px;
+    border-bottom: 5px solid #A6856E;
+}
+
+.handwatch .dial {
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 5px solid #8F8A8F;
+    top: 52px;
+    left: -3%;
+}
+
+.sun-hand {
+    height: 8px;
+    width: 8px;
+    background-color: #181B25;
+    border-radius: 50%;
+    top: 24px;
+    left: 26px;
+    z-index: 2;
+}
+
+.handwatch .dial .hand1 {
+    width: 2px;
+    height: 23px;
+    background-color: #A5A9B2;
+    left: 29px;
+    top: 5px;
+}
+
+.handwatch .dial .hand2 {
+    width: 2px;
+    height: 18px;
+    background-color: #A5A9B2;
+    left: 33px;
+    top: 13px;
+    transform: rotate(40deg);
+}
+
+.handwatch .dial .button1 {
+    height: 4px;
+    width: 4px;
+    background-color: #63636C;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right: -4px;
+    top: 10px;
+    transform: rotate(-34deg);
+}
+
+.handwatch .dial .button2 {
+    height: 4px;
+    width: 4px;
+    background-color: #63636C;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    right: -8px;
+    top: 20px;
+    transform: rotate(-7deg);
+}
+
+.passbook {
+    background-color: #26385A;
+    height: 170px;
+    width: 140px;
+    top: 15px;
+    left: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 5px solid #A6856E;
+}
+
+.passbook .symbol {
+    border: 2px solid #FFDAA0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+
+.passbook .symbol .h_line {
+    width: 100%;
+    top: 50%;
+    border-top: 2px solid #FFDAA0;
+}
+
+.passbook .symbol .v_line {
+    height: 100%;
+    left: 50%;
+    border-right: 2px solid #FFDAA0;
+}
+
+.passbook .symbol .inner_circle {
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid #FFDAA0;
+    left: 25%;
+    top: -2px;
+}
+
+.passbook .details1 {
+    height: 2px;
+    width: 10%;
+    background-color: #F9FAFB;
+    margin: 15px auto;
+}
+
+.passbook .details2 {
+    height: 4px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #FFDAA0;
+    margin: 10px auto;
+}
+
+.passbook .details3 {
+    height: 4px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #F9FAFB;
+    margin: 10px auto;
+}
+
+.diary {
+    height: 190px;
+    width: 120px;
+    top: 10px;
+    left: 40px;
+    border-bottom: 5px solid #A6856E;
+}
+
+.diary .main {
+    border: 5px solid #151822;
+    border-top: none;
+    background-color: #FFF;
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 15px;
+}
+
+.diary .main .cover {
+    background-color: #151822;
+    width: 115%;
+    height: 95%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.diary .main .cover .less {
+    background-color: #3C5996;
+    width: 7px;
+    height: 95%;
+    right: 10px;
+}
+
+.pencil {
+    background-color: #FFE882;
+    width: 15px;
+    height: 120px;
+    left: 230px;
+    top: 200px;
+}
+
+.pencil .pencil-nip {
+    border-bottom: 22px solid #F3C6A9;
+    border-left: 8px solid transparent;
+    border-right: 7px solid transparent;
+    width: 0;
+    height: 0;
+    margin-top: -22px;
+}
+
+.pencil .pencil-nip .pencil-tip {
+    border-bottom: 8px solid #151822;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    height: 0px;
+    width: 0px;
+    top: -22px;
+    position: absolute;
+    left: 5px;
+}
+
+.pencil .pencil-bottom {
+    bottom: 0px;
+    background-color: #FF859F;
+    width: 100%;
+    height: 15px;
+    border-bottom: 5px solid #A9876E;
+}
+
+.lock {
+    top: 380px;
+    left: 200px;
+    border-bottom: 5px solid #A9876E;
+    border-radius: 32px;
+}
+
+.lock .locker {
+    background-color: #272A34;
+    border: 5px solid #F8F8F9;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.lock .locker .key_hole {
+    background-color: #BBBCBF;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+}
+
+.lock .locker .key_hole:after {
+    position: absolute;
+    content: '';
+    background-color: #BBBCBF;
+    height: 10px;
+    width: 3px;
+    border-radius: 5px;
+    top: 7px;
+    left: 3px;
+}
+
+.lock .handle {
+    height: 30px;
+    width: 30px;
+    border: 5px solid #E8E8EB;
+    border-bottom: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-left: 10px;
+    margin-bottom: -7px;
+}
+
+.mug {
+    left: 65px;
+    top: 220px;
+    background-color: #262E41;
+    height: 160px;
+    width: 100px;
+    border-radius: 50px;
+    border-bottom: 15px solid #151822;
+}
+
+.mug .mug_head {
+    height: 85px;
+    width: 85px;
+    background-color: #C2CBDE;
+    margin-left: 7px;
+    margin-top: 7px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.mug .mug_head .coffee {
+    background-color: #49362E;
+    height: 72px;
+    width: 82px;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.mug .mug_head .ear {
+    height: 45px;
+    width: 50px;
+    right: -37px;
+    top: 39px;
+    border: 8px solid #262E41;
+    border-radius: 50%;
 }
 
 
-.passbook{
-  background-color: #26385A;
-  height: 170px;
-  width: 140px;
-  top: 15px;
-  left: 0px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom: 5px solid #A6856E;
-}
-.passbook .symbol{
-  border: 2px solid #FFDAA0;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin: 30px auto;
-}
-.passbook .symbol .h_line{
-  width: 100%;
-  top: 50%;
-  border-top: 2px solid #FFDAA0;
-}
-.passbook .symbol .v_line{
-  height: 100%;
-  left: 50%;
-  border-right: 2px solid #FFDAA0;
-}
-.passbook .symbol .inner_circle{
-  height: 100%;
-  width: 50%;
-  border-radius: 50%;
-  border: 2px solid #FFDAA0;
-  left: 25%;
-  top: -2px;
-}
-.passbook .details1{
-  height: 2px;
-  width: 10%;
-  background-color: #F9FAFB;
-  margin: 15px auto;
-}
-.passbook .details2{
-  height: 4px;
-  width: 30%;
-  border-radius: 5px;
-  background-color: #FFDAA0;
-  margin: 10px auto;
-}
-.passbook .details3{
-  height: 4px;
-  width: 40%;
-  border-radius: 5px;
-  background-color: #F9FAFB;
-  margin: 10px auto;
-}
-
-.diary{
-  height: 190px;
-  width: 120px;
-  top: 10px;
-  left: 40px;
-  border-bottom: 5px solid #A6856E;
-}
-.diary .main{
-  border: 5px solid #151822;
-  border-top: none;
-  background-color: #FFF;
-  height: 100%;
-  width: 100%;
-  border-bottom-right-radius: 15px;
-}
-.diary .main .cover{
-  background-color: #151822;
-  width: 115%;
-  height: 95%;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.diary .main .cover .less{
-  background-color: #3C5996;
-  width: 7px;
-  height: 95%;
-  right: 10px;
-}
-
-
-.pencil{
-  background-color: #FFE882;
-  width: 15px;
-  height: 120px;
-  left: 230px;
-  top: 200px;
-}
-.pencil .pencil-nip{
-  border-bottom: 22px solid #F3C6A9;
-  border-left: 8px solid transparent;
-  border-right: 7px solid transparent;
-  width: 0;
-  height: 0;
-  margin-top: -22px;
-}
-.pencil .pencil-nip .pencil-tip{
-  border-bottom: 8px solid #151822;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
-  height: 0px;
-  width: 0px;
-  top: -22px;
-  position: absolute;
-  left: 5px;
-}
-.pencil .pencil-bottom{
-  bottom: 0px;
-  background-color: #FF859F;
-  width: 100%;
-  height: 15px;
-  border-bottom: 5px solid #A9876E;
-}
-
-.lock{
-  top: 380px;
-  left: 200px;
-  border-bottom: 5px solid #A9876E;
-  border-radius: 32px;
-}
-.lock .locker{
-  background-color: #272A34;
-  border: 5px solid #F8F8F9;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-.lock .locker .key_hole{
-  background-color: #BBBCBF;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  top: 15px;
-  left: 15px;
-}
-.lock .locker .key_hole:after{
-  position: absolute;
-  content: '';
-  background-color: #BBBCBF;
-  height: 10px;
-  width: 3px;
-  border-radius: 5px;
-  top: 7px;
-  left: 3px;
-}
-.lock .handle{
-  height: 30px;
-  width: 30px;
-  border: 5px solid #E8E8EB;
-  border-bottom: 0;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  margin-left: 10px;
-  margin-bottom: -7px;
-}
-
-
-.mug{
-  left: 65px;
-  top: 220px;
-  background-color: #262E41;
-  height: 160px;
-  width: 100px;
-  border-radius: 50px;
-  border-bottom: 15px solid #151822;
-}
-.mug .mug_head{
-  height: 85px;
-  width: 85px;
-  background-color: #C2CBDE;
-  margin-left: 7px;
-  margin-top: 7px;
-  border-radius: 50%;
-  z-index: 2;
-}
-.mug .mug_head .coffee{
-  background-color: #49362E;
-  height: 72px;
-  width: 82px;
-  border-radius: 50%;
-  left: 2px;
-  bottom: 0px;
-  z-index: 1;
-}
-.mug .mug_head .ear{
-  height: 45px;
-  width: 50px;
-  right: -37px;
-  top: 39px;
-  border: 8px solid #262E41;
-  border-radius: 50%;
-}
 /*by Akash Bijwe end*/
-.mb400{
-  margin-bottom: 400px;
+
+.mb400 {
+    margin-bottom: 400px;
 }
+.ml25{
+  margin-left: 15%;
+}
+.br{
+  border-right: 1px solid #070735;
+}
+.bl{
+  border-left: 1px solid #070735;
+}
+/*knowledge*/
+
+.knowledhe{
+  margin: 0px;
+}
+.knowledge ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.knowledge ul li {
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-style: italic;
+    max-width: 600px;
+    display: table;
+}
+
+.knowledge ul li span {
+    padding-right: 15px;
+    color: #070735;
+    display: table-cell;
+}
+
 
 /*
 END WRAPER
