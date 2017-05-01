@@ -4539,7 +4539,9 @@ div {
     display: table-cell;
 }
 
-
+.zones{
+  max-width: 100%;
+}
 /*
 END WRAPER
 */
