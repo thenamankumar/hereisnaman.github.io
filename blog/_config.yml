@@ -1,8 +1,8 @@
 title: Blog | Naman Kumar
 description: Hi, I'm Naman Kumar. Tech Enthusiastic. Growing Programmer & Web Developer.
 
-url: http://namankumar.me/blog/
-baseurl: ""
+url: http://namankumar.me
+baseurl: "http://namankumar.me/blog/"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
