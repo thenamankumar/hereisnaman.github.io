@@ -3,6 +3,7 @@ description: Hi, I'm Naman Kumar. Tech Enthusiastic. Growing Programmer & Web De
 
 url: http://namankumar.me/blog
 baseurl: "/blog"
+BASE_PATH : http://namankumar.me/blog
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
