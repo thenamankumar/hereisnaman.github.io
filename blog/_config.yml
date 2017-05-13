@@ -5,8 +5,8 @@ url: http://namankumar.me/blog/
 source: /blog
 baseurl: "/blog/"
 BASE_PATH : http://namankumar.me/blog
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+paginate_path: "page:num/"
+permalink: :title/
 
 markdown: kramdown
 highlighter: rouge
