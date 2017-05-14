@@ -1627,6 +1627,7 @@ END ABOUT US
 8. BLOG AREA
 */
 
+
 #blog .previous {
     font-family: 'ralewayregular';
     background: url(../images/prev-bg.png) 0 0 no-repeat;
@@ -1644,8 +1645,8 @@ END ABOUT US
     right: -1px;
     z-index: 110;
 }
-
-#blog .next, #posts .next {
+#blog .next,
+#posts .next {
     font-family: 'ralewayregular';
     background: url(../images/next-bg.png) 0 0 no-repeat;
     width: 82px;
@@ -1663,36 +1664,33 @@ END ABOUT US
     position: absolute;
     z-index: 2147483647;
 }
-
-#blog .contentRight p, #posts .contentRight p {
+#blog .contentRight p,
+#posts .contentRight p {
     text-align: center;
 }
-
 .contentRight p.blogsp-txt {
     color: #929191;
     font-size: 14px;
     line-height: 18px;
     margin: 10px 0 20px;
 }
-
-#blog .contentRight h2, #posts .contentRight h2 {
-    text-align: left!important;
+#blog .contentRight h2,
+#posts .contentRight h2 {
     padding: 30px 0 0;
-    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
 }
-
-#blog .contentRight .blog-cont, #posts .contentRight .blog-cont {
+#blog .contentRight .blog-cont,
+#posts .contentRight .blog-cont {
     margin: 70px auto;
     width: 90%;
 }
-
-.comments-sec, .reply-sec {
+.comments-sec,
+.reply-sec {
     margin: 10px auto;
     width: 100%;
     clear: both;
 }
-
-#blog .contentRight .blog-cont p, #posts .contentRight .blog-cont p {
+#blog .contentRight .blog-cont p,
+#posts .contentRight .blog-cont p {
     margin: 0px;
     padding: 20px 0px;
     font-family: 'Inconsolata';
@@ -1700,8 +1698,8 @@ END ABOUT US
     text-align: left;
     line-height: 22.85px;
 }
-
-#blog .contentRight h3, #posts .contentRight h3 {
+#blog .contentRight h3,
+#posts .contentRight h3 {
     font-family: 'Lato', sans-serif;
     font-size: 22px;
     padding: 0 25px 0px 2px;
@@ -1711,43 +1709,43 @@ END ABOUT US
     letter-spacing: 2px;
     font-weight: 800;
 }
-
-#blog .contentRight h3 span, #posts .contentRight h3 span {
+#blog .contentRight h3 span,
+#posts .contentRight h3 span {
     background: none repeat scroll 0 0 #ff0000;
     border-radius: 100%;
     color: #fff;
     display: inline-block;
     padding: 0 8px;
 }
-
-#blog .contentRight .contactform, #posts .contentRight .contactform {
+#blog .contentRight .contactform,
+#posts .contentRight .contactform {
     width: 100%;
 }
-
-#blog .comment, #posts .comment {
+#blog .comment,
+#posts .comment {
     width: 100%;
     float: left;
     clear: both;
     margin: 50px 0;
 }
-
-#blog .comment .comt-pic, #posts .comment .comt-pic {
+#blog .comment .comt-pic,
+#posts .comment .comt-pic {
     float: left;
     width: 9%;
     margin-right: 2%;
 }
-
-#blog .comment .comt-pic img, #posts .comment .comt-pic img {
+#blog .comment .comt-pic img,
+#posts .comment .comt-pic img {
     max-width: 100%;
     border-radius: 33px;
 }
-
-#blog .comment .comt-txt, #posts .comment .comt-txt {
+#blog .comment .comt-txt,
+#posts .comment .comt-txt {
     width: 89%;
     float: left;
 }
-
-#blog .comment .comt-txt h4, #posts .comment .comt-txt h4 {
+#blog .comment .comt-txt h4,
+#posts .comment .comt-txt h4 {
     font-family: 'source sans pro';
     font-size: 16px;
     line-height: 18px;
@@ -1757,8 +1755,8 @@ END ABOUT US
     margin: 4px 0;
     text-transform: uppercase;
 }
-
-#blog .comment .comt-txt span.comt-date, #posts .comment .comt-txt span.comt-date {
+#blog .comment .comt-txt span.comt-date,
+#posts .comment .comt-txt span.comt-date {
     font-family: 'source sans pro';
     color: #3d3c3c;
     font-size: 16px;
@@ -1766,7 +1764,6 @@ END ABOUT US
     float: right;
     margin: 4px 0;
 }
-
 a.reply-link {
     font-family: 'source sans pro';
     font-size: 14px;
@@ -1779,12 +1776,11 @@ a.reply-link {
     text-decoration: none;
     clear: both;
 }
-
 a.reply-link:hover {
     text-decoration: underline;
 }
-
-#blog .comment .comt-txt p, #posts .comment .comt-txt p {
+#blog .comment .comt-txt p,
+#posts .comment .comt-txt p {
     margin: 0px;
     padding: 20px 0px;
     font-family: 'source sans pro';
@@ -1792,19 +1788,16 @@ a.reply-link:hover {
     line-height: 22.85px;
     text-align: left;
 }
-
 .nano {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-
 .nano .nano-content {
     padding: 0;
 }
-
-.nano>.nano-pane {
+.nano > .nano-pane {
     background: #000;
     position: absolute;
     width: 6px;
@@ -1814,8 +1807,7 @@ a.reply-link:hover {
     visibility: hidden\9;
     opacity: 1;
 }
-
-.nano>.nano-pane>.nano-slider {
+.nano > .nano-pane > .nano-slider {
     background: #fff;
     position: relative;
     margin: 0 1px;
@@ -1823,14 +1815,13 @@ a.reply-link:hover {
     -webkit-border-radius: 0px;
     border-radius: 0px;
 }
-
-#blog .post, #posts .post, #team .post {
+#blog .post,
+#posts .post,
+#team .post {
     overflow: auto !important;
     position: relative;
     z-index: 9999999;
 }
-
-
 /*
 END BLOG AREA
 */
