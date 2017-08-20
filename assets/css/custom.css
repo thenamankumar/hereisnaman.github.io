@@ -1,6 +1,11 @@
 .bg-github {
     background: #333;
 }
+
 .bg-github:hover {
     background: #222;
+}
+
+.fixed-top {
+    position: absolute !important;
 }

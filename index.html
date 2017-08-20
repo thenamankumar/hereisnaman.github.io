@@ -15,8 +15,25 @@
 </head>
 <body class="profile-page">
 <!-- Navbar -->
-<nav class="navbar navbar-toggleable-md bg-primary fixed-top navbar-transparent" color-on-scroll="500">
+<nav class="navbar navbar-toggleable-md bg-danger fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
+        <div class="dropdown button-dropdown">
+            <a href="" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-expanded="true">
+                <span class="button-bar"></span>
+                <span class="button-bar"></span>
+                <span class="button-bar"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-header">Menu</a>
+                <a class="dropdown-item" href="#about">About Me</a>
+                <a class="dropdown-item" href="#skills">Skills</a>
+                <a class="dropdown-item" href="#experience">Experience</a>
+                <a class="dropdown-item" href="#education">Education</a>
+                <a class="dropdown-item" href="#portfolio">Portfolio</a>
+                <a class="dropdown-item" href="#blog">Blog</a>
+                <a class="dropdown-item" href="#contact">Contact</a>
+            </div>
+        </div>
         <div class="navbar-translate">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
@@ -68,39 +85,91 @@
                          alt="hereisnaman-naman-kumar">
                 </div>
                 <h1 class="h1-seo text-capitalize">Naman Kumar</h1>
-                <h3>A passionate Programmer and Web Developer</h3>
+                <h3>A self-taught creative Web Developer</h3>
                 <div class="content">
-                    <div class="social-description">
-                        <h2><i class="now-ui-icons ui-2_like"></i></h2>
-                        <h2>15</h2>
-                        <p>Projects</p>
-                    </div>
-                    <div class="social-description">
+                    <div class="social-description" rel="tooltip"
+                         title="From Open Source contests to entrepreneurship challenges, have won a few."
+                         data-placement="left">
                         <h2><i class="now-ui-icons sport_trophy"></i></h2>
-                        <h2>5</h2>
-                        <p>Awards</p>
+                        <h2 id="awardsDigit" data-value="5"></h2>
+                        <p class="text-uppercase">Awards</p>
                     </div>
-                    <div class="social-description">
+                    <div class="social-description" rel="tooltip"
+                         title="Have built amazing things from cross platform applications to websites and mobile apps."
+                         data-placement="top">
+                        <h2><i class="now-ui-icons ui-2_like"></i></h2>
+                        <h2 id="projectsDigit" data-value="25"></h2>
+                        <p class="text-uppercase">Projects</p>
+                    </div>
+                    <div class="social-description" rel="tooltip"
+                         title="From algorithm design to JS frameworks and mobile app dev, I am skilled in a lot of things which interests me."
+                         data-placement="right">
                         <h2><i class="now-ui-icons tech_laptop"></i></h2>
-                        <h2>25</h2>
-                        <p>Skills</p>
+                        <h2 id="skillsDigit" data-value="45"></h2>
+                        <p class="text-uppercase">Skills</p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <div class="button-container">
-                    <a href="https://github.com/hereisnaman" class="btn btn-round btn-lg bg-github" target="_blank">
-                        <i class="fa fa-github"></i>
-                        Follow
-                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="main">
 
+    <div class="section section-about-us">
+        <div class="container">
+            <div class="button-container">
+                <a href="https://github.com/hereisnaman" class="btn btn-round btn-lg bg-github"
+                   target="_blank"> Follow <i class="fa fa-github"></i>
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <a id="about" class="in-page-link" data-scroll-id="about"></a>
+                    <h2 class="title">About Me</h2>
+                    <h5 class="description">A growing engineer who has the technical knowledge of how things work in
+                        the world of zero's and one's, ready with an edge to dive into the design process to
+                        discover, ideate and build some cool product.</h5>
+                </div>
+            </div>
+
+            <div class="separator separator-danger"></div>
+
+            <div class="section-story-overview">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="image-container image-left">
+                            <img src="assets/img/about-img-left.jpg" class="rounded img-fluid img-raised"
+                                 alt="naman-kumar-web-developer">
+                            <p class="blockquote blockquote-danger">"Start by doing what's necessary. Then do what's
+                                possible; and suddenly you are doing the impossible."<br><br>
+                                <small>-Francis Of Assisi</small>
+                            </p>
+                        </div>
+                        <div class="image-container">
+                            <img src="assets/img/about-img-left2.jpg" class="rounded img-fluid img-raised"
+                                 alt="naman-kumar-web-developer">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="image-container image-right">
+                            <img src="assets/img/about-img-right.jpg" class="rounded img-fluid img-raised"
+                                 alt="naman-kumar-web-developer">
+                        </div>
+                        <h3 class="text-uppercase">Who is this man, dude, myth or mega developer?</h3>
+                        <p>Well that's enough of talking about myself in the third person. I am an award winning open
+                            source contributor and web developer, always striving for learning and building up new
+                            things, because the noblest pleasure is the joy of self-satisfaction and understanding.</p>
+                        <p>I am a learning addict, visionary and risk taker. Innovation is my passion. Being logically
+                            minded and creative at heart, I create beautiful products. I love spending time on fixing
+                            little details and optimizing products. I enjoy turning complex problems into simple,
+                            beautiful and intuitive interface designs.</p>
+                        <p>I like working in teams as you'll learn faster and much more and the final product comes
+                            out to be the best. As the saying goes: "None of us is as smart as all of us.".</p>
+                        <p>Based in New Delhi, India, and a student at Northern India Engineering College, I am up for
+                            any freelance project that tend to make me learn something new.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -111,16 +180,28 @@
 <script src="./assets/js/plugins/bootstrap-switch.js"></script>
 <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
 <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="./assets/js/plugins/countup.js" type="text/javascript"></script>
 <script src="./assets/js/theme.js" type="text/javascript"></script>
 <script>
-    $('#sliderRegular').noUiSlider({
-        start: 40,
-        connect: "lower",
-        range: {
-            min: 0,
-            max: 100
-        }
-    });
+    var options = {
+        useEasing: true,
+        useGrouping: true,
+        separator: '',
+        decimal: ''
+    };
+    var time = 3;
+    var projectsDigit = document.querySelector("#projectsDigit");
+    var projectsCount = new CountUp('projectsDigit', 0, projectsDigit.getAttribute('data-value'), 0, time, options);
+
+    var awardsDigit = document.querySelector("#awardsDigit");
+    var awardsCount = new CountUp('awardsDigit', 0, awardsDigit.getAttribute('data-value'), 0, time, options);
+
+    var skillsDigit = document.querySelector("#skillsDigit");
+    var skillsCount = new CountUp('skillsDigit', 0, skillsDigit.getAttribute('data-value'), 0, time, options);
+
+    projectsCount.start();
+    awardsCount.start();
+    skillsCount.start();
 </script>
 </body>
 </html>
