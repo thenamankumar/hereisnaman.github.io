@@ -1,6 +1,7 @@
 body {
     box-sizing: border-box;
     background: #fff;
+    font-size: 12px;
 }
 
 .main {
@@ -38,7 +39,7 @@ body {
 
 section {
     position: relative !important;
-    padding: 70px 0 35px 0!important;
+    padding: 70px 0 !important;
     background: rgb(255, 255, 255);
 }
 
@@ -125,7 +126,7 @@ section.page-header {
 
 .about-details-row {
     justify-content: center;
-    margin-bottom: 0;
+    margin-bottom: 90px;
 }
 
 .image-sign {
@@ -149,6 +150,15 @@ section.page-header {
 
 .highlight {
     background: rgba(217, 83, 79, 0.4);
+}
+
+footer {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+footer .copyright {
+    padding: 15px 0;
 }
 
 @media (max-width: 767px) {
