@@ -1,0 +1,183 @@
+body {
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.main {
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3;
+}
+
+.main section {
+    border-radius: 6px;
+}
+
+.main-raised {
+    margin: -60px 30px 0px;
+    border-radius: 10px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-github {
+    background: #333;
+}
+
+.bg-github:hover {
+    background: #222;
+}
+
+.fixed-top {
+    position: absolute !important;
+}
+
+section {
+    position: relative !important;
+    padding: 70px 0 35px 0!important;
+    background: rgb(255, 255, 255);
+}
+
+section.bg-danger, .section.bg-danger {
+    background-color: rgb(217, 83, 79);
+    color: #ffffff !important;
+}
+
+section.page-header {
+    padding: 0 !important;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.page-header.page-header-small {
+    height: 87vh;
+    max-height: 100vh;
+}
+
+.position-fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
+.container-scroll {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.row-scroll {
+    margin: 40px 0;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    overflow: scroll;
+    flex-wrap: nowrap;
+}
+
+.row-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.row-scroll .card {
+    padding: 0;
+    margin: 20px 2%;
+    box-shadow: 0 5px 25px 2px rgba(0, 0, 0, 0.4);
+}
+
+.row-scroll .card:nth-child(1) {
+    margin-left: 10%;
+}
+
+.row-scroll .card .back {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.row-scroll .card .back .blockquote {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.row-scroll .card:hover .back {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.about-details-row {
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.image-sign {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.about-who {
+    padding: 10px 20px 20px 20px;
+    z-index: 5;
+    position: absolute;
+    top: 70px;
+    left: -30px;
+}
+
+.about-quote {
+    margin: -20px auto 20px auto;
+    width: 50%;
+}
+
+.highlight {
+    background: rgba(217, 83, 79, 0.4);
+}
+
+@media (max-width: 767px) {
+
+    .main-raised {
+        margin: -60px 15px 0px;
+    }
+
+    section {
+        padding: 30px 0 !important;
+    }
+
+    .about-details-row {
+        margin-bottom: 20px;
+    }
+
+    .about-left {
+        display: none;
+    }
+
+    .about-who {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .content {
+        display: none;
+    }
+}
