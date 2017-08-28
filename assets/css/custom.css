@@ -1,13 +1,13 @@
 body {
     box-sizing: border-box;
     background: #fff;
-    font-size: 12px;
 }
 
 .main {
     background: #FFFFFF;
     position: relative;
     z-index: 3;
+    padding-bottom: 40px;
 }
 
 .main section {
@@ -39,7 +39,7 @@ body {
 
 section {
     position: relative !important;
-    padding: 70px 0 !important;
+    padding: 70px 0 20px 0 !important;
     background: rgb(255, 255, 255);
 }
 
@@ -126,7 +126,7 @@ section.page-header {
 
 .about-details-row {
     justify-content: center;
-    margin-bottom: 90px;
+    margin-bottom: 0px;
 }
 
 .image-sign {
@@ -159,6 +159,45 @@ footer {
 
 footer .copyright {
     padding: 15px 0;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.profile-page h5.description {
+    margin-bottom: 40px;
+}
+
+hr {
+    background-color: rgb(217, 83, 79);
+}
+
+.experience-row {
+    justify-content: center;
+    text-align: left;
+}
+
+.experience-row h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.experience-row hr {
+    margin: 5px 0;
+}
+
+.experience-row .description {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.company .duration {
+    font-weight: 500;
+}
+
+.company-logo {
+    margin-top: 30px;
 }
 
 @media (max-width: 767px) {
