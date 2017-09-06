@@ -18,7 +18,8 @@
     <link href="./assets/css/custom.css" rel="stylesheet"/>
 </head>
 <body class="profile-page">
-<nav class="navbar navbar-toggleable-md bg-danger fixed-top navbar-transparent" color-on-scroll="500">
+<nav class="navbar navbar-toggleable-md bg-danger-trans fixed-top navbar-transparent pos-absolute"
+     color-on-scroll="500">
     <div class="container">
         <div class="dropdown button-dropdown">
             <a href="" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-expanded="true">
@@ -50,6 +51,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navigation"
              data-nav-image="./assets/img/blurred.jpg">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="Connect on LinkedIn" data-placement="bottom"
+                       href="https://linkedin.com/in/hereisnaman/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                        <p class="hidden-lg-up">LinkedIn</p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" rel="tooltip" title="Follow me on Github" data-placement="bottom"
                        href="https://github.com/hereisnaman/" target="_blank">
@@ -117,8 +125,17 @@
         <section class="section-about">
             <div class="container">
                 <div class="button-container">
-                    <a href="https://github.com/hereisnaman" class="btn btn-round btn-lg bg-github"
-                       target="_blank"> Follow <i class="fa fa-github"></i>
+                    <a href="https://www.linkedin.com/in/hereisnaman/" class="btn btn-round btn-md bg-linkedin"
+                       target="_blank" rel="tooltip" title="Connect" data-placement="bottom">LinkedIn <i
+                            class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/hereisnaman" class="btn btn-round btn-md bg-github"
+                       target="_blank" rel="tooltip" title="Follow" data-placement="bottom">GitHub <i
+                            class="fa fa-github"></i>
+                    </a>
+                    <a href="mailto:naman@outlook.in" class="btn btn-round btn-md bg-mail"
+                       target="_blank" rel="tooltip" title="Drop a line" data-placement="bottom">E-Mail <i
+                            class="fa fa-envelope-o"></i>
                     </a>
                 </div>
                 <div class="row">
@@ -181,13 +198,29 @@
                     <div class="col-md-7 position-details">
                         <h4>Software Development Intern</h4>
                         <hr>
-                        <p>
-                            Responsible for the development of the website and products. Worked on wide range of
-                            projects like improving the UI of online coding platform Hacker Blocks, writing a static
-                            site generator from scratch for the main coding blocks website, building up an online
-                            merchandise store, a jekyll based video resources section and a lot more. Also responsible
-                            to boost the search engine presence the products.
-                        </p>
+                        <ul>
+                            <li><p>
+                                Development of online coding & assessment platform <strong>"Hacker Blocks"</strong>,
+                                <em>Live: (<a href="https://cb.lk/34TvN" target="_blank">cb.lk/34TvN</a>) Contribution
+                                    (<a href="https://cb.lk/2v1Qj" target="_blank">cb.lk/2v1Qj</a>). Stack:
+                                    EmberJS, NodeJS, Postgres</em></p>
+                            </li>
+                            <li><p>
+                                Development of <strong>Coding Blocks website</strong>, <em>Live: (<a
+                                    href="https://cb.lk/" target="_blank">cb.lk</a>)</em>.</p>
+                            </li>
+                            <li><p>
+                                Development of a <strong>"Static Site Generator"</strong> using <em>GulpJS (task
+                                automation) and HandlebarJS (templating), Contributions (<a href="https://cb.lk/4Zsfv"
+                                                                                            target="_blank">cb.lk/4Zsfv</a>)</em>
+                            </p>
+                            </li>
+                            <li><p>
+                                Development of Jekyll based online video resource portal, <strong>"CB
+                                Resources"</strong>, <em>Live: (<a href="https://cb.lk/3gfIJ" target="_blank">cb.lk/3gfIJ</a>),
+                                Contributions (<a href="https://cb.lk/56CnA" target="_blank">cb.lk/56CnA</a>)</em>.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row experience-row">
@@ -199,27 +232,30 @@
                     <div class="col-md-7 position-details">
                         <h4>Teacher Assistant</h4>
                         <hr>
-                        <p>
-                            Intern for the Launchpad (C++ Fundamental Course). Responsible to clear doubts
-                            during class, taking separate doubts sessions and helping the students with assignments and
-                            problems from various coding platforms.
-                        </p>
+                        <ul>
+                            <li><p>
+                                Conducted Crux Course (Data & Algorithms in Java), Launchpad Course
+                                (Data & Algorithms in C++) for one batch each, as a Teacher Assistant at
+                                Coding Blocks Pitampura center.</p>
+                            </li>
+                            <li><p>
+                                Conducted regular doubt sessions for students independently.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row experience-row">
                     <div class="col-md-3 company">
-                        <h4>VV Stocks</h4>
-                        <p class="description duration">1 year</p>
-                        <p class="description">2015 to 2016</p>
+                        <h4>Freelance</h4>
+                        <p class="description duration">Ongoing</p>
+                        <p class="description">2016 to Present</p>
                     </div>
                     <div class="col-md-7 position-details">
-                        <h4>Technical Lead</h4>
+                        <h4>Web Developer</h4>
                         <hr>
-                        <p>
-                            Worked as Technical Lead and Web Developer for School Enterprise personalised T-Shirt
-                            selling startup. Built an online T shirt selling ecommerce store and a personalised software
-                            for stock management.
-                        </p>
+                        <ul>
+                            <li><p>Worked on 10+ web development freelance projects independently.</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>

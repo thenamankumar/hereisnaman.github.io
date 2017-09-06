@@ -2779,7 +2779,7 @@ body {
 }
 
 .navbar.navbar-transparent {
-    background-color: transparent !important;
+    background: transparent !important;
     box-shadow: none;
     color: #FFFFFF;
     padding-top: 20px;

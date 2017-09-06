@@ -3,6 +3,11 @@ body {
     background: #fff;
 }
 
+.navbar {
+    min-height: 45px;
+    max-height: 45px;
+}
+
 .main {
     background: #FFFFFF;
     position: relative;
@@ -20,6 +25,14 @@ body {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
+.profile-page .button-container {
+    margin-top: -90px;
+}
+
+.bg-danger-trans {
+    background: rgba(217, 83, 79, 0.9);
+}
+
 .row {
     margin: 0;
     padding: 0;
@@ -29,11 +42,23 @@ body {
     background: #333;
 }
 
-.bg-github:hover {
+.bg-github:hover, .bg-github:focus, .bg-github:active {
     background: #222;
 }
 
-.fixed-top {
+.bg-linkedin {
+    background: #0077B5;
+}
+
+.bg-linkedin:hover, .bg-linkedin:focus, .bg-linkedin:active {
+    background: #0077B5;
+}
+
+.bg-mail, .bg-mail:hover, .bg-mail:focus, .bg-mail:active {
+    background: rgb(217, 83, 79);
+}
+
+.pos-absolute {
     position: absolute !important;
 }
 
@@ -198,6 +223,24 @@ hr {
 
 .company-logo {
     margin-top: 30px;
+}
+
+.navbar a, .navbar a:hover, .navbar a:focus, .navbar a:active {
+    color: #FFFFFF;
+}
+
+a, a:hover, a:focus, a:active {
+    color: rgb(217, 83, 79);
+}
+
+ul {
+    color: rgb(217, 83, 79) !important;
+    padding: 0 0 0 20px;
+}
+
+li p {
+    color: black !important;
+    margin-bottom: 0.5em;
 }
 
 @media (max-width: 767px) {
