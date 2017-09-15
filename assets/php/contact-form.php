@@ -1,4 +1,3 @@
-#!/usr/bin/env php
 <?php
 
 	$name = trim($_POST['name']);
