@@ -1,0 +1,129 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "easy-pie-chart",
+        "scope": null,
+        "escapedName": "easy-pie-chart",
+        "name": "easy-pie-chart",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Ja/assets/plugins"
+    ]
+  ],
+  "_from": "easy-pie-chart@latest",
+  "_id": "easy-pie-chart@2.1.7",
+  "_inCache": true,
+  "_location": "/easy-pie-chart",
+  "_nodeVersion": "2.0.1",
+  "_npmUser": {
+    "name": "rendro",
+    "email": "rendro87@gmail.com"
+  },
+  "_npmVersion": "2.9.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "easy-pie-chart",
+    "scope": null,
+    "escapedName": "easy-pie-chart",
+    "name": "easy-pie-chart",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/easy-pie-chart/-/easy-pie-chart-2.1.7.tgz",
+  "_shasum": "35e49fb7daf9a94e52b8294f51626919bcaee7cc",
+  "_shrinkwrap": null,
+  "_spec": "easy-pie-chart",
+  "_where": "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Ja/assets/plugins",
+  "author": {
+    "name": "Robert Fleischmann",
+    "email": "rendro87@gmail.com",
+    "url": "http://robert-fleischmann.de"
+  },
+  "bugs": {
+    "url": "https://github.com/rendro/easy-pie-chart/issues"
+  },
+  "contributors": [
+    {
+      "name": "Moritz",
+      "url": "https://github.com/mrzmyr"
+    }
+  ],
+  "dependencies": {},
+  "description": "Lightweight plugin to render simple, animated and retina optimized pie charts",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-banner": "~0.4.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-less": "~1.0.1",
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-exec": "^0.4.6",
+    "grunt-karma": "~0.10.1",
+    "grunt-readme": "~0.4.5",
+    "grunt-umd": "~2.3.3",
+    "karma": "~0.12.31",
+    "karma-chrome-launcher": "~0.1.8",
+    "karma-coffee-preprocessor": "~0.2.1",
+    "karma-firefox-launcher": "~0.1.4",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-jasmine": "~0.3.5",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-requirejs": "~0.2.2",
+    "karma-script-launcher": "~0.1.0",
+    "load-grunt-tasks": "~3.1.0",
+    "requirejs": "~2.1.17",
+    "spacejam": "^1.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "35e49fb7daf9a94e52b8294f51626919bcaee7cc",
+    "tarball": "https://registry.npmjs.org/easy-pie-chart/-/easy-pie-chart-2.1.7.tgz"
+  },
+  "gitHead": "b1d8e032f0d5a737b5fcf6e4e2594f07c82557d2",
+  "homepage": "https://github.com/rendro/easy-pie-chart#readme",
+  "keywords": [
+    "pie chart",
+    "chart",
+    "circular progress",
+    "precent",
+    "progress bar"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    },
+    {
+      "type": "GPL",
+      "url": "http://www.opensource.org/licenses/gpl-license.php"
+    }
+  ],
+  "main": "dist/easypiechart.js",
+  "maintainers": [
+    {
+      "name": "rendro",
+      "email": "rendro87@gmail.com"
+    }
+  ],
+  "name": "easy-pie-chart",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rendro/easy-pie-chart.git"
+  },
+  "scripts": {
+    "test": "grunt karma:ci"
+  },
+  "version": "2.1.7"
+}

@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "jquery.localscroll@^1.4.0",
+        "scope": null,
+        "escapedName": "jquery.localscroll",
+        "name": "jquery.localscroll",
+        "rawSpec": "^1.4.0",
+        "spec": ">=1.4.0 <2.0.0",
+        "type": "range"
+      },
+      "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Ja/assets/plugins"
+    ]
+  ],
+  "_from": "jquery.localscroll@>=1.4.0 <2.0.0",
+  "_id": "jquery.localscroll@1.4.0",
+  "_inCache": true,
+  "_location": "/jquery.localscroll",
+  "_npmUser": {
+    "name": "flesler",
+    "email": "aflesler@gmail.com"
+  },
+  "_npmVersion": "1.4.28",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "jquery.localscroll@^1.4.0",
+    "scope": null,
+    "escapedName": "jquery.localscroll",
+    "name": "jquery.localscroll",
+    "rawSpec": "^1.4.0",
+    "spec": ">=1.4.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery.localscroll/-/jquery.localscroll-1.4.0.tgz",
+  "_shasum": "bd18977795cb2993511094a2861384cc21048e88",
+  "_shrinkwrap": null,
+  "_spec": "jquery.localscroll@^1.4.0",
+  "_where": "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Ja/assets/plugins",
+  "author": {
+    "name": "Ariel Flesler",
+    "url": "http://flesler.blogspot.com"
+  },
+  "bugs": {
+    "url": "https://github.com/flesler/jquery.localScroll/issues"
+  },
+  "demo": "http://demos.flesler.com/jquery/localScroll",
+  "dependencies": {
+    "jquery": ">=1.8",
+    "jquery.scrollto": ">=2.0.0"
+  },
+  "description": "Animated anchor navigation made easy with jQuery",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "bd18977795cb2993511094a2861384cc21048e88",
+    "tarball": "https://registry.npmjs.org/jquery.localscroll/-/jquery.localscroll-1.4.0.tgz"
+  },
+  "docs": "http://flesler.blogspot.com/2007/10/jquerylocalscroll-10.html",
+  "download": "https://github.com/flesler/jquery.localScroll/releases",
+  "gitHead": "85ff6e1940a6f7711b4e00f069f3be9188933e01",
+  "homepage": "https://github.com/flesler/jquery.localScroll",
+  "ignore": [
+    "**/.*",
+    "demo",
+    "tests",
+    "CHANGELOG",
+    "README.md",
+    "bower.json"
+  ],
+  "keywords": [
+    "browser",
+    "animated",
+    "animation",
+    "scrolling",
+    "scroll",
+    "links",
+    "anchors",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "licenses": "MIT",
+  "main": "jquery.localScroll.js",
+  "maintainers": [
+    {
+      "name": "flesler",
+      "email": "aflesler@gmail.com"
+    }
+  ],
+  "name": "jquery.localscroll",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flesler/jquery.localScroll.git"
+  },
+  "scripts": {},
+  "version": "1.4.0"
+}

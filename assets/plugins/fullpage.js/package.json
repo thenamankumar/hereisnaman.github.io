@@ -1,0 +1,112 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "fullpage.js",
+        "scope": null,
+        "escapedName": "fullpage.js",
+        "name": "fullpage.js",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Ja/assets/plugins"
+    ]
+  ],
+  "_from": "fullpage.js@latest",
+  "_id": "fullpage.js@2.9.4",
+  "_inCache": true,
+  "_location": "/fullpage.js",
+  "_nodeVersion": "4.1.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/fullpage.js-2.9.4.tgz_1489163667043_0.7180555427912623"
+  },
+  "_npmUser": {
+    "name": "alvarotrigo",
+    "email": "alvaro@alvarotrigo.com"
+  },
+  "_npmVersion": "4.1.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "fullpage.js",
+    "scope": null,
+    "escapedName": "fullpage.js",
+    "name": "fullpage.js",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/fullpage.js/-/fullpage.js-2.9.4.tgz",
+  "_shasum": "b07de9c146c95c042d28a31e934b8faf334fa0e9",
+  "_shrinkwrap": null,
+  "_spec": "fullpage.js",
+  "_where": "/Users/piotrosmola/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/Templates/Ja/assets/plugins",
+  "authors": [
+    "Alvaro Trigo https://github.com/alvarotrigo"
+  ],
+  "bugs": {
+    "url": "https://github.com/alvarotrigo/fullPage.js/issues"
+  },
+  "dependencies": {
+    "jquery": ">=1.6.0"
+  },
+  "description": "Create beautiful fullscreen scrolling websites",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "b07de9c146c95c042d28a31e934b8faf334fa0e9",
+    "tarball": "https://registry.npmjs.org/fullpage.js/-/fullpage.js-2.9.4.tgz"
+  },
+  "files": [
+    "vendors",
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "homepage": "https://github.com/alvarotrigo/fullPage.js",
+  "keywords": [
+    "jquery",
+    "javacript",
+    "scrolling",
+    "single_page",
+    "onepage",
+    "fullpage",
+    "fullpagejs",
+    "one_page",
+    "sliding",
+    "snap",
+    "scroll"
+  ],
+  "license": "MIT",
+  "main": "dist/jquery.fullpage.js",
+  "maintainers": [
+    {
+      "name": "alvarotrigo",
+      "email": "atrigol@gmail.com"
+    }
+  ],
+  "name": "fullpage.js",
+  "namespace": "$.fn.fullpage",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alvarotrigo/fullPage.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.9.4"
+}

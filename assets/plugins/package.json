@@ -1,0 +1,26 @@
+{
+  "name": "Ja",
+  "description": "Plugins",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "easy-pie-chart": "^2.1.7",
+    "font-awesome": "^4.7.0",
+    "fullcalendar": "^3.4.0",
+    "fullpage.js": "^2.9.4",
+    "imagesloaded": "^4.1.2",
+    "isotope-layout": "^3.0.4",
+    "jquery": "^3.1.1",
+    "jquery-validation": "^1.16.0",
+    "jquery.appear": "^1.0.1",
+    "jquery.localscroll": "^1.4.0",
+    "jquery.mb.ytplayer": "^3.0.20",
+    "masonry-layout": "^4.2.0",
+    "slick-carousel": "^1.6.0",
+    "snapsvg": "^0.5.1",
+    "typed.js": "^1.1.1",
+    "waypoints": "^4.0.1"
+  }
+}

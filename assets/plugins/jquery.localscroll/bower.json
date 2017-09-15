@@ -1,0 +1,38 @@
+{
+  "name": "jquery.localScroll",
+  "version": "1.4.0",
+  "description": "Animated anchor navigation made easy.",
+  "homepage": "https://github.com/flesler/jquery.localScroll",
+  "main": [
+    "./jquery.localScroll.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.8",
+    "jquery.scrollTo": ">=2.0.0"
+  },
+  "keywords": [
+    "browser",
+    "animated",
+    "animation",
+    "scrolling",
+    "scroll",
+    "links",
+    "anchors"
+  ],
+  "author": {
+    "name": "Ariel Flesler",
+    "web": "http://flesler.blogspot.com/"
+  },
+  "authors": [
+    "Ariel Flesler <aflesler@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "demo",
+    "test",
+    "tests"
+  ]
+}
