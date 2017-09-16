@@ -742,7 +742,7 @@
                             $btn.addClass('loading');
                             $.ajax({
                                 type: 'POST',
-                                url:  'http://www.ataichinews.com/contact-form.php',
+                                url:  '/assets/php/contact-form.php',
                                 data: $form.serialize(),
                                 error       : function(err) { setTimeout(function(){ $btn.addClass('error'); }, 1200); },
                                 success     : function(data) {
