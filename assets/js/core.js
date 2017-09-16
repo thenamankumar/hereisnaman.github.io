@@ -742,7 +742,7 @@
                             $btn.addClass('loading');
                             $.ajax({
                                 type: 'POST',
-                                url: 'assets/php/contact-form.php',
+                                url:  '/assets/php/contact-form.php',
                                 data: $form.serialize(),
                                 error: function (err) {
                                     setTimeout(function () {
@@ -785,7 +785,7 @@
                             $btn.addClass('loading');
                             $.ajax({
                                 type: 'POST',
-                                url: 'assets/php/contact-form-suelo.php',
+                                url: '/assets/php/contact-form-suelo.php',
                                 data: $form.serialize(),
                                 error: function (err) {
                                     setTimeout(function () {
