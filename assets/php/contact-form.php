@@ -10,8 +10,10 @@
 	$headers = 'From: '.$email."\r\n" .
         'Reply-To: '.$email."\r\n";
 
-	mail($emailTo, $subject, $body, $headers);
-	$emailSent = true;
-	echo ('success');
+	$mail = mail($emailTo, $subject, $body, $headers);
+	if($mail){
+		$emailSent = true;
+		echo ('success');
+	}
 	
 ?>
