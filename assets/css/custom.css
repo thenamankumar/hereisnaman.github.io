@@ -1,3 +1,33 @@
 .dark .image-box .image {
     background-color: #181818;
 }
+
+.home-avatar {
+    margin-bottom: 0 !important;
+}
+
+.header-img {
+    min-width: 150px;
+}
+
+.timeline .timeline-event .timeline-event-date {
+    color: rgb(65, 121, 235) !important;
+}
+
+.spread-images {
+    display: block;
+}
+
+.spread-images > li {
+    display: inline-block;
+}
+
+.companies-img > li {
+    width: 20%;
+    min-width: 150px;
+}
+
+.companies-img img {
+    min-width: 150px;
+    max-height: 100%!important;
+}
