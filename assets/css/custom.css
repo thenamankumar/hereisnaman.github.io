@@ -29,5 +29,138 @@
 
 .companies-img img {
     min-width: 150px;
-    max-height: 100%!important;
+    max-height: 100% !important;
+}
+
+@keyframes a {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.uc-badge {
+    animation: a 7.5s infinite linear;
+    transform: rotate(0);
+    transform-origin: center center;
+    will-change: transform;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tool-icon {
+    cursor: pointer;
+}
+
+.section-content .section-header.side {
+    margin: -5rem 0 0 20px;
+}
+
+.underline {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    cursor: pointer;
+}
+
+h5.inline {
+    display: inline;
+    margin-right: 20px;
+}
+
+.icon.icon-circle.icon-medium:before {
+    background-color: #00ab6c;
+}
+
+.icon.icon-circle.icon-medium:hover, .icon.icon-circle.icon-medium:focus {
+    color: #00ab6c;
+}
+
+.icon.icon-circle.icon-medium:hover:before, .icon.icon-circle.icon-medium:focus:before {
+    background-color: #fff;
+}
+
+.icon.icon-circle.icon-github:before {
+    background-color: #333;
+}
+
+.icon.icon-circle.icon-github:hover, .icon.icon-circle.icon-github:focus {
+    color: #333;
+}
+
+.icon.icon-circle.icon-github:hover:before, .icon.icon-circle.icon-github:focus:before {
+    background-color: #fff;
+}
+
+.icon.icon-circle.icon-email:before {
+    background-color: #ea3e23;
+}
+
+.icon.icon-circle.icon-email:hover, .icon.icon-circle.icon-email:focus {
+    color: #ea3e23;
+}
+
+.icon.icon-circle.icon-email:hover:before, .icon.icon-circle.icon-email:focus:before {
+    background-color: #fff;
+}
+
+.section.padded {
+    padding-bottom: 6rem;
+    min-height: 0;
+}
+
+.section {
+    padding-bottom: 0;
+    min-height: 100vh;
+}
+
+.blog-item {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    cursor: pointer;
+    color: #fff !important;
+}
+
+.blog-item:after {
+    display: none;
+}
+
+a .blog-item {
+    color: #fff !important;
+    transition: 0.5s;
+}
+
+.blog-item:hover {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    transition: 0.5s;
+
+}
+
+.bg-secondary-animated {
+    background-image: linear-gradient(to right, #D96BE5, #E86E21, #D96BE5);
+    background-size: 300% 100%;
+    background-position: 0% center;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -ms-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.resume-box hr {
+    margin-top: 0;
+}
+
+#works-list {
+    text-align: center;
+}
+
+#works-list .item {
+    position: relative !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#works-list .item a {
+    color: #2F2F2F;
 }
