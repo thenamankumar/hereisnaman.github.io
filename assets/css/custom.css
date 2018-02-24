@@ -150,17 +150,18 @@ a .blog-item {
     margin-top: 0;
 }
 
-#works-list {
-    text-align: center;
+.dark .post.item {
+    background: rgba(0, 0, 0, 0.3) !important;
 }
 
-#works-list .item {
-    position: relative !important;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.dark .post.item .post-content {
+    color: #fff !important;
 }
 
-#works-list .item a {
-    color: #2F2F2F;
+.dark .post.item .post-content .post-title {
+    color: #fff !important;
+}
+
+.dark .post.item .post-content p {
+    color: rgba(255, 255, 255, 0.6) !important;
 }

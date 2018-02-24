@@ -215,18 +215,17 @@
     </section>
 
     <!-- Section - Portfolio -->
-    <section id="portfolio" class="section light bg-light" data-scheme="light">
+    <section id="portfolio" class="section bg-dark dark" data-scheme="dark">
 
         <!-- Section Content -->
         <div class="section-content">
             <div class="container">
                 <!-- Section Header -->
                 <div class="section-header">
-                    <img src="assets/img/photos/developer/avatar-sm.jpg" alt="" class="section-header-image">
                     <div class="section-header-content">
-                        <span class="typing">What would you like to see?</span>
+                        <p class="lead text-lg">The <span class="underline">projects</span> I have contributed to.</p>
                         <!-- Filter - Isotope -->
-                        <ul class="nav nav-pills filter-isotope show-after-typing" data-filter-list="#works-list">
+                        <ul class="nav nav-pills filter-isotope" data-filter-list="#works-list">
                             <li class="nav-item"><a href="#" class="nav-link active" data-filter="*">All</a></li>
                             <li class="nav-item"><a href="#" class="nav-link" data-filter=".react">ReactJS</a>
                             </li>
@@ -239,46 +238,54 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-slim image-edge">
                 <!-- Filter - List Isotope -->
-                <div id="works-list" class="row filter-list-isotope">
-                    <div class="masonry-item col-md-4 col-sm-6 col-12 react node">
-                        <article class="post item">
-                            <div class="post-content">
-                                <h4 class="post-title"><a href="https://gitfa.me" target="_blank">GitFame</a>
-                                </h4>
-                                <p>A progressive web app for in-depth GitHub contributions analysis and rating.</p>
-                            </div>
-                        </article>
+                    <div class="image left">
+                        <img src="assets/img/items/docs.png" alt="" class="animated fadeInLeft visible"
+                             data-animation="fadeInLeft">
                     </div>
-                    <div class="masonry-item col-md-4 col-sm-6 col-12 ember node">
-                        <article class="post item">
-                            <div class="post-content">
-                                <h4 class="post-title"><a href="https://hackerblocks.com" target="_blank">Hacker
-                                    Blocks</a></h4>
-                                <p>An online coding platform supporting 6 languages and 5.5K users.</p>
-                            </div>
-                        </article>
+                    <div id="works-list" class="row filter-list-isotope dark">
+                        <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
+                            <article class="post item">
+                                <div class="post-content">
+                                    <h4 class="post-title"><a href="https://gitfa.me" target="_blank">GitFame</a>
+                                    </h4>
+                                    <p>A progressive web app for in-depth GitHub contributions analysis and rating.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="masonry-item col-md-6 col-sm-6 col-12 ember node">
+                            <article class="post item">
+                                <div class="post-content">
+                                    <h4 class="post-title"><a href="https://hackerblocks.com" target="_blank">Hacker
+                                        Blocks</a></h4>
+                                    <p>An online coding platform supporting 6 languages and 5.5K users.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="masonry-item col-md-6 col-sm-6 col-12 vue node">
+                            <article class="post item">
+                                <div class="post-content">
+                                    <h4 class="post-title"><a href="https://ide.codingblocks.com" target="_blank">CB
+                                        IDE</a></h4>
+                                    <p>An online IDE with paste bin, 6 languages, uploads, auto completion, custom
+                                        inputs
+                                        support.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
+                            <article class="post item">
+                                <div class="post-content">
+                                    <h4 class="post-title"><a href="https://admin.tripshire.com" target="_blank">Tripshire
+                                        Admin</a></h4>
+                                    <p>Admin dashboard for Tripshire with stats, custom editor and media upload gallery
+                                        to
+                                        modify content.</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                    <div class="masonry-item col-md-4 col-sm-6 col-12 vue node">
-                        <article class="post item">
-                            <div class="post-content">
-                                <h4 class="post-title"><a href="https://ide.codingblocks.com" target="_blank">CB
-                                    IDE</a></h4>
-                                <p>An online IDE with paste bin, 6 languages, uploads, auto completion, custom inputs
-                                    support.</p>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="masonry-item col-md-4 col-sm-6 col-12 react node">
-                        <article class="post item">
-                            <div class="post-content">
-                                <h4 class="post-title"><a href="https://admin.tripshire.com" target="_blank">Tripshire Admin</a></h4>
-                                <p>Admin dashboard for Tripshire with stats, custom editor and media upload gallery to modify content.</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -428,7 +435,7 @@
 
 <!-- JS Plugins -->
 <script src="assets/plugins/jquery/dist/jquery.min.js" defer></script>
-<script src="assets/plugins/jquery.appear/jquery.appear.js"defer></script>
+<script src="assets/plugins/jquery.appear/jquery.appear.js" defer></script>
 <script src="assets/plugins/tether/dist/js/tether.min.js" defer></script>
 <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js" defer></script>
 <script src="assets/plugins/jquery.scrollto/jquery.scrollTo.min.js" defer></script>
@@ -438,7 +445,7 @@
 <script src="assets/plugins/slick-carousel/slick/slick.min.js" defer></script>
 <script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js" defer></script>
 <script src="assets/plugins/jquery-validation/dist/jquery.validate.min.js" defer></script>
-<script src="assets/plugins/typed.js/dist/typed.min.js"defer></script>
+<script src="assets/plugins/typed.js/dist/typed.min.js" defer></script>
 <script src="assets/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js" defer></script>
 <script src="assets/plugins/snapsvg/dist/snap.svg-min.js" defer></script>
 <script src="assets/plugins/isotope-layout/dist/isotope.pkgd.min.js" defer></script>
