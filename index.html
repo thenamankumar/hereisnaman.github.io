@@ -72,8 +72,8 @@
         <ul class="nav nav-primary-panel">
             <li class="nav-item"><a href="#start" class="nav-link">Start</a></li>
             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#portfolio" class="nav-link">Work</a></li>
             <li class="nav-item"><a href="#blog" class="nav-link">Latest Posts</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Work</a></li>
         </ul>
     </div>
 
@@ -85,7 +85,6 @@
 
 <!-- Content -->
 <div id="content">
-
     <!-- Section - Start -->
     <section id="start" class="section padded dark bg-secondary-animated mouse-parallax"
              data-scheme="dark" data-local-scroll>
@@ -111,7 +110,8 @@
                             </svg>
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-9 ">
-                            <h1 class="mb-0"><span class="typing">I’m <strong>Naman Kumar</strong>. I discover, ideate and build cool products ~ <em>"what I want"</em> !</span>
+                            <h1 class="mb-0">I’m <strong>Naman Kumar</strong>. I discover, ideate and build cool
+                                products ~ <em>"what I want"</em> !
                             </h1>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
     </section>
 
     <!-- Section - Resume -->
-    <section id="about" class="section dark bg-dark" data-scheme="dark">
+    <section id="about" class="section dark bg-dark min-100" data-scheme="dark">
 
         <!-- Section Content -->
         <div class="section-content">
@@ -136,8 +136,13 @@
                             <img src="assets/img/items/plant2.png" alt="" class="animated fadeInRight visible"
                                  data-animation="fadeInRight">
                         </div>
-                        <p class="lead text-lg">A fullstack developer at <span class="underline">Tripshire</span>
-                            previously at <span class="underline">Coding Blocks</span>.</p>
+                        <div class="section-header">
+                            <div class="section-header-content">
+                                <p class="lead text-lg">A fullstack developer at <span
+                                        class="underline">Tripshire</span>
+                                    previously at <span class="underline">Coding Blocks</span>.</p>
+                            </div>
+                        </div>
                         <p class="lead">A growing engineer who has the technical knowledge of how things work
                             in the
                             world of zero's and one's, ready with an edge to dive into the design process to
@@ -214,86 +219,8 @@
 
     </section>
 
-    <!-- Section - Portfolio -->
-    <section id="portfolio" class="section bg-dark dark" data-scheme="dark">
-
-        <!-- Section Content -->
-        <div class="section-content">
-            <div class="container">
-                <!-- Section Header -->
-                <div class="section-header">
-                    <div class="section-header-content">
-                        <p class="lead text-lg">The <span class="underline">projects</span> I have contributed to.</p>
-                        <!-- Filter - Isotope -->
-                        <ul class="nav nav-pills filter-isotope" data-filter-list="#works-list">
-                            <li class="nav-item"><a href="#" class="nav-link active" data-filter="*">All</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".react">ReactJS</a>
-                            </li>
-                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".vue">VueJS</a>
-                            </li>
-                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".ember">EmberJS</a>
-                            </li>
-                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".node">NodeJS</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="container-slim image-edge">
-                <!-- Filter - List Isotope -->
-                    <div class="image left" id="img-left">
-                        <img src="assets/img/items/docs.png" alt="" class="animated fadeInLeft visible"
-                             data-animation="fadeInLeft">
-                    </div>
-                    <div id="works-list" class="row filter-list-isotope dark">
-                        <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
-                            <article class="post item">
-                                <div class="post-content">
-                                    <h4 class="post-title"><a href="https://gitfa.me" target="_blank">GitFame</a>
-                                    </h4>
-                                    <p>A progressive web app for in-depth GitHub contributions analysis and rating.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="masonry-item col-md-6 col-sm-6 col-12 ember node">
-                            <article class="post item">
-                                <div class="post-content">
-                                    <h4 class="post-title"><a href="https://hackerblocks.com" target="_blank">Hacker
-                                        Blocks</a></h4>
-                                    <p>An online coding platform supporting 6 languages and 5.5K users.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="masonry-item col-md-6 col-sm-6 col-12 vue node">
-                            <article class="post item">
-                                <div class="post-content">
-                                    <h4 class="post-title"><a href="https://ide.codingblocks.com" target="_blank">CB
-                                        IDE</a></h4>
-                                    <p>An online IDE with paste bin, 6 languages, uploads, auto completion, custom
-                                        inputs
-                                        support.</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
-                            <article class="post item">
-                                <div class="post-content">
-                                    <h4 class="post-title"><a href="https://admin.tripshire.com" target="_blank">Tripshire
-                                        Admin</a></h4>
-                                    <p>Admin dashboard for Tripshire with stats, custom editor and media upload gallery
-                                        to
-                                        modify content.</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-    </section>
-
-
     <!-- Section - Blog -->
-    <section id="blog" class="section bg-secondary-animated dark" data-scheme="dark">
+    <section id="blog" class="section bg-secondary-animated dark min-50" data-scheme="dark">
 
         <!-- BG Image -->
         <div class="bg-image-container bg-multiply loaded"
@@ -304,14 +231,8 @@
         <div class="section-content">
             <div class="container">
                 <div class="section-header">
-                    <img src="assets/img/photos/developer/avatar-sm.jpg" alt="" class="section-header-image">
                     <div class="section-header-content" style="min-height: 21px; min-width: 291px;">
-                        <span class="typing start">Some of my latest posts… Wan't more?</span><span
-                            class="typed-cursor">|</span>
-                        <div class="section-header-caption show-after-typing show">
-                            <a href="https://medium.com/@hereisnaman" target="_blank" class="btn btn-primary btn-sm">Check
-                                out my blog</a>
-                        </div>
+                        <p class="lead text-lg">Some of my <span class="underline">latest posts</span>.</p>
                     </div>
                 </div>
             </div>
@@ -334,9 +255,86 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-3">
+                <div class="text-center mt-3 mb-5">
                     <a href="https://medium.com/@hereisnaman" target="_blank" class="btn btn-primary">Check out my
                         blog</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section - Portfolio -->
+    <section id="portfolio" class="section bg-dark dark min-100" data-scheme="dark">
+
+        <!-- Section Content -->
+        <div class="section-content">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-header-content">
+                        <p class="lead text-lg"><span class="underline">Projects</span> I have contributed to.</p>
+                        <!-- Filter - Isotope -->
+                        <ul class="nav nav-pills filter-isotope" data-filter-list="#works-list">
+                            <li class="nav-item"><a href="#" class="nav-link active" data-filter="*">All</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".react">ReactJS</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".vue">VueJS</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".ember">EmberJS</a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link" data-filter=".node">NodeJS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-slim image-edge">
+                <!-- Filter - List Isotope -->
+                <div class="image left" id="img-left">
+                    <img src="assets/img/items/docs.png" alt="" class="animated fadeInLeft visible"
+                         data-animation="fadeInLeft">
+                </div>
+                <div id="works-list" class="row filter-list-isotope dark">
+                    <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
+                        <article class="post item">
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="https://gitfa.me" target="_blank">GitFame</a>
+                                </h4>
+                                <p>A progressive web app for in-depth GitHub contributions analysis and rating.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="masonry-item col-md-6 col-sm-6 col-12 ember node">
+                        <article class="post item">
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="https://hackerblocks.com" target="_blank">Hacker
+                                    Blocks</a></h4>
+                                <p>An online coding platform supporting 6 languages and 5.5K users.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="masonry-item col-md-6 col-sm-6 col-12 vue node">
+                        <article class="post item">
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="https://ide.codingblocks.com" target="_blank">CB
+                                    IDE</a></h4>
+                                <p>An online IDE with paste bin, 6 languages, uploads, auto completion, custom
+                                    inputs
+                                    support.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
+                        <article class="post item">
+                            <div class="post-content">
+                                <h4 class="post-title"><a href="https://admin.tripshire.com" target="_blank">Tripshire
+                                    Admin</a></h4>
+                                <p>Admin dashboard for Tripshire with stats, custom editor and media upload gallery
+                                    to
+                                    modify content.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </div>
@@ -347,14 +345,15 @@
 <!-- Content / End -->
 
 <!-- Footer -->
-<footer id="footer" class="bg-dark dark">
+<footer id="footer" class="bg-secondary-animated dark">
 
     <div class="footer-content">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-5 mb-md-0 text-center text-md-left">
-                    <p class="mb-2"><span class="typing">Would you like to get my CV in PDF?</span></p>
-                    <a href="resume.pdf" target="_blank" class="btn btn-primary btn-sm">Download my CV</a>
+                    <p class="lead text-lg">Want to get my <span
+                            class="underline">Resume</span>?</p>
+                    <a href="resume.pdf" target="_blank" class="btn btn-primary btn-sm">Download</a>
                 </div>
                 <div class="spread-icons col-md-6 text-center text-md-right">
                     <a href="https://twitter.com/hereisnaman" target="_blank"

@@ -111,6 +111,13 @@ h5.inline {
 
 .section {
     padding-bottom: 0;
+}
+
+.section.min-50 {
+    min-height: 50vh;
+}
+
+.section.min-100 {
     min-height: 100vh;
 }
 
@@ -168,4 +175,23 @@ a .blog-item {
 
 #works-list {
     min-height: 411px;
+}
+
+p.lead.text-lg:before {
+    content: "#";
+    position: absolute;
+    font-size: 7rem;
+    color: rgba(0, 0, 0, 0.3) !important;
+    font-weight: 500;
+    left: -7rem;
+    top: -3.5rem;
+}
+
+.row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.footer-content p.lead.text-lg {
+    font-size: 2.25rem!important;
 }
