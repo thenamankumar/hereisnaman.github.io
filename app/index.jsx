@@ -1,14 +1,8 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import { render } from 'react-dom';
 
 import './index.html';
-import store from './store';
 
-const App = () => (
-  <Provider store={store}>
-    <h1>Hello World!</h1>
-  </Provider>
-);
+const App = () => <h1>Hello World!</h1>;
 
 render(<App />, document.getElementById('app'));

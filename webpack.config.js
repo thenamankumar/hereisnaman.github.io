@@ -10,7 +10,8 @@ const config = {
   entry: `${APP_DIR}/index.jsx`,
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js',
   },
   mode: 'development',
   devtool: 'source-map',
