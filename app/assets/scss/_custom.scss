@@ -1,0 +1,208 @@
+.dark .image-box .image {
+  background-color: #181818;
+}
+
+.home-avatar {
+  margin-bottom: 0 !important;
+}
+
+.header-img {
+  min-width: 150px;
+}
+
+.timeline .timeline-event .timeline-event-date {
+  color: rgb(65, 121, 235) !important;
+}
+
+.spread-images {
+  display: block;
+}
+
+.spread-images > li {
+  display: inline-block;
+}
+
+.companies-img > li {
+  width: 20%;
+  min-width: 150px;
+}
+
+.companies-img img {
+  min-width: 150px;
+  max-height: 100% !important;
+}
+
+@keyframes a {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.uc-badge {
+  animation: a 7.5s infinite linear;
+  transform: rotate(0);
+  transform-origin: center center;
+  will-change: transform;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tool-icon {
+  cursor: pointer;
+}
+
+.section-content .section-header.side {
+  margin: -5rem 0 0 20px;
+}
+
+.underline {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  cursor: pointer;
+}
+
+h5.inline {
+  display: inline;
+  margin-right: 20px;
+}
+
+.icon.icon-circle.icon-medium:before {
+  background-color: #00ab6c;
+}
+
+.icon.icon-circle.icon-medium:hover,
+.icon.icon-circle.icon-medium:focus {
+  color: #00ab6c;
+}
+
+.icon.icon-circle.icon-medium:hover:before,
+.icon.icon-circle.icon-medium:focus:before {
+  background-color: #fff;
+}
+
+.icon.icon-circle.icon-github:before {
+  background-color: #333;
+}
+
+.icon.icon-circle.icon-github:hover,
+.icon.icon-circle.icon-github:focus {
+  color: #333;
+}
+
+.icon.icon-circle.icon-github:hover:before,
+.icon.icon-circle.icon-github:focus:before {
+  background-color: #fff;
+}
+
+.icon.icon-circle.icon-email:before {
+  background-color: #ea3e23;
+}
+
+.icon.icon-circle.icon-email:hover,
+.icon.icon-circle.icon-email:focus {
+  color: #ea3e23;
+}
+
+.icon.icon-circle.icon-email:hover:before,
+.icon.icon-circle.icon-email:focus:before {
+  background-color: #fff;
+}
+
+.section.padded {
+  padding-bottom: 6rem;
+  min-height: 0;
+}
+
+.section {
+  padding-bottom: 0;
+}
+
+.section.min-50 {
+  min-height: 50vh;
+}
+
+.section.min-100 {
+  min-height: 100vh;
+}
+
+.blog-item {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  cursor: pointer;
+  color: #fff !important;
+}
+
+.blog-item:after {
+  display: none;
+}
+
+a .blog-item {
+  color: #fff !important;
+  transition: 0.5s;
+}
+
+.blog-item:hover {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  transition: 0.5s;
+}
+
+.bg-secondary-animated {
+  background-image: linear-gradient(to right, #d96be5, #e86e21, #d96be5);
+  background-size: 300% 100%;
+  background-position: 0% center;
+  -webkit-animation: gradientAnimation 10s ease infinite;
+  -moz-animation: gradientAnimation 10s ease infinite;
+  -ms-animation: gradientAnimation 10s ease infinite;
+  -o-animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.resume-box hr {
+  margin-top: 0;
+}
+
+.dark .post.item {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark .post.item .post-content {
+  color: #fff !important;
+}
+
+.dark .post.item .post-content .post-title {
+  color: #fff !important;
+}
+
+.dark .post.item .post-content p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+#works-list {
+  min-height: 411px;
+}
+
+p.lead.text-lg:before {
+  content: '#';
+  position: absolute;
+  font-size: 7rem;
+  color: rgba(0, 0, 0, 0.3) !important;
+  font-weight: 500;
+  left: -7rem;
+  top: -3.5rem;
+}
+
+.row {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.footer-content p.lead.text-lg {
+  font-size: 1.5rem !important;
+}
+
+.footer-content p.lead.text-lg:before {
+  font-size: 3.5rem;
+  left: -2.5rem;
+  top: -1.5rem;
+}
