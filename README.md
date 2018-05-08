@@ -1,4 +1,6 @@
 # React Starter Kit
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/hereisnaman/hereisnaman.github.io.svg)](https://greenkeeper.io/)
 > This is a boilerplate for React 16 & Webpack 4
 ---
 
