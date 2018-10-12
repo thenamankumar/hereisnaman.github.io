@@ -140,7 +140,7 @@
             </div>
             <div class="section-header">
               <div class="section-header-content">
-                <p class="lead text-lg">Summer Intern at <span
+                <p class="lead text-lg">Intern at <span
                     class="underline">Hacker Earth</span>, previously at <span class="underline">Tripshire</span> and
                   <span
                       class="underline">Coding Blocks</span>.</p>
@@ -148,7 +148,7 @@
             </div>
             <p class="lead">A growing engineer who has the technical knowledge of how things work
               in the
-              world of zero's and one's, ready with an edge to dive into the design process to
+              world of zeros and ones, ready with an edge to dive into the design process to
               discover,
               ideate and build some cool product.</p>
           </div>
@@ -223,7 +223,7 @@
   </section>
 
   <!-- Section - Blog -->
-  <section id="blog" class="section bg-secondary-animated dark min-50" data-scheme="dark">
+  <section id="blog" class="section bg-secondary-animated dark min-100" data-scheme="dark">
 
     <!-- BG Image -->
     <div class="bg-image-container bg-multiply loaded"
@@ -240,6 +240,23 @@
         </div>
       </div>
       <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="testimonial mb-5">
+              <a href="https://medium.com/@hereisnaman/internship-at-hackerearth-20b1c4f2ea85" target="_blank">
+                <p class="testimonial-content blog-item">Shedding Intern Season upon HackerEarth</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial mb-5">
+              <a href="https://medium.com/@hereisnaman/building-gitfame-github-open-source-contributions-analyzer-ed2f42fef785" target="_blank">
+                <p class="testimonial-content blog-item">Building Gitfame — Github Open Source Contributions 
+                Analyzer</p>
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="testimonial mb-5">
@@ -280,43 +297,44 @@
             <!-- Filter - Isotope -->
             <ul class="nav nav-pills filter-isotope" data-filter-list="#works-list">
               <li class="nav-item"><a href="#" class="nav-link active" data-filter="*">All</a></li>
-              <li class="nav-item"><a href="#" class="nav-link" data-filter=".react">ReactJS</a>
+              <li class="nav-item"><a href="#" class="nav-link" data-filter=".react">React</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link" data-filter=".vue">VueJS</a>
+              <li class="nav-item"><a href="#" class="nav-link" data-filter=".vue">Vue</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link" data-filter=".ember">EmberJS</a>
+              <li class="nav-item"><a href="#" class="nav-link" data-filter=".ember">Ember</a>
               </li>
-              <li class="nav-item"><a href="#" class="nav-link" data-filter=".node">NodeJS</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" data-filter=".node">Node</a></li>
+              <li class="nav-item"><a href="#" class="nav-link" data-filter=".graphql">Graphql</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="container-slim image-edge">
-        <!-- Filter - List Isotope -->
-        <div class="image left" id="img-left">
-          <img src="assets/img/items/docs.png" alt="" class="animated fadeInLeft visible"
-               data-animation="fadeInLeft">
-        </div>
+      <!-- Filter - List Isotope -->
+      <div class="image left" id="img-left" style="position:absolute; margin-left:-200px">
+        <img src="assets/img/items/docs.png" alt="" class="animated fadeInLeft visible"
+                                                    data-animation="fadeInLeft">
+      </div>
+      <div class="container image-edge">
         <div id="works-list" class="row filter-list-isotope dark">
-          <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
+          <div class="masonry-item col-md-4 col-sm-4 col-12 node">
+            <article class="post item">
+              <div class="post-content">
+                <h4 class="post-title"><a href="https://www.hackerearth.com/recruit/facecode/" target="_blank">FaceCode</a>
+                </h4>
+                <p>A remote interviewing platform with pair programming and facetime, developed at HackerEarth.</p>
+              </div>
+            </article>
+          </div>
+          <div class="masonry-item col-md-4 col-sm-4 col-12 react node graphql">
             <article class="post item">
               <div class="post-content">
                 <h4 class="post-title"><a href="https://gitfa.me" target="_blank">GitFame</a>
                 </h4>
-                <p>A progressive web app for in-depth GitHub contributions analysis and rating.</p>
+                <p>A progressive web app for in-depth GitHub contributions analysis and rating with visualizations.</p>
               </div>
             </article>
           </div>
-          <div class="masonry-item col-md-6 col-sm-6 col-12 ember node">
-            <article class="post item">
-              <div class="post-content">
-                <h4 class="post-title"><a href="https://hackerblocks.com" target="_blank">Hacker
-                  Blocks</a></h4>
-                <p>An online coding platform supporting 6 languages and 5.5K users.</p>
-              </div>
-            </article>
-          </div>
-          <div class="masonry-item col-md-6 col-sm-6 col-12 vue node">
+          <div class="masonry-item col-md-4 col-sm-4 col-12 vue node">
             <article class="post item">
               <div class="post-content">
                 <h4 class="post-title"><a href="https://ide.codingblocks.com" target="_blank">CB
@@ -327,7 +345,7 @@
               </div>
             </article>
           </div>
-          <div class="masonry-item col-md-6 col-sm-6 col-12 react node">
+          <div class="masonry-item col-md-4 col-sm-4 col-12 react node">
             <article class="post item">
               <div class="post-content">
                 <h4 class="post-title"><a href="https://admin.tripshire.com" target="_blank">Tripshire
@@ -335,6 +353,24 @@
                 <p>Admin dashboard for Tripshire with stats, custom editor and media upload gallery
                   to
                   modify content.</p>
+              </div>
+            </article>
+          </div>
+          <div class="masonry-item col-md-4 col-sm-4 col-12 ember node">
+            <article class="post item">
+              <div class="post-content">
+                <h4 class="post-title"><a href="https://hackerblocks.com" target="_blank">Hacker
+                  Blocks</a></h4>
+                <p>An online coding and assessment platform supporting 6 languages and 5.5K users.</p>
+              </div>
+            </article>
+          </div>
+          <div class="masonry-item col-md-4 col-sm-4 col-12 node">
+            <article class="post item">
+              <div class="post-content">
+                <h4 class="post-title"><a href="https://github.com/coding-blocks/codingblocks.com"
+                    target="_blank">Static Site Generator</a></h4>
+                <p>A static site generator written using Gulp and Handlebars for Coding Blocks website.</p>
               </div>
             </article>
           </div>
@@ -354,7 +390,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 mb-5 mb-md-0 text-center text-md-left">
-          <p class="lead text-lg">Want to get my <span
+          <p class="lead text-lg">Want to see my <span
               class="underline">Resume</span>?</p>
           <a href="resume.pdf" target="_blank" class="btn btn-primary btn-sm">Download</a>
         </div>

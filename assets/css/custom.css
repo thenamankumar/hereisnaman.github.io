@@ -158,7 +158,7 @@ a .blog-item {
 }
 
 .dark .post.item {
-    background: rgba(0, 0, 0, 0.3) !important;
+    background: rgba(0, 0, 0, 0.9) !important;
 }
 
 .dark .post.item .post-content {
