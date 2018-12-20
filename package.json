@@ -1,0 +1,8 @@
+{
+  "name": "naman.sh",
+  "version": "1.0.0",
+  "description": "Personal website powered by Gatsby.",
+  "repository": "https://github.com/hereisnaman/hereisnaman.github.io.git",
+  "author": "naman@outlook.in",
+  "license": "MIT"
+}
