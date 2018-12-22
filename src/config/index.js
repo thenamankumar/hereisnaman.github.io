@@ -6,7 +6,7 @@ module.exports = {
     'Naman Kumar, Naman, hereisnaman, fullstack developer, software engineer, javascript, react, vue, ember, express, nodejs, graphql, pwa',
   siteUrl: 'https://naman.sh',
   siteLanguage: 'en_US',
-  siteImage: 'https://naman.sh/og.jpg',
+  siteImage: 'https://naman.sh/og.png',
   name: 'Naman Kumar',
   location: 'New Delhi, India',
   email: 'naman@outlook.in',
