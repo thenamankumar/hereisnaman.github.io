@@ -3,7 +3,7 @@ date: '2017-12-31'
 title: 'Software Engineer Intern'
 company: 'Coding Blocks'
 location: 'New Delhi, India'
-range: 'June 2017 - Jan 2017'
+range: 'Jun 2017 - Jan 2018'
 url: 'https://codingblocks.com/'
 ---
 
