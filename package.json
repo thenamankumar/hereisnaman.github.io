@@ -14,7 +14,10 @@
     "precommit": "pretty-quick --staged && lint-staged"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "dependencies": {
     "animejs": "^2.2.0",
@@ -52,7 +55,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.7.0",
     "eslint-plugin-react": "^7.11.1",
-    "husky": "^1.0.1",
+    "husky": "^1.2.1",
     "lint-staged": "^7.3.0",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.7.0"
