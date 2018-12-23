@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
