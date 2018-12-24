@@ -13,12 +13,6 @@
     "start": "gatsby develop",
     "precommit": "pretty-quick --staged && lint-staged"
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "dependencies": {
     "animejs": "^2.2.0",
     "babel-plugin-styled-components": "^1.7.1",

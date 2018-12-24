@@ -2,6 +2,7 @@
   "extends": ["plugin:jsx-a11y/recommended", "@upstatement/eslint-config/react"],
   "plugins": ["jsx-a11y"],
   "rules": {
-    "react/no-unescaped-entities": ["error", { "forbid": [">", "\"", "}"] }]
+    "react/no-unescaped-entities": ["error", { "forbid": [">", "\"", "}"] }],
+    "react/props-types": 0
   }
 }

@@ -18,7 +18,7 @@ const HeaderContainer = styled.header`
   position: fixed;
   top: 0;
   padding: 0px 50px;
-  background-color: ${theme.colors.navy};
+  background-color: transparent;
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;
@@ -27,8 +27,6 @@ const HeaderContainer = styled.header`
   width: 100%;
   height: ${props =>
     props.scrollDirection === 'none' ? theme.headerHeight : theme.headerScrollHeight};
-  box-shadow: ${props =>
-    props.scrollDirection === 'up' ? `0 2px 4px ${theme.colors.shadowNavy}` : 'none'};
   transform: translateY(
     ${props => (props.scrollDirection === 'down' ? `-${theme.headerScrollHeight}` : '0px')}
   );
