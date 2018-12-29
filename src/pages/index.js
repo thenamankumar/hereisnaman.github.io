@@ -8,6 +8,7 @@ import About from '../components/about';
 import Jobs from '../components/jobs';
 import Featured from '../components/featured';
 import Projects from '../components/projects';
+import BlogPosts from '../components/blogPosts';
 import Contact from '../components/contact';
 
 import styled from 'styled-components';
@@ -27,6 +28,7 @@ const IndexPage = ({ data, location }) => (
       <Jobs data={data.jobs.edges} />
       <Featured data={data.featured.edges} />
       <Projects data={data.projects.edges} />
+      <BlogPosts data={data.blogPosts.edges} />
       <Contact data={data.contact.edges} />
     </MainContainer>
   </Layout>
@@ -126,6 +128,41 @@ export const query = graphql`
             external
             show
           }
+          html
+        }
+      }
+    }
+    blogPosts: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 6
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+            slug
+            tags
+            show
+            authorName
+            authorImg {
+              childImageSharp {
+                fluid(maxWidth: 30, quality: 90, traceSVG: { color: "#64ffda" }) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            featuredImg {
+              childImageSharp {
+                fluid(maxWidth: 300, quality: 90, traceSVG: { color: "#64ffda" }) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+          timeToRead
+          excerpt(pruneLength: 300)
           html
         }
       }

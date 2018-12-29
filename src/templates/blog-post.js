@@ -47,15 +47,27 @@ const Author = styled.h3`
 `;
 
 const Avatar = styled(Img)`
-  width: 45px;
-  max-width: 45px;
-  max-height: 45px;
+  width: 30px;
+  max-width: 30px;
+  max-height: 30px;
   vertical-align: middle;
   position: relative;
   display: inline-block;
   border-radius: 50%;
   border: 3px solid #fff;
   margin-right: 10px;
+`;
+
+const FeaturedImage = styled(Img)`
+  width: 100%;
+  vertical-align: middle;
+  position: relative;
+  border: 3px solid #fff;
+  margin-top: 40px;
+`;
+
+const PostBody = styled.div`
+  margin: 40px 0;
 `;
 
 class BlogPostTemplate extends React.Component {
@@ -69,8 +81,15 @@ class BlogPostTemplate extends React.Component {
             <Title>{post.frontmatter.title}</Title>
             <div>
               <Avatar fluid={post.frontmatter.authorImg.childImageSharp.fluid} alt="Avatar" />
-              <Author>By {post.frontmatter.authorName}</Author>
+              <Author>
+                By {post.frontmatter.authorName} at {post.frontmatter.date}
+              </Author>
             </div>
+            <FeaturedImage
+              fluid={post.frontmatter.featuredImg.childImageSharp.fluid}
+              alt={post.frontmatter.title}
+            />
+            <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
           </HeroContainer>
         </MainContainer>
       </Layout>
@@ -87,15 +106,25 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 160)
       html
       frontmatter {
         title
+        slug
+        show
+        date
         authorName
+        featuredImg {
+          childImageSharp {
+            fluid(maxWidth: 1000, quality: 90, traceSVG: { color: "#64ffda" }) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
         authorImg {
           childImageSharp {
-            fluid(maxWidth: 100, quality: 90, traceSVG: { color: "#64ffda" }) {
+            fluid(maxWidth: 30, quality: 90, traceSVG: { color: "#64ffda" }) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
