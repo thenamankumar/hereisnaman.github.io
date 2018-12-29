@@ -1,6 +1,6 @@
 ---
 title: 'How to build an observable in Javascript?'
-date: '2018-12-30'
+date: '2018-11-30'
 authorName: 'Naman Kumar'
 slug: '/blog/how-to-build-an-observable-in-javascript'
 authorImg: '../about/me.jpg'

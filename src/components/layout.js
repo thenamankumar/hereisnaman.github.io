@@ -53,7 +53,7 @@ class Layout extends Component {
   };
 
   state = {
-    isLoading: window.IS_PAGE_LOADED ? false : true,
+    isLoading: window.IS_PAGE_LOADED ? false : false,
   };
 
   finishLoading = () => {
