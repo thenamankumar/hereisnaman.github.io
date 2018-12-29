@@ -43,6 +43,10 @@ module.exports = {
       url: '#projects',
     },
     {
+      name: 'Blog',
+      url: '#blog',
+    },
+    {
       name: 'Ping',
       url: '#contact',
     },

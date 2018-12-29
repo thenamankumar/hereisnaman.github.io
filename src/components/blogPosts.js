@@ -226,7 +226,7 @@ class BlogPosts extends Component {
     }
 
     return (
-      <BlogPostsContainer>
+      <BlogPostsContainer id="blog">
         <BlogPostsTitle innerRef={el => (this.projects = el)}>Latest Posts</BlogPostsTitle>
         <BlogPostsGrid>
           <TransitionGroup className="blog-posts">

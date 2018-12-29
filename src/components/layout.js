@@ -53,11 +53,13 @@ class Layout extends Component {
   };
 
   state = {
-    isLoading: true,
+    isLoading: window.IS_PAGE_LOADED ? false : true,
   };
 
-  finishLoading = () => this.setState({ isLoading: false });
-
+  finishLoading = () => {
+    window.IS_PAGE_LOADED = true;
+    this.setState({ isLoading: false });
+  };
   render() {
     const { children, location } = this.props;
     const { isLoading } = this.state;
