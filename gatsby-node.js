@@ -40,12 +40,12 @@ exports.createPages = ({ graphql, actions }) => {
           const next = index === 0 ? null : posts[index - 1].node;
 
           if (/^\/blog\/.*/.test(post.node.fields.slug) && post.node.frontmatter.show === 'true') {
-            console.log(post.node.frontmatter.slug);
             createPage({
               path: post.node.frontmatter.slug || post.node.fields.slug,
               component: blogPost,
               context: {
                 slug: post.node.frontmatter.slug || post.node.fields.slug,
+                filePath: post.node.fields.slug,
                 previous,
                 next,
               },

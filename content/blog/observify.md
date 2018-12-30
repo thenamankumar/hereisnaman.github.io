@@ -9,7 +9,7 @@ tags:
   - npm
   - nodejs
   - design pattern
-show: 'false'
+show: 'true'
 ---
 
 A little over a year ago, I walked into my first ever tech interview. A freshman with little knowledge of data structures and web development got selected for his first software-development internship. Having interned at another good startup afterward, infused a lot of enthusiasm in me for working in teams, building products, and learning things.

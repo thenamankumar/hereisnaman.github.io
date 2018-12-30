@@ -1,6 +1,7 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
+import Disqus from 'disqus-react';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
@@ -73,6 +74,7 @@ const PostBody = styled.div`
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
+    const pageContext = this.props.pageContext;
 
     return (
       <Layout location={location}>
@@ -90,6 +92,14 @@ class BlogPostTemplate extends React.Component {
               alt={post.frontmatter.title}
             />
             <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
+            <Disqus.DiscussionEmbed
+              shortname={'naman-kumar'}
+              config={{
+                url: 'https://naman.sh' + post.frontmatter.slug,
+                identifier: pageContext.filePath,
+                title: post.frontmatter.title,
+              }}
+            />
           </HeroContainer>
         </MainContainer>
       </Layout>
