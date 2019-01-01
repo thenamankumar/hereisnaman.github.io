@@ -19,7 +19,7 @@ import favicon96x96 from '../../static/favicons/favicon.png';
 import favicon16x16 from '../../static/favicons/favicon.png';
 import msIcon144x144 from '../../static/favicons/favicon.png';
 
-const Head = () => (
+const Head = props => (
   <StaticQuery
     query={graphql`
       query LayoutQuery {
@@ -35,34 +35,38 @@ const Head = () => (
     render={({ site }) => (
       <Helmet>
         <html lang="en" />
-        <title itemProp="name" lang="en">
-          {site.siteMetadata.title}
-        </title>
+        {props.index && (
+          <React.Fragment>
+            <title itemProp="name" lang="en">
+              {site.siteMetadata.title}
+            </title>
+            <meta name="description" content={site.siteMetadata.description} />
+            <meta name="keywords" content={config.siteKeywords} />
+            <meta property="og:title" content={site.siteMetadata.title} />
+            <meta property="og:description" content={site.siteMetadata.description} />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content={site.siteMetadata.siteUrl} />
+            <meta property="og:site_name" content={site.siteMetadata.title} />
+            <meta property="og:image" content={config.siteImage} />
+            <meta itemProp="name" content={site.siteMetadata.title} />
+            <meta itemProp="description" content={site.siteMetadata.description} />
+            <meta itemProp="image" content={config.siteImage} />
+            <meta name="twitter:url" content={site.siteMetadata.siteUrl} />
+            <meta name="twitter:title" content={site.siteMetadata.title} />
+            <meta name="twitter:description" content={site.siteMetadata.description} />
+            <meta name="twitter:image:src" content={config.siteImage} />
+            <meta name="twitter:image:alt" content={site.siteMetadata.title} />
+          </React.Fragment>
+        )}
         <link rel="icon" type="image/png" href={logo} />
-        <meta name="description" content={site.siteMetadata.description} />
-        <meta name="keywords" content={config.siteKeywords} />
         <meta name="google-site-verification" content={site.siteMetadata.googleVerification} />
-        <meta property="og:title" content={site.siteMetadata.title} />
-        <meta property="og:description" content={site.siteMetadata.description} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={site.siteMetadata.siteUrl} />
-        <meta property="og:site_name" content={site.siteMetadata.title} />
-        <meta property="og:image" content={config.siteImage} />
         <meta property="og:image:width" content="1280" />
         <meta property="og:image:height" content="800" />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:locale" content={config.siteLanguage} />
-        <meta itemProp="name" content={site.siteMetadata.title} />
-        <meta itemProp="description" content={site.siteMetadata.description} />
-        <meta itemProp="image" content={config.siteImage} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={site.siteMetadata.siteUrl} />
         <meta name="twitter:site" content={config.twitterHandle} />
         <meta name="twitter:creator" content={config.twitterHandle} />
-        <meta name="twitter:title" content={site.siteMetadata.title} />
-        <meta name="twitter:description" content={site.siteMetadata.description} />
-        <meta name="twitter:image:src" content={config.siteImage} />
-        <meta name="twitter:image:alt" content={site.siteMetadata.title} />
 
         <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
         <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />

@@ -1,7 +1,9 @@
+import path from 'path';
 import React from 'react';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Disqus from 'disqus-react';
+import Helmet from 'react-helmet';
 import rehypeReact from 'rehype-react';
 import styled from 'styled-components';
 
@@ -80,6 +82,16 @@ const PostBody = styled.div`
       vertical-align: middle;
     }
   }
+  ul {
+    list-style-type: '# ';
+    li {
+      margin-block-end: 0.5em;
+      margin-block-start: 0.5em;
+    }
+  }
+  a {
+    color: ${theme.colors.green};
+  }
 `;
 
 const renderAst = new rehypeReact({
@@ -90,10 +102,40 @@ const renderAst = new rehypeReact({
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
+    const site = this.props.data.site;
     const pageContext = this.props.pageContext;
+
+    const imgUrl = path.join(
+      site.siteMetadata.siteUrl,
+      post.frontmatter.featuredImg.childImageSharp.fluid.src,
+    );
+    const pageUrl = path.join(site.siteMetadata.siteUrl, post.frontmatter.slug, '/');
+    const pageTitle = post.frontmatter.title + ' | ' + site.siteMetadata.title;
+    const pageDescription = post.excerpt;
 
     return (
       <Layout location={location}>
+        <Helmet>
+          <title itemProp="name" lang="en">
+            {pageTitle}
+          </title>
+          <meta name="description" content={pageDescription} />
+          <meta name="keywords" content={(post.frontmatter.tags || []).join(',')} />
+          <meta property="og:title" content={pageTitle} />
+          <meta property="og:description" content={pageDescription} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={pageUrl} />
+          <meta property="og:site_name" content={site.siteMetadata.title} />
+          <meta property="og:image" content={imgUrl} />
+          <meta itemProp="name" content={site.siteMetadata.title} />
+          <meta itemProp="description" content={pageDescription} />
+          <meta itemProp="image" content={imgUrl} />
+          <meta name="twitter:url" content={pageUrl} />
+          <meta name="twitter:title" content={pageTitle} />
+          <meta name="twitter:description" content={pageDescription} />
+          <meta name="twitter:image:src" content={imgUrl} />
+          <meta name="twitter:image:alt" content={pageTitle} />
+        </Helmet>
         <MainContainer id="content">
           <HeroContainer>
             <Title>{post.frontmatter.title}</Title>
@@ -130,6 +172,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
@@ -139,12 +182,14 @@ export const pageQuery = graphql`
         title
         slug
         show
+        tags
         date
         authorName
         featuredImg {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 90, traceSVG: { color: "#64ffda" }) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              src
             }
           }
         }
