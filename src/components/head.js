@@ -33,10 +33,10 @@ const Head = props => (
       }
     `}
     render={({ site }) => (
-      <Helmet>
-        <html lang="en" />
+      <React.Fragment>
         {props.index && (
-          <React.Fragment>
+          <Helmet>
+            <html lang="en" />
             <title itemProp="name" lang="en">
               {site.siteMetadata.title}
             </title>
@@ -56,35 +56,37 @@ const Head = props => (
             <meta name="twitter:description" content={site.siteMetadata.description} />
             <meta name="twitter:image:src" content={config.siteImage} />
             <meta name="twitter:image:alt" content={site.siteMetadata.title} />
-          </React.Fragment>
+          </Helmet>
         )}
-        <link rel="icon" type="image/png" href={logo} />
-        <meta name="google-site-verification" content={site.siteMetadata.googleVerification} />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="800" />
-        <meta property="og:image:type" content="image/jpg" />
-        <meta property="og:locale" content={config.siteLanguage} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content={config.twitterHandle} />
-        <meta name="twitter:creator" content={config.twitterHandle} />
+        <Helmet>
+          <link rel="icon" type="image/png" href={logo} />
+          <meta name="google-site-verification" content={site.siteMetadata.googleVerification} />
+          <meta property="og:image:width" content="1280" />
+          <meta property="og:image:height" content="800" />
+          <meta property="og:image:type" content="image/jpg" />
+          <meta property="og:locale" content={config.siteLanguage} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content={config.twitterHandle} />
+          <meta name="twitter:creator" content={config.twitterHandle} />
 
-        <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
-        <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
-        <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72x72} />
-        <link rel="apple-touch-icon" sizes="76x76" href={appleIcon76x76} />
-        <link rel="apple-touch-icon" sizes="114x114" href={appleIcon114x114} />
-        <link rel="apple-touch-icon" sizes="120x120" href={appleIcon120x120} />
-        <link rel="apple-touch-icon" sizes="144x144" href={appleIcon144x144} />
-        <link rel="apple-touch-icon" sizes="152x152" href={appleIcon152x152} />
-        <link rel="apple-touch-icon" sizes="180x180" href={appleIcon180x180} />
-        <link rel="icon" type="image/png" sizes="192x192" href={androidIcon192x192} />
-        <link rel="icon" type="image/png" sizes="32x32" href={favicon32x32} />
-        <link rel="icon" type="image/png" sizes="96x96" href={favicon96x96} />
-        <link rel="icon" type="image/png" sizes="16x16" href={favicon16x16} />
-        <meta name="msapplication-TileColor" content={config.navyColor} />
-        <meta name="msapplication-TileImage" content={msIcon144x144} />
-        <meta name="theme-color" content={config.navyColor} />
-      </Helmet>
+          <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
+          <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
+          <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72x72} />
+          <link rel="apple-touch-icon" sizes="76x76" href={appleIcon76x76} />
+          <link rel="apple-touch-icon" sizes="114x114" href={appleIcon114x114} />
+          <link rel="apple-touch-icon" sizes="120x120" href={appleIcon120x120} />
+          <link rel="apple-touch-icon" sizes="144x144" href={appleIcon144x144} />
+          <link rel="apple-touch-icon" sizes="152x152" href={appleIcon152x152} />
+          <link rel="apple-touch-icon" sizes="180x180" href={appleIcon180x180} />
+          <link rel="icon" type="image/png" sizes="192x192" href={androidIcon192x192} />
+          <link rel="icon" type="image/png" sizes="32x32" href={favicon32x32} />
+          <link rel="icon" type="image/png" sizes="96x96" href={favicon96x96} />
+          <link rel="icon" type="image/png" sizes="16x16" href={favicon16x16} />
+          <meta name="msapplication-TileColor" content={config.navyColor} />
+          <meta name="msapplication-TileImage" content={msIcon144x144} />
+          <meta name="theme-color" content={config.navyColor} />
+        </Helmet>
+      </React.Fragment>
     )}
   />
 );

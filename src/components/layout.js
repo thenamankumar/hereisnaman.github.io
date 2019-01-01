@@ -67,7 +67,7 @@ class Layout extends Component {
 
     return (
       <div id="root">
-        <Head />
+        <Head index={true} />
 
         <SkipToContent href="#content" className="skip-to-content">
           Skip To Content

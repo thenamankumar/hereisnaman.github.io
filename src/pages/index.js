@@ -23,7 +23,7 @@ const MainContainer = styled(Main)`
 const IndexPage = ({ data, location }) => (
   <Layout location={location}>
     <MainContainer id="content">
-      <Hero data={data.hero.edges} index={true} />
+      <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
       <Jobs data={data.jobs.edges} />
       <Featured data={data.featured.edges} />
