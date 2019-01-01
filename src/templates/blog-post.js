@@ -114,7 +114,7 @@ class BlogPostTemplate extends React.Component {
     const pageDescription = post.excerpt;
 
     return (
-      <Layout location={location}>
+      <Layout location={this.props.location}>
         <Helmet>
           <title itemProp="name" lang="en">
             {pageTitle}
