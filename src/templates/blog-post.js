@@ -68,11 +68,11 @@ const FeaturedImage = styled(Img)`
   vertical-align: middle;
   position: relative;
   border: 3px solid #fff;
-  margin-top: 40px;
+  margin-top: 20px;
 `;
 
 const PostBody = styled.div`
-  margin: 40px 0;
+  margin-top: 40px;
   strong {
     color: white;
   }
@@ -92,6 +92,28 @@ const PostBody = styled.div`
   a {
     color: ${theme.colors.green};
   }
+`;
+
+const Meta = styled.h3`
+  display: inline;
+  color: ${theme.colors.green};
+  margin: 0 0 20px 3px;
+  font-size: ${theme.fontSizes.medium};
+  font-family: ${theme.fonts.SFMono};
+  font-weight: normal;
+  ${media.desktop`font-size: ${theme.fontSizes.small};`};
+  ${media.tablet`font-size: ${theme.fontSizes.smallish};`};
+  .tag {
+    margin-left: 10px;
+  }
+  .read-time {
+    margin-right: 20px;
+  }
+`;
+
+const Credits = styled.div`
+  margin-top: 20px;
+  margin-bottom: 40px;
 `;
 
 const renderAst = new rehypeReact({
@@ -140,16 +162,26 @@ class BlogPostTemplate extends React.Component {
           <HeroContainer>
             <Title>{post.frontmatter.title}</Title>
             <div>
-              <Avatar fluid={post.frontmatter.authorImg.childImageSharp.fluid} alt="Avatar" />
-              <Author>
-                By {post.frontmatter.authorName} at {post.frontmatter.date}
-              </Author>
+              <Meta>
+                <span className="read-time">
+                  {post.timeToRead} Min{post.timeToRead > 1 ? 's' : ''} Read
+                </span>
+                {(post.frontmatter.tags || []).map(tag => (
+                  <span className="tag">#{tag}</span>
+                ))}
+              </Meta>
             </div>
             <FeaturedImage
               fluid={post.frontmatter.featuredImg.childImageSharp.fluid}
               alt={post.frontmatter.title}
             />
             <PostBody>{renderAst(post.htmlAst)}</PostBody>
+            <Credits>
+              <Avatar fluid={post.frontmatter.authorImg.childImageSharp.fluid} alt="Avatar" />
+              <Author>
+                By {post.frontmatter.authorName} at {post.frontmatter.date}
+              </Author>
+            </Credits>
             <Disqus.DiscussionEmbed
               shortname={'naman-kumar'}
               config={{
@@ -178,6 +210,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 160)
       htmlAst
+      timeToRead
       frontmatter {
         title
         slug
