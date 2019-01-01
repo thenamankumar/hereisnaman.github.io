@@ -2,9 +2,11 @@ import React from 'react';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import Disqus from 'disqus-react';
+import rehypeReact from 'rehype-react';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
+import Emoji from '../components/emoji';
 import { theme, mixins, media, Main, Section } from '../style';
 
 const MainContainer = styled(Main)`
@@ -69,7 +71,21 @@ const FeaturedImage = styled(Img)`
 
 const PostBody = styled.div`
   margin: 40px 0;
+  strong {
+    color: white;
+  }
+  .emoji {
+    margin-right: 5px;
+    img {
+      vertical-align: middle;
+    }
+  }
 `;
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { emoji: Emoji },
+}).Compiler;
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -91,7 +107,7 @@ class BlogPostTemplate extends React.Component {
               fluid={post.frontmatter.featuredImg.childImageSharp.fluid}
               alt={post.frontmatter.title}
             />
-            <PostBody dangerouslySetInnerHTML={{ __html: post.html }} />
+            <PostBody>{renderAst(post.htmlAst)}</PostBody>
             <Disqus.DiscussionEmbed
               shortname={'naman-kumar'}
               config={{
@@ -118,7 +134,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 160)
-      html
+      htmlAst
       frontmatter {
         title
         slug
