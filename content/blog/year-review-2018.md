@@ -20,16 +20,16 @@ I am really happy to see most of my goals getting completed. I hope you will be 
 ## Here is everything I did in the last year.
 
 - <emoji>:closed_book:</emoji> **Read 16 books**. Developing a habit of reading was my focus for 2018. I really enjoyed the time
-  reading, understanding facts and learning a lot from the books I read this year. My favourite books were **"Factfulness"** by Hans Rosling
+  reading, understanding facts and learning a lot from the books. My favourite books were **"Factfulness"** by Hans Rosling
   and **"The Power of your Subconscious Mind"** by Joseph Murphy.
 - <emoji>:computer:</emoji> **Working at HackerEarth** is where the major part of 2018 was well spent. I got to meet and make
-  connections with great people at HackerEarth. I interned at HackerEarth on-site for 3 months and then continued
+  connections with great people. I interned at HackerEarth on-site for 3 months and then continued
   remotely. It is definitely a great place to work and learn.
 - <emoji>:trophy:</emoji> **2nd Runner up in The Great Hackathon twice**. A quaterly organised internal hackathon at
   HackerEarth, I with my teammates came 3rd twice. I haven't seen such an amazing culture and work flow anywhere else.
   Really loved those 24hr hackathons and building product features.
 - <emoji>:airplane:</emoji> **Lived in Bangalore for 3 months**. An amazing experience to be cherished. Living alone
-  for 3 months period was great to learn planning, time management, not shutting the alarm & sleep again and what not. The all time beautiful weather of
+  for 3 months was a great time to learn planning, time management, not shutting the alarm & sleep again and what not. The year long beautiful weather of
   Bangalore is what no one can ever forget. Though I was unable to cover all the famous eating spots in Bangalore,
   I certainly went to the best ones. I had 2 trips to **Nandi Hills**, apparantly one was not enough to be satisfied by
   the soothing breeze and sunrise. Also went for a one day tour to **Mysore**.
