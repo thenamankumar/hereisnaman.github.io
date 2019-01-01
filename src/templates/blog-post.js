@@ -127,11 +127,9 @@ class BlogPostTemplate extends React.Component {
     const site = this.props.data.site;
     const pageContext = this.props.pageContext;
 
-    const imgUrl = path.join(
-      site.siteMetadata.siteUrl,
-      post.frontmatter.featuredImg.childImageSharp.fluid.src,
-    );
-    const pageUrl = path.join(site.siteMetadata.siteUrl, post.frontmatter.slug, '/');
+    const imgUrl =
+      'https://' + path.join('naman.sh/', post.frontmatter.featuredImg.childImageSharp.fluid.src);
+    const pageUrl = 'https://' + path.join('naman.sh/', post.frontmatter.slug, '/');
     const pageTitle = post.frontmatter.title + ' | ' + site.siteMetadata.title;
     const pageDescription = post.excerpt;
 
