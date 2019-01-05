@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import config from '../config';
@@ -53,7 +54,7 @@ const Blurb = styled.div`
   }
 `;
 const EmailButton = styled.div``;
-const EmailLink = styled(A)`
+const EmailLink = styled(Link)`
   ${mixins.bigButton};
   font-size: ${theme.fontSizes.smallish};
   margin-top: 50px;
@@ -87,7 +88,7 @@ class Hero extends Component {
     );
     const five = () => (
       <EmailButton style={{ transitionDelay: '500ms' }}>
-        <EmailLink href={`mailto:${config.email}`}>Get In Touch</EmailLink>
+        <EmailLink to="/about/">About me</EmailLink>
       </EmailButton>
     );
 

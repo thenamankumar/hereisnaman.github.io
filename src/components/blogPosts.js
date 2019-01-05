@@ -151,6 +151,12 @@ const BlogPost = styled.div`
   .right {
     flex 3;
   }
+  ${media.tablet`
+    display: block;
+    .right {
+      display: none;
+    }
+  `};
 `;
 
 const PostTitle = styled.h5`
@@ -179,6 +185,7 @@ const Meta = styled.h3`
   }
   .read-time {
     margin-right: 20px;
+    display: inline-block;
   }
 `;
 

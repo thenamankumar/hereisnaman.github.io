@@ -31,24 +31,20 @@ module.exports = {
 
   navLinks: [
     {
+      name: 'Home',
+      url: '/',
+    },
+    {
       name: 'About',
-      url: '#about',
-    },
-    {
-      name: 'Experience',
-      url: '#jobs',
-    },
-    {
-      name: 'Work',
-      url: '#projects',
+      url: '/about/',
     },
     {
       name: 'Blog',
-      url: '#blog',
+      url: '/blog/',
     },
     {
       name: 'Ping',
-      url: '#contact',
+      url: '/#contact',
     },
   ],
 

@@ -26,6 +26,7 @@ const Header = styled(H3)`
   justify-content: center;
   ${media.desktop`font-size: ${theme.fontSizes.small};`};
   &:before {
+    display: none;
     bottom: 0;
     font-size: ${theme.fontSizes.small};
     ${media.desktop`font-size: ${theme.fontSizes.smallish};`};

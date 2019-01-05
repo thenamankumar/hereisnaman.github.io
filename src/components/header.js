@@ -149,7 +149,7 @@ const NavListItem = styled.li`
     font-size: ${theme.fontSizes.xsmall};
   }
 `;
-const NavLink = styled(AnchorLink)`
+const NavLink = styled(Link)`
   ${mixins.link};
   padding: 12px 10px;
 `;
@@ -279,21 +279,19 @@ class Header extends Component {
           </TransitionGroup>
 
           <NavLinks>
-            {isHome && (
-              <NavList>
-                <TransitionGroup>
-                  {show &&
-                    navLinks &&
-                    navLinks.map((link, i) => (
-                      <CSSTransition key={i} classNames="fadedown" timeout={3000}>
-                        <NavListItem key={i} style={{ transitionDelay: `${i * 100}ms` }}>
-                          <NavLink href={link.url}>{link.name}</NavLink>
-                        </NavListItem>
-                      </CSSTransition>
-                    ))}
-                </TransitionGroup>
-              </NavList>
-            )}
+            <NavList>
+              <TransitionGroup>
+                {show &&
+                  navLinks &&
+                  navLinks.map((link, i) => (
+                    <CSSTransition key={i} classNames="fadedown" timeout={3000}>
+                      <NavListItem key={i} style={{ transitionDelay: `${i * 100}ms` }}>
+                        <NavLink to={link.url}>{link.name}</NavLink>
+                      </NavListItem>
+                    </CSSTransition>
+                  ))}
+              </TransitionGroup>
+            </NavList>
             <TransitionGroup>
               {show && (
                 <CSSTransition classNames="fadedown" timeout={3000}>
