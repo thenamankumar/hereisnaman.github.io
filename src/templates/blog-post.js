@@ -138,7 +138,7 @@ const PostLinks = styled.div`
     flex: 1;
     border-radius: 2px;
     max-width: calc(50% - 15px);
-    padding: 20px;
+    padding: 10px 20px;
     background: #172a45;
     .title {
       color: white;
@@ -149,7 +149,6 @@ const PostLinks = styled.div`
       color: ${theme.colors.green};
       font-size: ${theme.fontSizes.small};
       margin-bottom: 5px;
-      margin-top: -10px;
     }
     .empty {
       text-align: center;
@@ -160,9 +159,10 @@ const PostLinks = styled.div`
     }
     .excerpt {
       font-size: ${theme.fontSizes.large};
+      margin-bottom: 0px;
     }
     ${Meta} {
-      font-size: ${theme.fontSizes.small};
+      font-size: 12px;
       margin-bottom: 0;
     }
     &:hover {

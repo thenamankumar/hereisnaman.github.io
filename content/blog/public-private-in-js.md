@@ -21,7 +21,7 @@ model in Javascript but was a plain syntax sugar over already existing prototypa
 features around classes are in the pipeline _(as at the time of writing this post)_, including **_class field declarations_**
 and **_private fields_**, which are at stage 3 under the [class-fields proposal](https://github.com/tc39/proposal-class-fields).
 
-Again that will only introduce just a new syntax sugar in the language. In this post we will learn how the classes
+Again, that will only introduce just a new syntax sugar in the language. In this post we will learn how the classes
 actually work under the hood and how we can implement _public_, _private_, _protected_, and _static_ properties and
 methods in Javascript.
 
@@ -29,19 +29,6 @@ methods in Javascript.
 function foo (){
   console.log('naman');
 }
-function foo (){
-  console.log('naman');
-}
-function foo (){
-  console.log('naman');
-}
-function foo (){
-  console.log('naman');
-}
-function foo (){
-  console.log('naman');
-}
-function foo (){
-  console.log('naman');
-}
+
+foo();
 </editor>
