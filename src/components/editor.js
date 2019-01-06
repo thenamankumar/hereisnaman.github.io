@@ -1,8 +1,9 @@
+const beautify = require('js-beautify').js;
 import React from 'react';
 import brace from 'brace';
 import AceEditor from 'react-ace';
 import styled from 'styled-components';
-import { FaPlay, FaRedo, FaArrowUp, FaArrowDown } from 'react-icons/fa/';
+import { FaPlay, FaRedo, FaArrowUp, FaArrowDown, FaMagic } from 'react-icons/fa/';
 
 import 'brace/mode/javascript';
 import 'brace/theme/clouds_midnight';
@@ -30,6 +31,18 @@ const EditorWrap = styled.div`
     .ace_selection {
       padding: 15px;
       background: ${theme.colors.navy}!important;
+    }
+
+    .ace_keyword {
+      color: #64ffda;
+    }
+
+    .ace_constant {
+      color: #fe8341 !important;
+    }
+
+    .ace_operator {
+      color: #a8b2d1 !important;
     }
   }
   ${media.tablet`
@@ -61,7 +74,7 @@ const Action = styled.button`
   flex: 1;
   background: none;
   color: ${theme.colors.green};
-  font-size: ${theme.fontSizes.medium};
+  font-size: ${theme.fontSizes.small};
   cursor: pointer;
   transition: all 0.2s ease;
   &.run {
@@ -71,12 +84,18 @@ const Action = styled.button`
     }
   }
   &.reset:hover {
-    color: #0a192f;
+    color: #09ae87;
+  }
+  &.format {
+    color: #3e9add;
+    &:hover {
+      color: #1e72ae;
+    }
   }
   svg {
     display: inline;
-    width: ${theme.fontSizes.medium};
-    height: ${theme.fontSizes.medium};
+    width: ${theme.fontSizes.small};
+    height: ${theme.fontSizes.small};
     cursor: pointer;
     vertical-align: middle;
   }
@@ -119,8 +138,8 @@ const Output = styled.div`
 
 const Spinner = styled.div`
   position: relative;
-  width: 16px !important;
-  height: 16px;
+  width: 14px !important;
+  height: 14px;
   display: inline-block;
 
   &:before,
@@ -205,7 +224,7 @@ class Editor extends React.Component {
     super(props);
 
     const raw = props.children[0];
-    const code = raw.substr(1, raw.length - 1);
+    const code = beautify(raw.substr(1, raw.length - 1), { indent_size: 2 });
 
     this.state = {
       code: code,
@@ -268,6 +287,13 @@ class Editor extends React.Component {
     }
   };
 
+  handleCodeFormat = () =>
+    this.setState(state => ({
+      code: beautify(state.code, {
+        indent_size: 2,
+      }),
+    }));
+
   render() {
     const { code, output, running, showOutput } = this.state;
 
@@ -276,13 +302,23 @@ class Editor extends React.Component {
         <div className="wrap">
           <EditorHeader>
             <Action
+              className="format"
+              title="Format"
+              onClick={this.handleCodeFormat}
+              disabled={running}>
+              <FaMagic />
+            </Action>
+            <Action
               className="reset"
               title="Reset"
               onClick={this.handleCodeReset}
               disabled={running}>
               <FaRedo />
             </Action>
-            <Action className="run" onClick={running ? this.handleStopExec : this.handleCodeRun}>
+            <Action
+              className="run"
+              title={running ? 'Stop' : 'Run'}
+              onClick={running ? this.handleStopExec : this.handleCodeRun}>
               {running ? <Loader /> : <FaPlay />}
             </Action>
           </EditorHeader>
