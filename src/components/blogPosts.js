@@ -275,7 +275,7 @@ class BlogPosts extends Component {
                         alt="Avatar"
                       />
                       <Meta>
-                        By {node.frontmatter.authorName} at {node.frontmatter.date}
+                        By {node.frontmatter.authorName} on {node.frontmatter.date}
                       </Meta>
                     </div>
                   </div>

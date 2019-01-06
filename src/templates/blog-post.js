@@ -1,7 +1,7 @@
 import path from 'path';
 import React from 'react';
 import Img from 'gatsby-image';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Disqus from 'disqus-react';
 import Helmet from 'react-helmet';
 import rehypeReact from 'rehype-react';
@@ -9,12 +9,18 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import Emoji from '../components/emoji';
+import Editor from '../components/editor';
 import { theme, mixins, media, Main, Section } from '../style';
 
 const MainContainer = styled(Main)`
   ${mixins.sidePadding};
   counter-reset: section;
-  background-image: linear-gradient(to bottom, #020c1b 200px, #0a192f 550px);
+`;
+
+const CommentsContainer = styled.div`
+  .reaction-item__button {
+    border-color: ${theme.colors.green};
+  }
 `;
 
 const HeroContainer = styled(Section)`
@@ -44,7 +50,7 @@ const Author = styled.h3`
   display: inline;
   color: ${theme.colors.green};
   margin: 0 0 20px 3px;
-  font-size: ${theme.fontSizes.medium};
+  font-size: ${theme.fontSizes.small};
   font-family: ${theme.fonts.SFMono};
   font-weight: normal;
   ${media.desktop`font-size: ${theme.fontSizes.small};`};
@@ -98,9 +104,10 @@ const Meta = styled.h3`
   display: inline;
   color: ${theme.colors.green};
   margin: 0 0 20px 3px;
-  font-size: ${theme.fontSizes.medium};
+  font-size: ${theme.fontSizes.small};
   font-family: ${theme.fonts.SFMono};
   font-weight: normal;
+  word-wrap: break-word;
   ${media.desktop`font-size: ${theme.fontSizes.small};`};
   ${media.tablet`font-size: ${theme.fontSizes.smallish};`};
   .tag {
@@ -116,9 +123,74 @@ const Credits = styled.div`
   margin-bottom: 40px;
 `;
 
+const PostLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  .next {
+    text-align: right;
+  }
+  .prevous {
+    text-align: left;
+  }
+  .previous,
+  .next {
+    flex: 1;
+    border-radius: 2px;
+    max-width: calc(50% - 15px);
+    padding: 20px;
+    background: #172a45;
+    .title {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    .pos {
+      color: ${theme.colors.green};
+      font-size: ${theme.fontSizes.small};
+      margin-bottom: 5px;
+      margin-top: -10px;
+    }
+    .empty {
+      text-align: center;
+      margin-bottom: 0;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .excerpt {
+      font-size: ${theme.fontSizes.large};
+    }
+    ${Meta} {
+      font-size: ${theme.fontSizes.small};
+      margin-bottom: 0;
+    }
+    &:hover {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+      box-shadow: 0 2px 4px rgba(2, 12, 27, 0.9);
+    }
+  }
+  ${media.tablet`
+  flex-direction: column;
+    .next, .previous {
+      max-width: 100%;
+    }
+
+    .previous {
+      margin-bottom: 20px;
+    }
+
+    .next.latest, .previous.first {
+      display: none;
+    }
+  `}
+`;
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { emoji: Emoji },
+  components: { emoji: Emoji, editor: Editor },
 }).Compiler;
 
 class BlogPostTemplate extends React.Component {
@@ -126,6 +198,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const site = this.props.data.site;
     const pageContext = this.props.pageContext;
+    const { previous, next } = pageContext;
 
     const imgUrl =
       'https://' + path.join('naman.sh/', post.frontmatter.featuredImg.childImageSharp.fluid.src);
@@ -177,17 +250,59 @@ class BlogPostTemplate extends React.Component {
             <Credits>
               <Avatar fluid={post.frontmatter.authorImg.childImageSharp.fluid} alt="Avatar" />
               <Author>
-                By {post.frontmatter.authorName} at {post.frontmatter.date}
+                By {post.frontmatter.authorName} on {post.frontmatter.date}
               </Author>
             </Credits>
-            <Disqus.DiscussionEmbed
-              shortname={'naman-kumar'}
-              config={{
-                url: 'https://naman.sh' + post.frontmatter.slug,
-                identifier: pageContext.filePath,
-                title: post.frontmatter.title,
-              }}
-            />
+            <PostLinks>
+              {previous ? (
+                <Link className={'previous'} to={previous.frontmatter.slug}>
+                  <p className="pos">{'<< previous'}</p>
+                  <h3 className="title">{previous.frontmatter.title}</h3>
+                  <p className="excerpt">{previous.excerpt}</p>
+                  <Meta>
+                    <span className="read-time">
+                      {previous.timeToRead} {previous.timeToRead > 1 ? 'Mins' : 'Min'} Read
+                    </span>
+                    {(previous.frontmatter.tags || []).map(tag => (
+                      <span className="tag">#{tag}</span>
+                    ))}
+                  </Meta>
+                </Link>
+              ) : (
+                <div className="previous first">
+                  <p className="empty">This is the first post.</p>
+                </div>
+              )}
+              {next ? (
+                <Link className={'next'} to={next.frontmatter.slug}>
+                  <p className="pos">{'next >>'}</p>
+                  <h3 className="title">{next.frontmatter.title}</h3>
+                  <p className="excerpt">{next.excerpt}</p>
+                  <Meta>
+                    <span className="read-time">
+                      {next.timeToRead} {next.timeToRead > 1 ? 'Mins' : 'Min'} Read
+                    </span>
+                    {(next.frontmatter.tags || []).map(tag => (
+                      <span className="tag">#{tag}</span>
+                    ))}
+                  </Meta>
+                </Link>
+              ) : (
+                <div className="next latest">
+                  <p className="empty">This is the latest post</p>
+                </div>
+              )}
+            </PostLinks>
+            <CommentsContainer>
+              <Disqus.DiscussionEmbed
+                shortname={'naman-kumar'}
+                config={{
+                  url: 'https://naman.sh' + post.frontmatter.slug,
+                  identifier: pageContext.filePath,
+                  title: post.frontmatter.title,
+                }}
+              />
+            </CommentsContainer>
           </HeroContainer>
         </MainContainer>
       </Layout>

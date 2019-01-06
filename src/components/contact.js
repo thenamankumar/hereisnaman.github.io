@@ -11,7 +11,8 @@ import ScrollReveal from 'scrollreveal';
 const ContactContainer = styled(Section)`
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
+  padding-bottom: 100px;
   a {
     ${mixins.inlineLink};
   }

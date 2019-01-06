@@ -15,7 +15,6 @@ import { mixins, Main } from '../style';
 const MainContainer = styled(Main)`
   ${mixins.sidePadding};
   counter-reset: section;
-  background-image: linear-gradient(to bottom, #020c1b 200px, #0a192f 550px);
 `;
 
 const AboutPage = ({ data, location }) => (

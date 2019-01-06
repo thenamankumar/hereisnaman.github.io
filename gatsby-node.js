@@ -10,9 +10,15 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              filter: { fileAbsolutePath: { regex: "/blog/" } }
+              limit: 1000
+            ) {
               edges {
                 node {
+                  excerpt(pruneLength: 100)
+                  timeToRead
                   fields {
                     slug
                   }
@@ -20,6 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     show
                     slug
+                    tags
                   }
                 }
               }
@@ -35,11 +42,12 @@ exports.createPages = ({ graphql, actions }) => {
         // Create blog posts pages.
         const posts = result.data.allMarkdownRemark.edges;
 
+        let previousIndex = 1;
+        let nextIndex = 0;
         posts.forEach((post, index) => {
-          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-          const next = index === 0 ? null : posts[index - 1].node;
-
-          if (/^\/blog\/.*/.test(post.node.fields.slug) && post.node.frontmatter.show === 'true') {
+          if (post.node.frontmatter.show === 'true') {
+            const previous = index === posts.length - 1 ? null : posts[previousIndex++].node;
+            const next = index === 0 ? null : posts[nextIndex++].node;
             createPage({
               path: post.node.frontmatter.slug || post.node.fields.slug,
               component: blogPost,
