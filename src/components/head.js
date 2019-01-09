@@ -85,6 +85,7 @@ const Head = props => (
           <meta name="msapplication-TileColor" content={config.navyColor} />
           <meta name="msapplication-TileImage" content={msIcon144x144} />
           <meta name="theme-color" content={config.navyColor} />
+          <script src="https://unpkg.com/@babel/standalone/babel.min.js" />
         </Helmet>
       </React.Fragment>
     )}

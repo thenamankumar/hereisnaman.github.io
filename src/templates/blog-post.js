@@ -98,6 +98,17 @@ const PostBody = styled.div`
   a {
     color: ${theme.colors.green};
   }
+  blockquote {
+    border-left: 3px solid;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    margin: 0;
+    margin-bottom: 0px;
+    margin-bottom: 1em;
+    p {
+      margin: 0;
+    }
+  }
 `;
 
 const Meta = styled.h3`

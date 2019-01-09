@@ -246,6 +246,14 @@ const base = injectGlobal`
     transition: opacity 1000ms ${theme.easing};
   }
 
+  code {
+    font-size: 14px;
+    background: #172a45;
+    padding: 2px 7px;
+    border-radius: 4px;
+    vertical-align: middle;
+    line-height: 14px;
+  }
 `;
 
 export default base;

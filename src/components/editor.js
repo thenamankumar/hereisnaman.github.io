@@ -32,17 +32,29 @@ const EditorWrap = styled.div`
       padding: 15px;
       background: ${theme.colors.navy}!important;
     }
+    .ace_identifier {
+      color: #fff;
+    }
 
     .ace_keyword {
       color: #64ffda;
     }
 
-    .ace_constant {
+    .ace_constant,
+    .ace_string {
       color: #fe8341 !important;
     }
 
     .ace_operator {
       color: #a8b2d1 !important;
+    }
+
+    .ace_variable.ace_language {
+      color: #ea9f82;
+    }
+
+    .ace_comment {
+      color: #657092;
     }
   }
   ${media.tablet`
@@ -223,7 +235,7 @@ class Editor extends React.Component {
   constructor(props) {
     super(props);
 
-    const raw = props.children[0];
+    const raw = props.children[0].replace(/\n[\s]*\/\/[\s]*\n/gi, '\n\n');
     const code = beautify(raw.substr(1, raw.length - 1), { indent_size: 2 });
 
     this.state = {
@@ -344,7 +356,7 @@ class Editor extends React.Component {
               </div>
               <p className="print">
                 {(output || []).map(val => (
-                  <div>{val}</div>
+                  <div>{val === undefined ? typeof val : val === null ? 'null' : val}</div>
                 ))}
               </p>
             </Output>
