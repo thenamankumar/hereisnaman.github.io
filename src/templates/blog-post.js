@@ -4,12 +4,12 @@ import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
 import Disqus from 'disqus-react';
 import Helmet from 'react-helmet';
+import Loadable from 'react-loadable';
 import rehypeReact from 'rehype-react';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import Emoji from '../components/emoji';
-import Editor from '../components/editor';
 import { theme, mixins, media, Main, Section } from '../style';
 
 const MainContainer = styled(Main)`
@@ -201,7 +201,13 @@ const PostLinks = styled.div`
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { emoji: Emoji, editor: Editor },
+  components: {
+    emoji: Emoji,
+    editor: Loadable({
+      loader: () => import('../components/editor'),
+      loading: () => null,
+    }),
+  },
 }).Compiler;
 
 class BlogPostTemplate extends React.Component {

@@ -42,6 +42,7 @@
     "react-emoji-render": "^0.5.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
+    "react-loadable": "^5.5.0",
     "react-transition-group": "^2.5.0",
     "scrollreveal": "^4.0.4",
     "styled-components": "^3.4.9"
