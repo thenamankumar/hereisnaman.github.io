@@ -39,6 +39,10 @@ const Copy = styled(P)`
   margin: 5px 0 3px;
   font-size: ${theme.fontSizes.medium};
 `;
+const StyleCopy = styled(P)`
+  margin: 5px 0 3px;
+  font-size: 12px;
+`;
 const GithubLink = styled(A)`
   ${mixins.inlineLink};
   color: ${theme.colors.lightGrey};
@@ -80,6 +84,7 @@ const Footer = () => (
       </SocialItemList>
     </SocialContainer>
     <Copy>Made with ❤ using Gatsby.</Copy>
+    <StyleCopy>Design by Brittany Chiang.</StyleCopy>
   </FooterContainer>
 );
 
