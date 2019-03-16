@@ -10,6 +10,9 @@ import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import Emoji from '../components/emoji';
+import Image from '../components/image';
+import BubbleLine from '../components/bubbleLine';
+import ChartCard from '../components/chartCard';
 import { theme, mixins, media, Main, Section } from '../style';
 
 const MainContainer = styled(Main)`
@@ -107,6 +110,20 @@ const PostBody = styled.div`
     margin-bottom: 1em;
     p {
       margin: 0;
+    }
+  }
+  ol {
+    li {
+      list-style: none;
+      counter-increment: item 1;
+      &::before {
+        content: '0' counter(item) '.';
+        text-align: right;
+        color: #64ffda;
+        margin-right: 0.5em;
+        font-size: 14px;
+        font-family: SF Mono, Fira Code, Fira Mono, monospace;
+      }
     }
   }
 `;
@@ -207,6 +224,9 @@ const renderAst = new rehypeReact({
       loader: () => import('../components/editor'),
       loading: () => null,
     }),
+    'image-box': Image,
+    'bubble-line': BubbleLine,
+    'chart-card': ChartCard,
   },
 }).Compiler;
 
