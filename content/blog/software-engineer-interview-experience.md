@@ -206,7 +206,7 @@ applications and to have experience building the same. They want you to be cultu
 care what you have previously worked on, what are your personal goals, and how you work in a team.
 
 <chart-card>
-<bubble-line label="Data Structures & Alogs" total="8" selected="3"></bubble-line>
+<bubble-line label="Data Structures & Algos" total="8" selected="3"></bubble-line>
 <bubble-line label="Language concepts" total="8" selected="7"></bubble-line>
 <bubble-line label="Development concepts" total="8" selected="8"></bubble-line>
 <bubble-line label="Projects & Experience" total="8" selected="8"></bubble-line>
