@@ -93,10 +93,16 @@ const PostBody = styled.div`
   }
   ul {
     list-style-type: '# ';
+  }
+  ul,
+  ol {
     li {
       margin-block-end: 0.5em;
       margin-block-start: 0.5em;
     }
+    ${media.phone`
+    padding-inline-start: 15px;
+  `};
   }
   a {
     color: ${theme.colors.green};

@@ -21,6 +21,9 @@ const LineLabel = styled.span`
 
 const Line = styled.div`
   display: flex;
+  ${media.tablet`
+    display: block;
+  `};
 `;
 
 const BubbleRow = styled.div`

@@ -9,6 +9,7 @@ const ImageBox = styled.div`
   margin-bottom: 0.5em;
 
   img {
+    max-width: 100%;
     display: inline-block;
     border: 3px solid #fff;
   }

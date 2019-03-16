@@ -6,6 +6,10 @@ const Card = styled.div`
   max-width: 80%;
   margin: 50px auto;
 
+  ${media.tablet`
+    max-width: 100%;
+  `};
+
   .wrap {
     position: relative;
     padding: 30px;
