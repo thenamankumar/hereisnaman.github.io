@@ -250,7 +250,7 @@ class BlogPostTemplate extends React.Component {
     const pageDescription = post.excerpt;
 
     return (
-      <Layout location={location} avatar={post.frontmatter.authorImg}>
+      <Layout avatar={post.frontmatter.authorImg}>
         <Helmet>
           <title itemProp="name" lang="en">
             {pageTitle}
