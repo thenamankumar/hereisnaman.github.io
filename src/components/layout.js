@@ -61,7 +61,7 @@ class Layout extends Component {
     this.setState({ isLoading: false });
   };
   render() {
-    const { children, location } = this.props;
+    const { children, location, avatar, hideLogo } = this.props;
     const { isLoading } = this.state;
     const navLinks = config.navLinks;
 
@@ -77,9 +77,7 @@ class Layout extends Component {
           <Loader finishLoading={this.finishLoading} />
         ) : (
           <div className="container">
-            <Header location={location} navLinks={navLinks} />
-            <Social />
-            <Email />
+            <Header location={location} navLinks={navLinks} hideLogo={hideLogo} avatar={avatar} />
             {children}
             <Footer />
           </div>

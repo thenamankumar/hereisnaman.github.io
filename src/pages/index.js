@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import Layout from '../components/layout';
 import Hero from '../components/hero';
-import Projects from '../components/projects';
 import BlogPosts from '../components/blogPosts';
 import Contact from '../components/contact';
 
@@ -17,11 +16,10 @@ const MainContainer = styled(Main)`
 `;
 
 const IndexPage = ({ data, location }) => (
-  <Layout location={location}>
+  <Layout location={location} hideLogo>
     <MainContainer id="content">
       <Hero data={data.hero.edges} />
       <BlogPosts data={data.blogPosts.edges} />
-      <Projects data={data.projects.edges} />
       <Contact data={data.contact.edges} />
     </MainContainer>
   </Layout>
@@ -44,24 +42,6 @@ export const query = graphql`
             name
             subtitle
             contactText
-          }
-          html
-        }
-      }
-    }
-    projects: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/projects/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            image
-            tech
-            github
-            external
-            show
           }
           html
         }

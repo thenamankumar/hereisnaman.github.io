@@ -16,7 +16,7 @@ const MainContainer = styled(Main)`
 `;
 
 const BlogPage = ({ data, location }) => (
-  <Layout location={location}>
+  <Layout location={location} avatar={data.blogPosts.edges[0].node.frontmatter.authorImg}>
     <MainContainer id="content">
       <BlogPosts data={data.blogPosts.edges} long={true} />
     </MainContainer>

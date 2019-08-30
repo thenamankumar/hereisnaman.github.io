@@ -234,7 +234,6 @@ class BlogPosts extends Component {
 
     return (
       <BlogPostsContainer id="blog">
-        <BlogPostsTitle innerRef={el => (this.projects = el)}>Latest Posts</BlogPostsTitle>
         <BlogPostsGrid>
           <TransitionGroup className="blog-posts">
             {blogPosts.map(({ node }, i) => (

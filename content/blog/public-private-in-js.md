@@ -3,7 +3,7 @@ title: 'Implementing public, private, and static data members in pre-ES5 Javascr
 date: '2019-01-10'
 authorName: 'Naman Kumar'
 slug: '/blog/public-private-static-data-members-in-javascript'
-authorImg: '../about/me.jpg'
+authorImg: './me.jpg'
 featuredImg: '../images/javascript.png'
 tags:
   - javascript

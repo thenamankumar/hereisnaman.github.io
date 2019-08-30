@@ -3,7 +3,7 @@ title: "An undergrad's experience with cracking 8 software engineer intern inter
 date: '2019-03-15'
 authorName: 'Naman Kumar'
 slug: '/blog/software-engineering-interview-experience'
-authorImg: '../about/me.jpg'
+authorImg: './me.jpg'
 featuredImg: '../images/software-engineer-interview-experience.jpg'
 tags:
   - interviews

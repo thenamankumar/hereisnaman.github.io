@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import config from '../config';
@@ -12,11 +13,11 @@ const HeroContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
   ${media.tablet`padding-top: 150px;`};
   div {
     width: 100%;
   }
+  padding-bottom: 0;
 `;
 const Hi = styled.h1`
   color: ${theme.colors.green};
@@ -49,8 +50,13 @@ const Blurb = styled.div`
   margin-top: 25px;
   width: 50%;
   max-width: 500px;
+  color: #e6f1ff;
+  margin-top: 0;
   a {
     ${mixins.inlineLink};
+  }
+  p {
+    margin-bottom: 0;
   }
 `;
 const EmailButton = styled.div``;
@@ -66,12 +72,8 @@ class Hero extends Component {
   };
 
   state = {
-    show: false,
+    show: true,
   };
-
-  componentDidMount() {
-    setTimeout(() => this.setState({ show: true }), 1000);
-  }
 
   render() {
     const { data } = this.props;
@@ -86,26 +88,10 @@ class Hero extends Component {
     const four = () => (
       <Blurb style={{ transitionDelay: '400ms' }} dangerouslySetInnerHTML={{ __html: node.html }} />
     );
-    const five = () => (
-      <EmailButton style={{ transitionDelay: '500ms' }}>
-        <EmailLink to="/about/">About me</EmailLink>
-      </EmailButton>
-    );
 
-    const items = [one, two, three, four, five];
+    const items = [one, two, three, four];
 
-    return (
-      <HeroContainer>
-        <TransitionGroup>
-          {show &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={3000}>
-                {item}
-              </CSSTransition>
-            ))}
-        </TransitionGroup>
-      </HeroContainer>
-    );
+    return <HeroContainer>{items.map(item => item())}</HeroContainer>;
   }
 }
 

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import { throttle } from '../utils';
+import { IconGithub, IconLinkedin, IconInstagram, IconTwitter } from './icons';
 
 import config from '../config';
 
@@ -47,7 +48,6 @@ const Logo = styled.div`
 `;
 const LogoLink = styled(Link)`
   color: ${theme.colors.green};
-  width: 42px;
   height: 42px;
   &:hover,
   &:focus {
@@ -141,13 +141,6 @@ const NavListItem = styled.li`
   margin: 0 10px;
   position: relative;
   font-size: ${theme.fontSizes.smallish};
-  counter-increment: item 1;
-  &:before {
-    content: '0' counter(item) '.';
-    text-align: right;
-    color: ${theme.colors.green};
-    font-size: ${theme.fontSizes.xsmall};
-  }
 `;
 const NavLink = styled(Link)`
   ${mixins.link};
@@ -158,6 +151,13 @@ const ResumeLink = styled(A)`
   ${mixins.smallButton};
   margin-left: 10px;
   font-size: ${theme.fontSizes.smallish};
+`;
+const SocialLink = styled(A)`
+  padding: 10px;
+  svg {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 const DELTA = 5;
@@ -172,7 +172,7 @@ class Header extends Component {
     lastScrollTop: 0,
     scrollDirection: 'none',
     menuOpen: false,
-    show: false,
+    show: true,
   };
 
   componentDidMount() {
@@ -248,18 +248,18 @@ class Header extends Component {
 
   render() {
     const { scrollDirection, menuOpen, show } = this.state;
-    const { location, navLinks } = this.props;
+    const { location, navLinks, avatar, hideLogo } = this.props;
     const isHome = location && location.pathname === '/';
 
     return (
       <HeaderContainer innerRef={el => (this.header = el)} scrollDirection={scrollDirection}>
         <Navbar>
           <TransitionGroup>
-            {show && (
+            {show && !hideLogo && (
               <CSSTransition classNames="fade" timeout={3000}>
                 <Logo>
                   <LogoLink to="/" aria-label="Home">
-                    <IconLogo />
+                    <IconLogo avatar={avatar} />
                   </LogoLink>
                 </Logo>
               </CSSTransition>
@@ -286,26 +286,28 @@ class Header extends Component {
                   navLinks.map((link, i) => (
                     <CSSTransition key={i} classNames="fadedown" timeout={3000}>
                       <NavListItem key={i} style={{ transitionDelay: `${i * 100}ms` }}>
-                        <NavLink to={link.url}>{link.name}</NavLink>
+                        <SocialLink
+                          href={link.url}
+                          target="_blank"
+                          rel="nofollow noopener noreferrer"
+                          aria-label={link.name}>
+                          {link.name === 'Github' ? (
+                            <IconGithub />
+                          ) : link.name === 'Linkedin' ? (
+                            <IconLinkedin />
+                          ) : link.name === 'Instagram' ? (
+                            <IconInstagram />
+                          ) : link.name === 'Twitter' ? (
+                            <IconTwitter />
+                          ) : (
+                            <IconGithub />
+                          )}
+                        </SocialLink>
                       </NavListItem>
                     </CSSTransition>
                   ))}
               </TransitionGroup>
             </NavList>
-            <TransitionGroup>
-              {show && (
-                <CSSTransition classNames="fadedown" timeout={3000}>
-                  <ResumeButton style={{ transitionDelay: `600ms` }}>
-                    <ResumeLink
-                      href="https://github.com/hereisnaman"
-                      target="_blank"
-                      rel="nofollow noopener noreferrer">
-                      GitHub
-                    </ResumeLink>
-                  </ResumeButton>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
           </NavLinks>
         </Navbar>
 

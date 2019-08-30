@@ -31,20 +31,20 @@ module.exports = {
 
   navLinks: [
     {
-      name: 'Home',
-      url: '/',
+      name: 'Github',
+      url: 'https://github.com/hereisnaman',
     },
     {
-      name: 'About',
-      url: '/about/',
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/hereisnaman',
     },
     {
-      name: 'Blog',
-      url: '/blog/',
+      name: 'Twitter',
+      url: 'https://twitter.com/hereisnaman',
     },
     {
-      name: 'Ping',
-      url: '/#contact',
+      name: 'Instagram',
+      url: 'https://instagram.com/hereisnaman',
     },
   ],
 

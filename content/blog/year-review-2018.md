@@ -3,7 +3,7 @@ title: '2018 Year in Review'
 date: '2019-01-01'
 authorName: 'Naman Kumar'
 slug: '/blog/2018-year-in-review'
-authorImg: '../about/me.jpg'
+authorImg: './me.jpg'
 featuredImg: '../images/2018-year-review.jpg'
 tags:
   - yearreview
