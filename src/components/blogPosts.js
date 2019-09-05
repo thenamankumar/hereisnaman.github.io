@@ -130,8 +130,7 @@ const BlogPost = styled.div`
   &:focus {
     ${PostExcerpt} {
       transform: translateY(-5px);
-      box-shadow: 0 2px 4px ${theme.colors.shadowNavy};
-      box-shadow: 0 19px 38px ${theme.colors.darkestNavy} 0 15px 12px ${theme.colors.shadowNavy};
+      box-shadow: 0 0 140px rgba(255, 255, 255, 0.05);
     }
     ${AvatarContainer} {
       background: transparent;
